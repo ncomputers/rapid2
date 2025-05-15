@@ -756,7 +756,7 @@
       <div class="col-xl-4 col-lg-5">
         <div class="ud-contact-form-wrapper wow fadeInUp" data-wow-delay=".2s">
           <h3 class="ud-contact-form-title">Send Us a Message</h3>
-          <form class="ud-contact-form" id="contactForm">
+          <form class="ud-contact-form" action="https://formspree.io/f/xrbqrroa" method="POST">
             <div class="ud-form-group">
               <label for="fullName">Full Name*</label>
               <input type="text" name="fullName" placeholder="Your Full Name" required />
@@ -773,6 +773,13 @@
               <label for="message">Message*</label>
               <textarea name="message" rows="4" placeholder="Tell us what you're looking for..." required></textarea>
             </div>
+
+            <!-- Optional: Spam Protection -->
+            <!-- <input type="text" name="_gotcha" style="display:none">  -->
+
+            <!-- Optional: Redirect after success -->
+            <!--<input type="hidden" name="_redirect" value="https://rapidcorp.in/thank-you.html" />  -->
+
             <div class="ud-form-group mb-0">
               <button type="submit" class="ud-main-btn">Send Message</button>
             </div>
@@ -783,6 +790,7 @@
   </div>
 </section>
 <!-- ====== Contact End ====== -->
+
 
 
 <!-- ====== Footer Start ====== -->
