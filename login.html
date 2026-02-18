@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login | Rapid Corp</title>
+    <title>Request Consultation | Rapid Corp</title>
 
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/svg" />
@@ -34,16 +34,17 @@
               <div class="navbar-collapse">
                 <ul id="nav" class="navbar-nav mx-auto">
                   <li class="nav-item"><a class="ud-menu-scroll" href="https://rapidcorp.in/">Home</a></li>
-                  <li class="nav-item"><a class="ud-menu-scroll" href="#about">About</a></li>
-                  <li class="nav-item"><a class="ud-menu-scroll" href="#pricing">Pricing</a></li>
-                  <li class="nav-item"><a class="ud-menu-scroll" href="#team">Team</a></li>
-                  <li class="nav-item"><a class="ud-menu-scroll" href="#contact">Contact</a></li>
+                  <li class="nav-item"><a class="ud-menu-scroll" href="index.html#about">About</a></li>
+                  <li class="nav-item"><a href="company-profile.html">Profile</a></li>
+                  <li class="nav-item"><a class="ud-menu-scroll" href="index.html#pricing">Pricing</a></li>
+                  <li class="nav-item"><a class="ud-menu-scroll" href="index.html#team">Team</a></li>
+                  <li class="nav-item"><a class="ud-menu-scroll" href="index.html#contact">Contact</a></li>
                 </ul>
               </div>
 
               <div class="navbar-btn d-none d-sm-inline-block">
                 <a href="login.html" class="ud-main-btn ud-login-btn">Sign In</a>
-                <a class="ud-main-btn ud-white-btn" href="signup.html">Sign Up</a>
+                <a class="ud-main-btn ud-white-btn" href="contact.html">Sign Up</a>
               </div>
             </nav>
           </div>
@@ -58,7 +59,7 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="ud-banner-content">
-              <h1>Login Page</h1>
+              <h1>Request IT Consultation</h1>
             </div>
           </div>
         </div>
@@ -73,17 +74,17 @@
           <div class="col-lg-12">
             <div class="ud-login-wrapper">
               <div class="ud-login-logo">
-                <img src="assets/images/logo/rapidcorp-logo.svg" alt="Rapid Corp Logo" />
+                <img src="assets/images/logo/logo.svg" alt="Rapid Corp Logo" />
               </div>
-              <form class="ud-login-form" action="/login" method="POST">
+              <form class="ud-login-form" action="https://formspree.io/f/xrbqrroa" method="POST">
                 <div class="ud-form-group">
-                  <input type="email" name="email" placeholder="Email/username" required />
+                  <input type="email" name="email" placeholder="Work Email" required />
                 </div>
                 <div class="ud-form-group">
-                  <input type="password" name="password" placeholder="*********" required />
+                  <input type="tel" name="phone" placeholder="Phone Number" required />
                 </div>
                 <div class="ud-form-group">
-                  <button type="submit" class="ud-main-btn w-100">Login</button>
+                  <button type="submit" class="ud-main-btn w-100">Request Callback</button>
                 </div>
               </form>
 
@@ -96,8 +97,8 @@
                 </ul>
               </div>
 
-              <a class="forget-pass" href="#">Forget Password?</a>
-              <p class="signup-option">Not a member yet? <a href="signup.html"> Sign Up </a></p>
+              <a class="forget-pass" href="contact.html">Need urgent support? Contact us</a>
+              <p class="signup-option">Prefer email? <a href="mailto:admin@rapidcorp.in"> admin@rapidcorp.in </a></p>
             </div>
           </div>
         </div>
@@ -134,6 +135,7 @@
           <div class="row">
             <div class="col-md-8">
               <ul class="ud-footer-bottom-left">
+                <li><a href="company-profile.html">Company Profile</a></li>
                 <li><a href="#">Privacy policy</a></li>
                 <li><a href="#">Support policy</a></li>
                 <li><a href="#">Terms of service</a></li>
