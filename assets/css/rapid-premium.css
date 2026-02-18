@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap");
+
+:root {
+  --rc-bg: #f4f8ff;
+  --rc-bg-soft: #ecf3ff;
+  --rc-surface: #ffffff;
+  --rc-surface-2: #f8fbff;
+  --rc-line: #d7e2f3;
+  --rc-text: #10233f;
+  --rc-muted: #556781;
+  --rc-primary: #1254bb;
+  --rc-primary-2: #2f7fe8;
+  --rc-accent: #0aa5a2;
+  --rc-shadow: 0 18px 42px rgba(16, 34, 63, 0.1);
+  --rc-radius-lg: 18px;
+  --rc-radius-md: 14px;
+}
+
+body.rc-theme {
+  font-family: "Outfit", sans-serif;
+  color: var(--rc-text);
+  background:
+    radial-gradient(1200px 600px at 0% -10%, #dce8ff 0%, rgba(220, 232, 255, 0) 64%),
+    radial-gradient(1000px 500px at 100% 0%, #def7f4 0%, rgba(222, 247, 244, 0) 56%),
+    var(--rc-bg);
+}
+
+.rc-theme p,
+.rc-theme li,
+.rc-theme a,
+.rc-theme input,
+.rc-theme textarea,
+.rc-theme label,
+.rc-theme button {
+  font-family: "Outfit", sans-serif;
+}
+
+.rc-theme h1,
+.rc-theme h2,
+.rc-theme h3,
+.rc-theme h4,
+.rc-theme h5,
+.rc-theme h6 {
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--rc-text);
+}
+
+.rc-theme .ud-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  background: linear-gradient(120deg, rgba(9, 24, 45, 0.88), rgba(18, 84, 187, 0.72));
+}
+
+.rc-theme .sticky {
+  background: rgba(11, 25, 47, 0.88);
+  backdrop-filter: blur(10px);
+}
+
+.rc-theme .navbar .navbar-nav .nav-item a,
+.rc-theme .navbar-brand,
+.rc-theme .navbar-brand span {
+  color: #fff !important;
+}
+
+.rc-theme .navbar .navbar-nav .nav-item a:hover,
+.rc-theme .navbar .navbar-nav .nav-item a.active {
+  color: #d8e9ff !important;
+}
+
+.rc-theme .navbar-toggler .toggler-icon {
+  background: #fff;
+}
+
+.rc-theme .ud-main-btn {
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--rc-primary), var(--rc-primary-2));
+  border: 1px solid transparent;
+  font-weight: 700;
+}
+
+.rc-theme .ud-main-btn:hover {
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, #0e489f, #256fcf);
+}
+
+.rc-theme .ud-main-btn.ud-white-btn {
+  background: #fff;
+  color: var(--rc-text);
+  border-color: #c6d7ef;
+}
+
+.rc-theme .ud-main-btn.ud-white-btn:hover {
+  background: #eef4ff;
+  color: var(--rc-text);
+}
+
+.rc-theme .ud-page-banner,
+.rc-theme .profile-hero,
+.rc-theme .ud-hero {
+  position: relative;
+}
+
+.rc-theme .ud-page-banner::before,
+.rc-theme .ud-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(9, 24, 45, 0.78), rgba(18, 84, 187, 0.72));
+  z-index: 0;
+}
+
+.rc-theme .ud-page-banner > .container,
+.rc-theme .ud-hero > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.rc-theme .ud-banner-content h1,
+.rc-theme .ud-hero-title,
+.rc-theme .ud-hero-desc,
+.rc-theme .ud-hero-content p,
+.rc-theme .ud-hero-content h1 {
+  color: #fff;
+}
+
+.rc-theme .ud-hero {
+  padding-top: 180px;
+  padding-bottom: 100px;
+}
+
+.rc-theme section {
+  position: relative;
+}
+
+.rc-theme .ud-section-title {
+  margin-bottom: 44px;
+}
+
+.rc-theme .ud-section-title span,
+.rc-theme .tag {
+  background: #e8f1ff;
+  color: var(--rc-primary);
+  padding: 7px 13px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.rc-theme .ud-section-title p,
+.rc-theme .ud-feature-desc,
+.rc-theme .ud-blog-desc,
+.rc-theme .ud-widget-desc,
+.rc-theme .ud-contact-title p,
+.rc-theme .ud-about-content p,
+.rc-theme p {
+  color: var(--rc-muted);
+}
+
+.rc-theme .ud-single-feature,
+.rc-theme .ud-single-pricing,
+.rc-theme .ud-single-team,
+.rc-theme .ud-single-testimonial,
+.rc-theme .ud-single-blog,
+.rc-theme .ud-single-faq,
+.rc-theme .ud-contact-content-wrapper,
+.rc-theme .ud-contact-form-wrapper,
+.rc-theme .ud-login-wrapper,
+.rc-theme .ud-blog-sidebar,
+.rc-theme .ud-blog-details-content,
+.rc-theme .ud-widget,
+.rc-theme .ud-404-wrapper {
+  border: 1px solid var(--rc-line);
+  background: linear-gradient(170deg, rgba(255, 255, 255, 0.96), rgba(246, 250, 255, 0.96));
+  border-radius: var(--rc-radius-lg);
+  box-shadow: var(--rc-shadow);
+}
+
+.rc-theme .ud-single-feature,
+.rc-theme .ud-single-pricing,
+.rc-theme .ud-single-blog,
+.rc-theme .ud-single-team,
+.rc-theme .ud-single-testimonial,
+.rc-theme .ud-single-faq {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.rc-theme .ud-single-feature:hover,
+.rc-theme .ud-single-pricing:hover,
+.rc-theme .ud-single-blog:hover,
+.rc-theme .ud-single-team:hover,
+.rc-theme .ud-single-testimonial:hover,
+.rc-theme .ud-single-faq:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 46px rgba(16, 34, 63, 0.14);
+}
+
+.rc-theme .ud-feature-icon,
+.rc-theme .ud-info-icon,
+.rc-theme .ud-social-icons a,
+.rc-theme .ud-team-socials a {
+  background: linear-gradient(135deg, var(--rc-primary), var(--rc-primary-2));
+  color: #fff;
+  border-radius: 12px;
+}
+
+.rc-theme .ud-feature-icon i,
+.rc-theme .ud-info-icon i {
+  color: #fff;
+}
+
+.rc-theme .ud-pricing-header,
+.rc-theme .ud-pricing-body,
+.rc-theme .ud-pricing-footer {
+  border-color: var(--rc-line);
+}
+
+.rc-theme .ud-pricing-active .ud-single-pricing {
+  border-color: #9fbff0;
+}
+
+.rc-theme .ud-blog-image img,
+.rc-theme .ud-about-image img,
+.rc-theme .ud-hero-image img,
+.rc-theme .ud-blog-details-image img {
+  border-radius: 14px;
+}
+
+.rc-theme .ud-blog-date {
+  background: #e9f2ff;
+  color: var(--rc-primary);
+  border-radius: 999px;
+  padding: 6px 12px;
+}
+
+.rc-theme .ud-blog-title a,
+.rc-theme .ud-blog-details-title,
+.rc-theme .ud-blog-details-subtitle,
+.rc-theme .ud-widget-title,
+.rc-theme .ud-contact-form-title,
+.rc-theme .ud-login-title {
+  color: var(--rc-text);
+}
+
+.rc-theme .ud-blog-quote {
+  border-radius: var(--rc-radius-md);
+  border: 1px solid #bcd4ff;
+  background: #ebf3ff;
+}
+
+.rc-theme .ud-contact,
+.rc-theme .ud-login,
+.rc-theme .ud-blog-details,
+.rc-theme .ud-blog-grids,
+.rc-theme .ud-pricing,
+.rc-theme .ud-team,
+.rc-theme .ud-about,
+.rc-theme .ud-features,
+.rc-theme .ud-testimonials,
+.rc-theme .ud-faq,
+.rc-theme .ud-404 {
+  padding-top: 88px;
+  padding-bottom: 88px;
+}
+
+.rc-theme .ud-contact-form .ud-form-group input,
+.rc-theme .ud-contact-form .ud-form-group textarea,
+.rc-theme .ud-login-form .ud-form-group input,
+.rc-theme .ud-login-form .ud-form-group textarea,
+.rc-theme .ud-login-form .ud-form-group select {
+  border: 1px solid #d4e1f2;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.rc-theme .ud-contact-form .ud-form-group input:focus,
+.rc-theme .ud-contact-form .ud-form-group textarea:focus,
+.rc-theme .ud-login-form .ud-form-group input:focus,
+.rc-theme .ud-login-form .ud-form-group textarea:focus,
+.rc-theme .ud-login-form .ud-form-group select:focus {
+  border-color: #3a82e4;
+}
+
+.rc-theme .ud-footer {
+  background: linear-gradient(135deg, #0d2342 0%, #0f3f80 55%, #0a6f95 100%);
+}
+
+.rc-theme .ud-footer .ud-widget-links a,
+.rc-theme .ud-footer .ud-widget-desc,
+.rc-theme .ud-footer-bottom-left a,
+.rc-theme .ud-footer-bottom-right,
+.rc-theme .ud-footer .startup-logo,
+.rc-theme .ud-widget-title {
+  color: rgba(255, 255, 255, 0.92) !important;
+}
+
+.rc-theme .ud-footer .ud-widget-links a:hover,
+.rc-theme .ud-footer-bottom-left a:hover {
+  color: #fff !important;
+}
+
+.rc-theme .ud-footer .ud-widget-socials a {
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 10px;
+}
+
+.rc-theme .ud-footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.rc-theme .back-to-top {
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--rc-primary), var(--rc-primary-2));
+}
+
+.rc-theme.rc-index .ud-hero-buttons {
+  margin-top: 28px;
+}
+
+.rc-theme.rc-index .ud-hero-brands-wrapper {
+  display: none;
+}
+
+.rc-theme.rc-blog .ud-single-blog,
+.rc-theme.rc-blog-details .ud-single-blog {
+  overflow: hidden;
+}
+
+.rc-theme.rc-404 .ud-404-title {
+  font-size: clamp(34px, 5vw, 56px);
+  line-height: 1.12;
+}
+
+.rc-theme.rc-login .ud-login-wrapper {
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+.rc-theme.rc-company-profile .profile-kicker,
+.rc-theme.rc-company-profile .profile-section-title span {
+  box-shadow: none;
+}
+
+.rc-theme.rc-company-profile .hero-panel,
+.rc-theme.rc-company-profile .glass-panel,
+.rc-theme.rc-company-profile .contact-panel,
+.rc-theme.rc-company-profile .kpi-card,
+.rc-theme.rc-company-profile .vision-banner,
+.rc-theme.rc-company-profile .profile-page .ud-contact-form-wrapper {
+  box-shadow: 0 18px 42px rgba(16, 34, 63, 0.14);
+}
+
+@media (max-width: 991px) {
+  .rc-theme .ud-hero {
+    padding-top: 150px;
+  }
+
+  .rc-theme .ud-navbar,
+  .rc-theme .navbar-collapse {
+    border-radius: 0 0 12px 12px;
+  }
+
+  .rc-theme .ud-footer-bottom-right {
+    text-align: left;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .rc-theme .ud-contact,
+  .rc-theme .ud-login,
+  .rc-theme .ud-blog-details,
+  .rc-theme .ud-blog-grids,
+  .rc-theme .ud-pricing,
+  .rc-theme .ud-team,
+  .rc-theme .ud-about,
+  .rc-theme .ud-features,
+  .rc-theme .ud-testimonials,
+  .rc-theme .ud-faq,
+  .rc-theme .ud-404 {
+    padding-top: 68px;
+    padding-bottom: 68px;
+  }
+
+  .rc-theme .ud-single-feature,
+  .rc-theme .ud-single-pricing,
+  .rc-theme .ud-single-team,
+  .rc-theme .ud-single-testimonial,
+  .rc-theme .ud-single-blog,
+  .rc-theme .ud-single-faq,
+  .rc-theme .ud-contact-content-wrapper,
+  .rc-theme .ud-contact-form-wrapper,
+  .rc-theme .ud-login-wrapper,
+  .rc-theme .ud-blog-sidebar,
+  .rc-theme .ud-blog-details-content,
+  .rc-theme .ud-widget,
+  .rc-theme .ud-404-wrapper {
+    padding: 20px;
+  }
+
+  .rc-theme .ud-main-btn {
+    padding: 13px 18px;
+  }
+}
