@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Rapid Corp — AI-Powered Safety & IT Solutions</title>
+<meta name="description" content="Rapid Corp builds AI-based safety systems (Z-Eye PPE compliance), enterprise IT infrastructure, procurement automation (TenderFlows) and surveillance solutions for manufacturing, pharma and corporate clients across India." />
+<meta name="keywords" content="Z-Eye, PPE detection, AI safety, TenderFlows, procurement, IT infrastructure Udaipur, CCTV Rajasthan, enterprise IT, Manish Patel, Rapid Corp" />
+<meta name="author" content="Rapid Corp" />
+<meta name="theme-color" content="#0A1628" />
+<link rel="canonical" href="https://rapidcorp.in/" />
+
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://rapidcorp.in/" />
+<meta property="og:title" content="Rapid Corp — AI-Powered Safety & IT Solutions" />
+<meta property="og:description" content="From AI-based PPE compliance to enterprise IT infrastructure — Rapid Corp helps businesses run safer, smarter and more efficiently." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Rapid Corp — AI-Powered Safety & IT Solutions" />
+<meta name="twitter:description" content="From AI-based PPE compliance to enterprise IT infrastructure — Rapid Corp helps businesses run safer, smarter and more efficiently." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Rapid Corp",
+  "url": "https://rapidcorp.in",
+  "logo": "https://rapidcorp.in/assets/images/logo.svg",
+  "founder": {"@type": "Person", "name": "Manish Patel"},
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "100ft Road, Nokha",
+    "addressLocality": "Udaipur",
+    "addressRegion": "Rajasthan",
+    "postalCode": "313001",
+    "addressCountry": "IN"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+91-9828519299",
+    "contactType": "Customer Support",
+    "email": "admin@rapidcorp.in",
+    "areaServed": "IN"
+  }
+}
+</script>
+
+<style>
+  :root {
+    --navy:        #0A1628;
+    --navy-2:      #0F1D33;
+    --navy-3:      #14233F;
+    --navy-4:      #1B2D4D;
+    --gold:        #C9A84C;
+    --gold-2:      #D9BC6E;
+    --gold-soft:   rgba(201,168,76,0.10);
+    --gold-line:   rgba(201,168,76,0.28);
+    --white:       #FFFFFF;
+    --gray-1:      #C5CCD9;
+    --gray-2:      #8B95A8;
+    --gray-3:      #5A6478;
+    --border:      rgba(255,255,255,0.07);
+    --border-2:    rgba(255,255,255,0.14);
+    --section-pad: clamp(72px, 9vw, 130px);
+    --container:   1200px;
+    --radius:      6px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--navy);
+    color: var(--white);
+    line-height: 1.6;
+    overflow-x: hidden;
+    font-feature-settings: 'cv11', 'ss01';
+  }
+  a { color: inherit; }
+  img { max-width: 100%; display: block; }
+  ul { list-style: none; }
+
+  .container { max-width: var(--container); margin: 0 auto; padding: 0 24px; position: relative; }
+
+  /* ---------- Scroll progress ---------- */
+  .scroll-progress {
+    position: fixed; top: 0; left: 0; height: 2px; width: 0%;
+    background: linear-gradient(90deg, var(--gold), var(--gold-2));
+    z-index: 200; transition: width 0.1s linear;
+  }
+
+  /* ---------- Nav ---------- */
+  .nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 22px 0;
+    transition: background 0.3s ease, padding 0.3s ease, border-color 0.3s ease;
+    border-bottom: 1px solid transparent;
+  }
+  .nav.scrolled {
+    background: rgba(10, 22, 40, 0.88);
+    backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    border-bottom-color: var(--border);
+    padding: 14px 0;
+  }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+  .logo {
+    font-weight: 800; font-size: 19px; letter-spacing: 0.14em;
+    color: var(--white); text-decoration: none;
+    display: inline-flex; align-items: center; gap: 4px;
+  }
+  .logo span { color: var(--gold); }
+  .logo::before {
+    content: ''; width: 8px; height: 8px; border-radius: 2px;
+    background: var(--gold); margin-right: 12px;
+    box-shadow: 0 0 12px rgba(201,168,76,0.6);
+  }
+
+  .nav-links { display: flex; gap: 38px; align-items: center; }
+  .nav-links a {
+    color: var(--gray-1); text-decoration: none;
+    font-size: 14px; font-weight: 500; letter-spacing: 0.01em;
+    position: relative; padding: 4px 0;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover, .nav-links a.active { color: var(--white); }
+  .nav-links a::after {
+    content: ''; position: absolute; left: 0; right: 0; bottom: -8px;
+    height: 1px; background: var(--gold);
+    transform: scaleX(0); transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+  .nav-links a:hover::after, .nav-links a.active::after { transform: scaleX(1); }
+
+  .nav-cta {
+    padding: 11px 22px; background: var(--gold); color: var(--navy);
+    border-radius: 3px; font-weight: 600; font-size: 13px;
+    letter-spacing: 0.05em; text-transform: uppercase;
+    text-decoration: none; transition: all 0.2s;
+  }
+  .nav-cta:hover { background: var(--gold-2); transform: translateY(-1px); }
+
+  .hamburger {
+    display: none; width: 30px; height: 22px;
+    background: none; border: none; cursor: pointer;
+    flex-direction: column; justify-content: space-between;
+  }
+  .hamburger span {
+    display: block; height: 2px; width: 100%;
+    background: var(--white); border-radius: 2px;
+    transition: transform 0.3s, opacity 0.2s;
+  }
+  .hamburger.active span:nth-child(1) { transform: translateY(10px) rotate(45deg); }
+  .hamburger.active span:nth-child(2) { opacity: 0; }
+  .hamburger.active span:nth-child(3) { transform: translateY(-10px) rotate(-45deg); }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    min-height: 100vh;
+    display: flex; align-items: center;
+    position: relative; overflow: hidden;
+    padding: 140px 0 80px;
+    background:
+      radial-gradient(ellipse at top right, rgba(201,168,76,0.08) 0%, transparent 55%),
+      radial-gradient(ellipse at bottom left, rgba(20,35,63,0.6) 0%, transparent 50%),
+      var(--navy);
+  }
+  .hero::before {
+    content: ''; position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(ellipse 70% 60% at center, black 30%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse 70% 60% at center, black 30%, transparent 75%);
+    pointer-events: none;
+  }
+  .hero::after {
+    content: ''; position: absolute; right: -120px; top: 20%;
+    width: 480px; height: 480px;
+    background: radial-gradient(circle, rgba(201,168,76,0.06) 0%, transparent 70%);
+    border-radius: 50%; pointer-events: none;
+  }
+
+  .hero-content { position: relative; max-width: 920px; }
+  .hero-tag {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 8px 18px;
+    background: rgba(201,168,76,0.08);
+    border: 1px solid var(--gold-line);
+    border-radius: 100px;
+    color: var(--gold);
+    font-size: 12px; font-weight: 600; letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+  .hero-tag .dot {
+    width: 7px; height: 7px; background: var(--gold);
+    border-radius: 50%; animation: pulse 2s ease-in-out infinite;
+    box-shadow: 0 0 0 0 var(--gold);
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(201,168,76,0.6); }
+    50%      { opacity: 0.5; box-shadow: 0 0 0 8px rgba(201,168,76,0); }
+  }
+
+  .hero h1 {
+    font-size: clamp(36px, 6vw, 70px);
+    line-height: 1.05;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    margin-bottom: 28px;
+  }
+  .hero h1 .accent {
+    color: var(--gold);
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-2) 100%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hero p {
+    font-size: clamp(16px, 1.3vw, 19px);
+    color: var(--gray-1); max-width: 680px;
+    margin-bottom: 44px; line-height: 1.7; font-weight: 400;
+  }
+  .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+
+  /* ---------- Buttons ---------- */
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 16px 30px;
+    border-radius: 3px;
+    font-family: inherit;
+    font-weight: 600; font-size: 14px;
+    letter-spacing: 0.05em; text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    cursor: pointer; border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  .btn i { font-size: 12px; transition: transform 0.25s; }
+  .btn:hover i { transform: translateX(3px); }
+  .btn-primary { background: var(--gold); color: var(--navy); }
+  .btn-primary:hover {
+    background: var(--gold-2);
+    transform: translateY(-2px);
+    box-shadow: 0 14px 32px -8px rgba(201,168,76,0.45);
+  }
+  .btn-ghost {
+    background: transparent; color: var(--white);
+    border-color: var(--border-2);
+  }
+  .btn-ghost:hover { background: rgba(255,255,255,0.04); border-color: var(--gold); color: var(--gold); }
+
+  /* ---------- Stats ---------- */
+  .stats { padding: 0; background: var(--navy-2);
+    border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .stats-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    gap: 1px; background: var(--border);
+  }
+  .stat {
+    background: var(--navy-2); padding: 44px 28px;
+    text-align: center;
+    transition: background 0.3s ease;
+  }
+  .stat:hover { background: var(--navy-3); }
+  .stat-num {
+    font-size: clamp(28px, 3.6vw, 46px);
+    font-weight: 800; color: var(--gold);
+    letter-spacing: -0.025em; line-height: 1; margin-bottom: 12px;
+  }
+  .stat-label {
+    font-size: 12.5px; color: var(--gray-2);
+    letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500;
+  }
+
+  /* ---------- Section base ---------- */
+  section { padding: var(--section-pad) 0; }
+  .section-head { margin-bottom: 60px; max-width: 820px; }
+  .section-head.center { margin-left: auto; margin-right: auto; text-align: center; }
+
+  .section-eyebrow {
+    display: inline-block; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.2em; color: var(--gold);
+    text-transform: uppercase; margin-bottom: 18px;
+    position: relative; padding-left: 32px;
+  }
+  .section-eyebrow::before {
+    content: ''; position: absolute; left: 0; top: 50%;
+    width: 22px; height: 1px; background: var(--gold);
+  }
+  .section-head.center .section-eyebrow {
+    padding-left: 0; padding-right: 0;
+  }
+  .section-head.center .section-eyebrow::before { display: none; }
+  .section-head.center .section-eyebrow::after {
+    content: ''; display: block; width: 36px; height: 1px;
+    background: var(--gold); margin: 14px auto 0;
+  }
+
+  .section-title {
+    font-size: clamp(28px, 3.4vw, 46px);
+    font-weight: 700; line-height: 1.15;
+    letter-spacing: -0.02em; margin-bottom: 20px;
+  }
+  .section-subtitle {
+    font-size: clamp(15px, 1.15vw, 17.5px);
+    color: var(--gray-1); line-height: 1.75; max-width: 700px;
+  }
+  .section-head.center .section-subtitle { margin-left: auto; margin-right: auto; }
+
+  /* ---------- About ---------- */
+  .about-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 80px; align-items: center;
+  }
+  .about-content p {
+    color: var(--gray-1); font-size: 16px;
+    line-height: 1.85; margin-bottom: 18px;
+  }
+  .founder-badge {
+    display: inline-flex; align-items: center; gap: 14px;
+    padding: 14px 22px 14px 18px;
+    background: var(--navy-3);
+    border: 1px solid var(--border);
+    border-left: 2px solid var(--gold);
+    border-radius: 4px; margin-top: 18px;
+  }
+  .founder-badge .avatar {
+    width: 42px; height: 42px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--gold), var(--gold-2));
+    display: flex; align-items: center; justify-content: center;
+    color: var(--navy); font-weight: 700; font-size: 15px;
+    letter-spacing: 0.02em;
+  }
+  .founder-badge .info strong {
+    display: block; color: var(--white); font-size: 14px; margin-bottom: 2px;
+  }
+  .founder-badge .info span {
+    color: var(--gray-2); font-size: 12px; letter-spacing: 0.04em;
+  }
+
+  .about-visual {
+    position: relative; aspect-ratio: 1.05;
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--navy-3) 0%, var(--navy-4) 100%);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .about-visual::before {
+    content: ''; position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(201,168,76,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(201,168,76,0.05) 1px, transparent 1px);
+    background-size: 32px 32px;
+    mask-image: radial-gradient(circle at center, black 30%, transparent 75%);
+    -webkit-mask-image: radial-gradient(circle at center, black 30%, transparent 75%);
+  }
+  .av-rings { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+  .av-rings span {
+    position: absolute; border: 1px solid var(--gold-line);
+    border-radius: 50%;
+  }
+  .av-rings span:nth-child(1) { width: 70%; height: 70%; }
+  .av-rings span:nth-child(2) { width: 50%; height: 50%; opacity: 0.6; }
+  .av-rings span:nth-child(3) { width: 30%; height: 30%; opacity: 0.4; }
+  .av-shield {
+    position: relative; z-index: 2;
+    width: 96px; height: 96px;
+    background: var(--navy);
+    border: 1px solid var(--gold);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--gold); font-size: 38px;
+    box-shadow: 0 0 40px rgba(201,168,76,0.25);
+  }
+  .av-tags {
+    position: absolute; inset: 0; pointer-events: none;
+  }
+  .av-tags span {
+    position: absolute;
+    background: var(--navy);
+    border: 1px solid var(--border-2);
+    padding: 7px 14px; border-radius: 3px;
+    font-size: 11.5px; color: var(--gray-1);
+    letter-spacing: 0.06em; text-transform: uppercase; font-weight: 500;
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  .av-tags span::before {
+    content: ''; width: 6px; height: 6px;
+    background: var(--gold); border-radius: 50%;
+  }
+  .av-tags span:nth-child(1) { top: 14%; left: 10%; }
+  .av-tags span:nth-child(2) { top: 22%; right: 8%; }
+  .av-tags span:nth-child(3) { bottom: 18%; left: 12%; }
+  .av-tags span:nth-child(4) { bottom: 26%; right: 10%; }
+
+  /* ---------- Services ---------- */
+  .services-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+  }
+  .service-card {
+    padding: 38px 32px;
+    background: var(--navy-2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    transition: all 0.3s ease;
+    position: relative; overflow: hidden;
+  }
+  .service-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, var(--gold), transparent);
+    transform: scaleX(0); transform-origin: left;
+    transition: transform 0.4s ease;
+  }
+  .service-card:hover {
+    background: var(--navy-3);
+    border-color: var(--border-2);
+    transform: translateY(-5px);
+  }
+  .service-card:hover::before { transform: scaleX(1); }
+  .service-icon {
+    width: 56px; height: 56px;
+    background: var(--gold-soft);
+    border: 1px solid var(--gold-line);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px; color: var(--gold);
+    margin-bottom: 26px;
+  }
+  .service-card h3 { font-size: 18.5px; font-weight: 600; margin-bottom: 12px; letter-spacing: -0.005em; }
+  .service-card p { color: var(--gray-2); font-size: 14.5px; line-height: 1.65; }
+
+  /* ---------- Z-Eye ---------- */
+  .zeye {
+    background: linear-gradient(180deg, var(--navy-2) 0%, var(--navy) 100%);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    position: relative; overflow: hidden;
+  }
+  .zeye::before {
+    content: ''; position: absolute;
+    right: -20%; top: -10%;
+    width: 700px; height: 700px;
+    background: radial-gradient(circle, rgba(201,168,76,0.06), transparent 60%);
+    border-radius: 50%; pointer-events: none;
+  }
+  .zeye-grid {
+    display: grid; grid-template-columns: 1.15fr 1fr;
+    gap: 80px; align-items: center; position: relative;
+  }
+  .feature-list { margin-top: 34px; }
+  .feature-list li {
+    display: flex; align-items: flex-start; gap: 14px;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--gray-1); font-size: 15px; line-height: 1.55;
+  }
+  .feature-list li:last-child { border-bottom: none; }
+  .feature-list li i {
+    color: var(--gold); font-size: 12px;
+    margin-top: 5px; flex-shrink: 0;
+    width: 18px; height: 18px;
+    border: 1px solid var(--gold-line);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  .zeye-stats { display: grid; grid-template-columns: 1fr; gap: 16px; }
+  .zeye-stat {
+    padding: 30px 32px;
+    background: var(--navy-3);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    position: relative; overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+  .zeye-stat:hover { transform: translateX(4px); border-color: var(--gold-line); }
+  .zeye-stat::before {
+    content: ''; position: absolute;
+    left: 0; top: 18%; bottom: 18%;
+    width: 2px; background: var(--gold);
+  }
+  .zeye-stat::after {
+    content: ''; position: absolute; right: 24px; top: 50%; transform: translateY(-50%);
+    width: 60px; height: 60px;
+    background: radial-gradient(circle, var(--gold-soft), transparent 70%);
+    border-radius: 50%;
+  }
+  .zeye-stat .num {
+    font-size: 42px; font-weight: 800;
+    color: var(--gold); line-height: 1;
+    margin-bottom: 8px; letter-spacing: -0.02em;
+  }
+  .zeye-stat .label {
+    font-size: 13.5px; color: var(--gray-1);
+    letter-spacing: 0.06em; text-transform: uppercase; font-weight: 500;
+  }
+
+  /* ---------- TenderFlows ---------- */
+  .tf-cards {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+  }
+  .tf-card {
+    padding: 40px 32px 36px;
+    background: var(--navy-2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  .tf-card:hover { background: var(--navy-3); border-color: var(--border-2); }
+  .tf-card .step {
+    font-size: 11.5px; color: var(--gold);
+    font-weight: 600; letter-spacing: 0.2em;
+    margin-bottom: 16px;
+  }
+  .tf-card h4 { font-size: 18px; font-weight: 600; margin-bottom: 12px; }
+  .tf-card p { color: var(--gray-2); font-size: 14.5px; line-height: 1.65; }
+
+  /* ---------- Clients ---------- */
+  .clients { background: var(--navy-2); }
+  .clients-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    border: 1px solid var(--border); border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .client {
+    padding: 36px 24px; text-align: center;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    transition: background 0.3s;
+  }
+  .client:nth-child(3n) { border-right: none; }
+  .client:nth-last-child(-n+3) { border-bottom: none; }
+  .client:hover { background: rgba(201,168,76,0.04); }
+  .client-name {
+    font-size: 15.5px; font-weight: 600;
+    color: var(--white); margin-bottom: 4px;
+    letter-spacing: -0.005em;
+  }
+  .client-meta {
+    font-size: 11.5px; color: var(--gray-3);
+    letter-spacing: 0.06em; text-transform: uppercase;
+  }
+
+  /* ---------- Testimonials ---------- */
+  .testimonials-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .testimonial {
+    padding: 44px 40px 36px;
+    background: var(--navy-2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    position: relative;
+  }
+  .testimonial::before {
+    content: '\201C';
+    position: absolute; top: 12px; left: 28px;
+    font-size: 90px; font-family: Georgia, serif;
+    color: var(--gold); opacity: 0.32; line-height: 1;
+  }
+  .testimonial p {
+    color: var(--gray-1); font-size: 16px;
+    line-height: 1.75; margin-bottom: 26px;
+    position: relative;
+  }
+  .testimonial-author {
+    display: flex; align-items: center; gap: 14px;
+    padding-top: 22px; border-top: 1px solid var(--border);
+  }
+  .testimonial-author .avatar {
+    width: 44px; height: 44px; border-radius: 50%;
+    background: var(--navy-3);
+    border: 1px solid var(--gold);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--gold); font-weight: 600; font-size: 14px;
+  }
+  .testimonial-author strong { display: block; color: var(--white); font-size: 14px; margin-bottom: 2px; }
+  .testimonial-author span { color: var(--gray-3); font-size: 12px; letter-spacing: 0.04em; }
+
+  /* ---------- Contact ---------- */
+  .contact-grid {
+    display: grid; grid-template-columns: 1fr 1.15fr;
+    gap: 60px;
+  }
+  .contact-info { display: flex; flex-direction: column; gap: 8px; }
+  .contact-item {
+    display: flex; gap: 18px; align-items: flex-start;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .contact-item:last-child { border-bottom: none; }
+  .contact-item .icon {
+    width: 46px; height: 46px;
+    background: var(--gold-soft);
+    border: 1px solid var(--gold-line);
+    border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--gold); font-size: 16px; flex-shrink: 0;
+  }
+  .contact-item .label {
+    font-size: 11.5px; color: var(--gray-3);
+    letter-spacing: 0.14em; text-transform: uppercase;
+    margin-bottom: 6px; font-weight: 500;
+  }
+  .contact-item .value {
+    color: var(--white); font-weight: 500;
+    font-size: 15.5px; line-height: 1.5;
+  }
+  .contact-item a { text-decoration: none; transition: color 0.2s; }
+  .contact-item a:hover { color: var(--gold); }
+
+  .contact-form {
+    padding: 42px;
+    background: var(--navy-2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+  .contact-form h3 {
+    font-size: 22px; font-weight: 600;
+    margin-bottom: 6px; letter-spacing: -0.01em;
+  }
+  .contact-form .sub {
+    color: var(--gray-2); font-size: 14px;
+    margin-bottom: 28px;
+  }
+  .form-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .form-group { margin-bottom: 16px; }
+  .form-group.full { grid-column: 1 / -1; }
+  .form-group label {
+    display: block; font-size: 11.5px;
+    color: var(--gray-2); margin-bottom: 8px;
+    letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500;
+  }
+  .form-group input, .form-group textarea {
+    width: 100%; padding: 14px 16px;
+    background: var(--navy);
+    border: 1px solid var(--border-2);
+    border-radius: 4px;
+    color: var(--white); font-family: inherit;
+    font-size: 15px;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .form-group input::placeholder, .form-group textarea::placeholder { color: var(--gray-3); }
+  .form-group input:focus, .form-group textarea:focus {
+    outline: none; border-color: var(--gold);
+    background: var(--navy-2);
+  }
+  .form-group textarea { resize: vertical; min-height: 110px; }
+  .form-status {
+    display: none; padding: 14px 16px;
+    border-radius: 4px; font-size: 14px;
+    margin-bottom: 16px;
+  }
+  .form-status.show { display: block; }
+  .form-status.success {
+    background: rgba(46,204,113,0.08);
+    border: 1px solid rgba(46,204,113,0.25);
+    color: #6BD9A0;
+  }
+
+  /* ---------- Footer ---------- */
+  .footer {
+    background: var(--navy-2);
+    border-top: 1px solid var(--border);
+    padding: 36px 0;
+  }
+  .footer-inner {
+    display: flex; justify-content: space-between;
+    align-items: center; flex-wrap: wrap;
+    gap: 18px;
+  }
+  .footer-copy { color: var(--gray-3); font-size: 13px; }
+  .footer-links { display: flex; gap: 26px; }
+  .footer-links a {
+    color: var(--gray-2); text-decoration: none;
+    font-size: 13px; transition: color 0.2s;
+  }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-tagline { color: var(--gray-3); font-size: 13px; }
+  .footer-tagline span { color: var(--gold); }
+
+  /* ---------- Back to top ---------- */
+  .back-top {
+    position: fixed; bottom: 26px; right: 26px;
+    width: 44px; height: 44px;
+    background: var(--gold); color: var(--navy);
+    border: none; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer; opacity: 0; pointer-events: none;
+    transform: translateY(8px);
+    transition: all 0.3s ease;
+    z-index: 90;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.4);
+  }
+  .back-top.show { opacity: 1; pointer-events: auto; transform: translateY(0); }
+  .back-top:hover { background: var(--gold-2); transform: translateY(-2px); }
+
+  /* ---------- Reveal animations ---------- */
+  .reveal {
+    opacity: 0; transform: translateY(28px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    .reveal { opacity: 1; transform: none; }
+    html { scroll-behavior: auto; }
+  }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 980px) {
+    .nav-cta.desktop-only { display: none; }
+    .hamburger { display: flex; }
+    .nav-links {
+      position: fixed; top: 64px; left: 0; right: 0;
+      flex-direction: column; align-items: stretch;
+      gap: 0;
+      background: rgba(10,22,40,0.98);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+      transform: translateY(-110%);
+      transition: transform 0.35s ease;
+      max-height: calc(100vh - 64px); overflow-y: auto;
+    }
+    .nav-links.open { transform: translateY(0); }
+    .nav-links a {
+      padding: 16px 24px; border-bottom: 1px solid var(--border);
+      font-size: 15px;
+    }
+    .nav-links a::after { display: none; }
+    .nav-links a:hover, .nav-links a.active { background: var(--navy-3); color: var(--gold); }
+
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .about-grid { grid-template-columns: 1fr; gap: 50px; }
+    .about-visual { aspect-ratio: 1.4; max-height: 360px; }
+    .services-grid, .tf-cards { grid-template-columns: repeat(2, 1fr); }
+    .zeye-grid { grid-template-columns: 1fr; gap: 50px; }
+    .clients-grid { grid-template-columns: repeat(2, 1fr); }
+    .client:nth-child(3n) { border-right: 1px solid var(--border); }
+    .client:nth-child(2n) { border-right: none; }
+    .client:nth-last-child(-n+3) { border-bottom: 1px solid var(--border); }
+    .client:nth-last-child(-n+2) { border-bottom: none; }
+    .testimonials-grid { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  }
+
+  @media (max-width: 620px) {
+    .container { padding: 0 20px; }
+    .hero { padding: 120px 0 70px; min-height: auto; }
+    .services-grid, .tf-cards { grid-template-columns: 1fr; }
+    .clients-grid { grid-template-columns: 1fr; }
+    .client { border-right: none !important; }
+    .client:not(:last-child) { border-bottom: 1px solid var(--border) !important; }
+    .stat { padding: 30px 16px; }
+    .testimonial { padding: 36px 26px 28px; }
+    .contact-form { padding: 28px 22px; }
+    .form-grid { grid-template-columns: 1fr; }
+    .av-tags span { font-size: 10px; padding: 5px 10px; }
+    .footer-inner { justify-content: center; text-align: center; }
+  }
+</style>
+</head>
+
+<body>
+
+<div class="scroll-progress"></div>
+
+<!-- ========== NAV ========== -->
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#home" class="logo">RAPID<span>CORP</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#zeye">Z-Eye</a></li>
+      <li><a href="#tenderflows">TenderFlows</a></li>
+      <li><a href="#clients">Clients</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta desktop-only">Book a Call</a>
+    <button class="hamburger" id="burger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content reveal">
+      <div class="hero-tag"><span class="dot"></span> Enterprise Safety & IT Solutions</div>
+      <h1>AI-Powered Safety & IT Solutions for <span class="accent">Industrial, Pharma & Corporate</span> Clients</h1>
+      <p>From AI-based PPE compliance to enterprise IT infrastructure — Rapid Corp helps businesses run safer, smarter and more efficiently.</p>
+      <div class="hero-ctas">
+        <a href="#zeye" class="btn btn-primary">Explore Z-Eye <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#contact" class="btn btn-ghost">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== STATS ========== -->
+<section class="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat reveal"><div class="stat-num">90%+</div><div class="stat-label">PPE Detection Accuracy</div></div>
+      <div class="stat reveal"><div class="stat-num">&lt; 1 Sec</div><div class="stat-label">Alert Response</div></div>
+      <div class="stat reveal"><div class="stat-num">300–500%</div><div class="stat-label">ROI in Year 1</div></div>
+      <div class="stat reveal"><div class="stat-num">7+ Yrs</div><div class="stat-label">Industry Experience</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ABOUT ========== -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-content reveal">
+        <span class="section-eyebrow">Who We Are</span>
+        <h2 class="section-title">Industrial-grade technology, built for real businesses.</h2>
+        <p>Rapid Corp is founded by Manish Patel, based in Udaipur, Rajasthan. We are not a typical IT vendor — we build technology products that solve real industrial problems.</p>
+        <p>Our work spans AI-based safety systems, enterprise IT infrastructure, procurement automation and surveillance solutions. We serve manufacturing plants, pharma companies, hospitals and corporates across Rajasthan and beyond.</p>
+        <div class="founder-badge">
+          <div class="avatar">MP</div>
+          <div class="info"><strong>Manish Patel</strong><span>Founder, Rapid Corp</span></div>
+        </div>
+      </div>
+
+      <div class="about-visual reveal" aria-hidden="true">
+        <div class="av-rings"><span></span><span></span><span></span></div>
+        <div class="av-tags">
+          <span>AI Safety</span>
+          <span>Networking</span>
+          <span>Procurement</span>
+          <span>Surveillance</span>
+        </div>
+        <div class="av-shield"><i class="fa-solid fa-shield-halved"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SERVICES ========== -->
+<section id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-eyebrow">What We Do</span>
+      <h2 class="section-title">Six core capabilities, end-to-end execution.</h2>
+      <p class="section-subtitle">We design, deploy and maintain. Every engagement is owned end-to-end — from first audit to ongoing support.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fa-solid fa-robot"></i></div>
+        <h3>Z-Eye AI Safety System</h3>
+        <p>Real-time PPE detection for manufacturing and pharma — runs on your existing camera infrastructure.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fa-solid fa-gavel"></i></div>
+        <h3>TenderFlows</h3>
+        <p>Blind auction procurement platform that lets vendors compete and gets you the best price automatically.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fa-solid fa-server"></i></div>
+        <h3>IT Infrastructure</h3>
+        <p>Servers, NAS, networking and structured cabling — designed and deployed for enterprise scale.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fa-solid fa-video"></i></div>
+        <h3>CCTV & Surveillance</h3>
+        <p>AI-enhanced camera systems with intelligent monitoring, analytics and remote access.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fa-solid fa-cloud"></i></div>
+        <h3>Cloud & Server Solutions</h3>
+        <p>NAS, on-premise data centers and cloud migration with disaster recovery built-in.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3>Cybersecurity</h3>
+        <p>Firewall hardening, endpoint security and AMC contracts tailored to your environment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Z-EYE ========== -->
+<section id="zeye" class="zeye">
+  <div class="container">
+    <div class="zeye-grid">
+      <div class="reveal">
+        <span class="section-eyebrow">Featured Product</span>
+        <h2 class="section-title">Z-Eye — AI Safety Compliance, Automated.</h2>
+        <p class="section-subtitle">Detects PPE violations on your existing CCTV cameras, in real time. Fewer accidents, automatic compliance reports, measurable ROI.</p>
+        <ul class="feature-list">
+          <li><i class="fa-solid fa-check"></i><span>Detects 7 PPE items in real time — helmets, vests, goggles, gloves, masks, boots, harnesses.</span></li>
+          <li><i class="fa-solid fa-check"></i><span>Works on existing cameras — no new hardware required.</span></li>
+          <li><i class="fa-solid fa-check"></i><span>Alerts in under 1 second to supervisors and dashboards.</span></li>
+          <li><i class="fa-solid fa-check"></i><span>OSHA-ready automatic compliance reports.</span></li>
+          <li><i class="fa-solid fa-check"></i><span>Saves ₹7–10 lakh per site, per year.</span></li>
+          <li><i class="fa-solid fa-check"></i><span>Payback in 3–6 months.</span></li>
+          <li><i class="fa-solid fa-check"></i><span>300–500% ROI in Year 1.</span></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary" style="margin-top:36px;">Request a Free Z-Eye Demo <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="zeye-stats reveal">
+        <div class="zeye-stat"><div class="num">90%</div><div class="label">Detection Accuracy</div></div>
+        <div class="zeye-stat"><div class="num">95%</div><div class="label">Accident Reduction</div></div>
+        <div class="zeye-stat"><div class="num">70%</div><div class="label">Monitoring Cost Saved</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TENDERFLOWS ========== -->
+<section id="tenderflows">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="section-eyebrow">Procurement Platform</span>
+      <h2 class="section-title">TenderFlows — Smart Procurement Platform.</h2>
+      <p class="section-subtitle">Run blind auctions. Let vendors compete. Get the best price automatically.</p>
+    </div>
+
+    <div class="tf-cards">
+      <div class="tf-card reveal">
+        <div class="step">01 — ENGINE</div>
+        <h4>Blind Auction Engine</h4>
+        <p>Vendors compete without seeing each other's prices, eliminating cartel pricing and bid-rigging.</p>
+      </div>
+      <div class="tf-card reveal">
+        <div class="step">02 — TRANSPARENCY</div>
+        <h4>Live Rank Tracking</h4>
+        <p>Vendors see their rank in real time, not competitor prices — driving genuine price competition.</p>
+      </div>
+      <div class="tf-card reveal">
+        <div class="step">03 — COMPLIANCE</div>
+        <h4>Full Audit Trail</h4>
+        <p>Every bid logged with timestamp and signature for complete compliance and procurement governance.</p>
+      </div>
+    </div>
+
+    <div class="reveal" style="text-align:center; margin-top:50px;">
+      <a href="#contact" class="btn btn-ghost">Learn More about TenderFlows <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CLIENTS ========== -->
+<section id="clients" class="clients">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="section-eyebrow">Trusted By</span>
+      <h2 class="section-title">Industry leaders we've partnered with.</h2>
+    </div>
+
+    <div class="clients-grid reveal">
+      <div class="client"><div class="client-name">Coromandel</div><div class="client-meta">Murugappa Group</div></div>
+      <div class="client"><div class="client-name">SK Khetan Group</div><div class="client-meta">Diversified Industrial</div></div>
+      <div class="client"><div class="client-name">Mankind Pharma</div><div class="client-meta">Pharmaceutical</div></div>
+      <div class="client"><div class="client-name">Narayan Seva Sansthan</div><div class="client-meta">Healthcare & Service</div></div>
+      <div class="client"><div class="client-name">SMS Limited</div><div class="client-meta">Engineering</div></div>
+      <div class="client"><div class="client-name">Pacific Bulk Bags</div><div class="client-meta">Manufacturing</div></div>
+    </div>
+
+    <div class="testimonials-grid reveal" style="margin-top: 50px;">
+      <div class="testimonial">
+        <p>Rapid Corp deployed our complete IT infrastructure and CCTV system. Professional, fast and reliable — they delivered exactly what they promised.</p>
+        <div class="testimonial-author">
+          <div class="avatar">SK</div>
+          <div><strong>SK Khetan Group</strong><span>Udaipur, Rajasthan</span></div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <p>Their Z-Eye system gives us 24/7 compliance visibility we never had before. Genuine real-time enforcement, not just dashboards.</p>
+        <div class="testimonial-author">
+          <div class="avatar">MC</div>
+          <div><strong>Manufacturing Client</strong><span>Rajasthan</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACT ========== -->
+<section id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-eyebrow">Get In Touch</span>
+      <h2 class="section-title">Let's talk about your safety, IT or procurement challenge.</h2>
+      <p class="section-subtitle">Reach out for a consultation, a Z-Eye demo or an infrastructure assessment. We respond within one business day.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="contact-item">
+          <div class="icon"><i class="fa-solid fa-phone"></i></div>
+          <div><div class="label">Phone</div><div class="value"><a href="tel:+919828519299">+91 98285 19299</a></div></div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+          <div><div class="label">Email</div><div class="value"><a href="mailto:admin@rapidcorp.in">admin@rapidcorp.in</a></div></div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div><div class="label">Office</div><div class="value">100ft Road, Nokha,<br/>Udaipur, Rajasthan 313001</div></div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><i class="fa-solid fa-clock"></i></div>
+          <div><div class="label">Response Time</div><div class="value">Within 24 hours, business days</div></div>
+        </div>
+      </div>
+
+      <div class="contact-form reveal">
+        <h3>Send Us a Message</h3>
+        <p class="sub">We'll get back to you within one business day.</p>
+        <div class="form-status success" id="formStatus">Thank you. Your message has been received — we'll be in touch within 24 hours.</div>
+        <form id="contactForm" action="https://formspree.io/f/xrbqrroa" method="POST" novalidate>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Your organisation" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@company.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required />
+            </div>
+            <div class="form-group full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us briefly what you're looking for — IT infrastructure, Z-Eye demo, TenderFlows, etc." required></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send Message <i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-copy">© 2026 Rapid Corp. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms</a>
+    </div>
+    <div class="footer-tagline">Proudly built in Udaipur, Rajasthan <span>🇮🇳</span></div>
+  </div>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script>
+(function () {
+  'use strict';
+
+  const $  = (s, root = document) => root.querySelector(s);
+  const $$ = (s, root = document) => Array.from(root.querySelectorAll(s));
+
+  // Scroll progress + sticky nav + back-to-top
+  const nav      = $('#nav');
+  const progress = $('.scroll-progress');
+  const backTop  = $('#backTop');
+
+  function onScroll() {
+    const scrolled  = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const pct       = docHeight > 0 ? (scrolled / docHeight) * 100 : 0;
+
+    progress.style.width = pct + '%';
+    nav.classList.toggle('scrolled', scrolled > 20);
+    backTop.classList.toggle('show', scrolled > 600);
+
+    // Active section highlighting
+    const sections = $$('section[id]');
+    const links    = $$('.nav-links a[href^="#"]');
+    const offset   = scrolled + 120;
+    let current    = '';
+    sections.forEach(s => {
+      if (s.offsetTop <= offset && s.offsetTop + s.offsetHeight > offset) current = s.id;
+    });
+    links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + current));
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Hamburger
+  const burger = $('#burger');
+  const menu   = $('#navLinks');
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+    menu.classList.toggle('open');
+  });
+  $$('.nav-links a').forEach(a => a.addEventListener('click', () => {
+    burger.classList.remove('active');
+    menu.classList.remove('open');
+  }));
+
+  // Reveal on scroll
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    $$('.reveal').forEach((el, i) => {
+      el.style.transitionDelay = (i % 4) * 60 + 'ms';
+      io.observe(el);
+    });
+  } else {
+    $$('.reveal').forEach(el => el.classList.add('in'));
+  }
+
+  // Back to top
+  backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // Contact form — submit via fetch to Formspree, show inline success
+  const form   = $('#contactForm');
+  const status = $('#formStatus');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        form.reset();
+        status.classList.add('show');
+        status.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        setTimeout(() => status.classList.remove('show'), 8000);
+      } else {
+        alert('Sorry, something went wrong. Please email us directly at admin@rapidcorp.in');
+      }
+    } catch (err) {
+      alert('Network error — please email us directly at admin@rapidcorp.in');
+    }
+  });
+
+  // Current year (defensive — in case the file outlives 2026)
+  const yr = new Date().getFullYear();
+  $$('.footer-copy').forEach(el => {
+    el.textContent = `© ${yr} Rapid Corp. All rights reserved.`;
+  });
+})();
+</script>
+
+</body>
+</html>
