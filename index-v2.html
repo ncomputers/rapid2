@@ -4,24 +4,22 @@
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>Rapid Corp — AI-Powered Safety & IT Solutions</title>
-<meta name="description" content="Rapid Corp builds AI-based safety systems (Z-Eye PPE compliance), enterprise IT infrastructure, procurement automation (TenderFlows) and surveillance solutions for manufacturing, pharma and corporate clients across India." />
-<meta name="keywords" content="Z-Eye, PPE detection, AI safety, TenderFlows, procurement, IT infrastructure Udaipur, CCTV Rajasthan, enterprise IT, Manish Patel, Rapid Corp" />
+<title>Rapid Corp — IT Infrastructure & Security Solutions, Udaipur</title>
+<meta name="description" content="Rapid Corp is a Udaipur-based IT infrastructure and security solutions company. We design, deploy and maintain enterprise networking, servers, CCTV, firewalls and AI-enabled monitoring — backed by strong AMC support. Founded 2016." />
+<meta name="keywords" content="IT infrastructure Udaipur, networking, CCTV surveillance, firewall security, server setup, AMC, managed IT, Rapid Corp, Manish Patel" />
 <meta name="author" content="Rapid Corp" />
-<meta name="theme-color" content="#0A1628" />
+<meta name="theme-color" content="#1146a8" />
 <link rel="canonical" href="https://rapidcorp.in/" />
 
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://rapidcorp.in/" />
-<meta property="og:title" content="Rapid Corp — AI-Powered Safety & IT Solutions" />
-<meta property="og:description" content="From AI-based PPE compliance to enterprise IT infrastructure — Rapid Corp helps businesses run safer, smarter and more efficiently." />
+<meta property="og:title" content="Rapid Corp — IT Infrastructure & Security Solutions" />
+<meta property="og:description" content="Reliable, end-to-end IT infrastructure and security solutions for businesses across Rajasthan and beyond. Founded 2016, 13-person team based in Udaipur." />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Rapid Corp — AI-Powered Safety & IT Solutions" />
-<meta name="twitter:description" content="From AI-based PPE compliance to enterprise IT infrastructure — Rapid Corp helps businesses run safer, smarter and more efficiently." />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer" />
 
 <script type="application/ld+json">
@@ -30,8 +28,8 @@
   "@type": "Organization",
   "name": "Rapid Corp",
   "url": "https://rapidcorp.in",
-  "logo": "https://rapidcorp.in/assets/images/logo.svg",
   "founder": {"@type": "Person", "name": "Manish Patel"},
+  "foundingDate": "2016",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "100ft Road, Nokha",
@@ -52,107 +50,104 @@
 
 <style>
   :root {
-    --navy:        #0A1628;
-    --navy-2:      #0F1D33;
-    --navy-3:      #14233F;
-    --navy-4:      #1B2D4D;
-    --gold:        #C9A84C;
-    --gold-2:      #D9BC6E;
-    --gold-soft:   rgba(201,168,76,0.10);
-    --gold-line:   rgba(201,168,76,0.28);
-    --white:       #FFFFFF;
-    --gray-1:      #C5CCD9;
-    --gray-2:      #8B95A8;
-    --gray-3:      #5A6478;
-    --border:      rgba(255,255,255,0.07);
-    --border-2:    rgba(255,255,255,0.14);
-    --section-pad: clamp(72px, 9vw, 130px);
-    --container:   1200px;
-    --radius:      6px;
+    --primary:        #1146a8;
+    --primary-dark:   #0c3a8c;
+    --primary-soft:   #eaf2ff;
+    --accent:         #0aa5a2;
+    --accent-soft:    #e3f7f6;
+    --ink:            #10233f;
+    --ink-2:          #1f3358;
+    --muted:          #51627a;
+    --muted-2:        #7a8699;
+    --line:           #dbe3f1;
+    --line-2:         #eef2f9;
+    --bg:             #ffffff;
+    --bg-soft:        #f5f8fd;
+    --bg-tint:        #fafcff;
+    --shadow-sm:      0 1px 2px rgba(16, 35, 63, 0.04);
+    --shadow:         0 8px 24px rgba(16, 35, 63, 0.06);
+    --shadow-lg:      0 16px 40px rgba(16, 35, 63, 0.08);
+    --radius:         8px;
+    --radius-lg:      12px;
+    --section-pad:    clamp(72px, 8vw, 110px);
+    --container:      1200px;
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
   body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background: var(--navy);
-    color: var(--white);
+    background: var(--bg);
+    color: var(--ink);
     line-height: 1.6;
     overflow-x: hidden;
-    font-feature-settings: 'cv11', 'ss01';
   }
   a { color: inherit; }
   img { max-width: 100%; display: block; }
   ul { list-style: none; }
+  button { font-family: inherit; }
 
   .container { max-width: var(--container); margin: 0 auto; padding: 0 24px; position: relative; }
-
-  /* ---------- Scroll progress ---------- */
-  .scroll-progress {
-    position: fixed; top: 0; left: 0; height: 2px; width: 0%;
-    background: linear-gradient(90deg, var(--gold), var(--gold-2));
-    z-index: 200; transition: width 0.1s linear;
-  }
 
   /* ---------- Nav ---------- */
   .nav {
     position: fixed; top: 0; left: 0; right: 0;
     z-index: 100;
-    padding: 22px 0;
-    transition: background 0.3s ease, padding 0.3s ease, border-color 0.3s ease;
+    padding: 18px 0;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid transparent;
+    transition: border-color 0.25s, padding 0.25s, background 0.25s;
   }
   .nav.scrolled {
-    background: rgba(10, 22, 40, 0.88);
-    backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
-    border-bottom-color: var(--border);
-    padding: 14px 0;
+    border-bottom-color: var(--line);
+    padding: 12px 0;
+    background: rgba(255, 255, 255, 0.96);
   }
-  .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+
   .logo {
-    font-weight: 800; font-size: 19px; letter-spacing: 0.14em;
-    color: var(--white); text-decoration: none;
-    display: inline-flex; align-items: center; gap: 4px;
+    font-weight: 800; font-size: 18px;
+    letter-spacing: 0.06em; color: var(--ink);
+    text-decoration: none;
+    display: inline-flex; align-items: center; gap: 10px;
   }
-  .logo span { color: var(--gold); }
-  .logo::before {
-    content: ''; width: 8px; height: 8px; border-radius: 2px;
-    background: var(--gold); margin-right: 12px;
-    box-shadow: 0 0 12px rgba(201,168,76,0.6);
+  .logo .mark {
+    width: 28px; height: 28px;
+    background: var(--primary);
+    border-radius: 6px;
+    display: inline-flex; align-items: center; justify-content: center;
+    color: #fff; font-size: 13px; font-weight: 800;
   }
 
-  .nav-links { display: flex; gap: 38px; align-items: center; }
+  .nav-links { display: flex; gap: 32px; align-items: center; }
   .nav-links a {
-    color: var(--gray-1); text-decoration: none;
-    font-size: 14px; font-weight: 500; letter-spacing: 0.01em;
-    position: relative; padding: 4px 0;
+    color: var(--muted); text-decoration: none;
+    font-size: 14px; font-weight: 500;
+    padding: 6px 0; position: relative;
     transition: color 0.2s;
   }
-  .nav-links a:hover, .nav-links a.active { color: var(--white); }
-  .nav-links a::after {
-    content: ''; position: absolute; left: 0; right: 0; bottom: -8px;
-    height: 1px; background: var(--gold);
-    transform: scaleX(0); transform-origin: left;
-    transition: transform 0.3s ease;
+  .nav-links a:hover, .nav-links a.active { color: var(--primary); }
+  .nav-links a.active::after {
+    content: ''; position: absolute; left: 0; right: 0; bottom: -6px;
+    height: 2px; background: var(--primary); border-radius: 1px;
   }
-  .nav-links a:hover::after, .nav-links a.active::after { transform: scaleX(1); }
 
   .nav-cta {
-    padding: 11px 22px; background: var(--gold); color: var(--navy);
-    border-radius: 3px; font-weight: 600; font-size: 13px;
-    letter-spacing: 0.05em; text-transform: uppercase;
-    text-decoration: none; transition: all 0.2s;
+    padding: 10px 20px; background: var(--primary); color: #fff;
+    border-radius: 6px; font-weight: 600; font-size: 13.5px;
+    text-decoration: none; transition: background 0.2s;
   }
-  .nav-cta:hover { background: var(--gold-2); transform: translateY(-1px); }
+  .nav-cta:hover { background: var(--primary-dark); }
 
   .hamburger {
-    display: none; width: 30px; height: 22px;
+    display: none; width: 28px; height: 22px;
     background: none; border: none; cursor: pointer;
     flex-direction: column; justify-content: space-between;
   }
   .hamburger span {
     display: block; height: 2px; width: 100%;
-    background: var(--white); border-radius: 2px;
+    background: var(--ink); border-radius: 2px;
     transition: transform 0.3s, opacity 0.2s;
   }
   .hamburger.active span:nth-child(1) { transform: translateY(10px) rotate(45deg); }
@@ -161,656 +156,481 @@
 
   /* ---------- Hero ---------- */
   .hero {
-    min-height: 100vh;
-    display: flex; align-items: center;
-    position: relative; overflow: hidden;
-    padding: 140px 0 80px;
+    padding: 150px 0 90px;
     background:
-      radial-gradient(ellipse at top right, rgba(201,168,76,0.08) 0%, transparent 55%),
-      radial-gradient(ellipse at bottom left, rgba(20,35,63,0.6) 0%, transparent 50%),
-      var(--navy);
+      radial-gradient(900px 460px at 12% 0%, var(--primary-soft) 0%, rgba(234,242,255,0) 70%),
+      radial-gradient(800px 420px at 100% 30%, var(--accent-soft) 0%, rgba(227,247,246,0) 70%),
+      var(--bg);
+    position: relative; overflow: hidden;
   }
-  .hero::before {
-    content: ''; position: absolute; inset: 0;
-    background-image:
-      linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
-    background-size: 64px 64px;
-    mask-image: radial-gradient(ellipse 70% 60% at center, black 30%, transparent 75%);
-    -webkit-mask-image: radial-gradient(ellipse 70% 60% at center, black 30%, transparent 75%);
-    pointer-events: none;
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+    align-items: center;
   }
-  .hero::after {
-    content: ''; position: absolute; right: -120px; top: 20%;
-    width: 480px; height: 480px;
-    background: radial-gradient(circle, rgba(201,168,76,0.06) 0%, transparent 70%);
-    border-radius: 50%; pointer-events: none;
-  }
-
-  .hero-content { position: relative; max-width: 920px; }
   .hero-tag {
-    display: inline-flex; align-items: center; gap: 10px;
-    padding: 8px 18px;
-    background: rgba(201,168,76,0.08);
-    border: 1px solid var(--gold-line);
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 6px 14px;
+    background: var(--primary-soft);
+    border: 1px solid #c7daf8;
     border-radius: 100px;
-    color: var(--gold);
-    font-size: 12px; font-weight: 600; letter-spacing: 0.12em;
-    text-transform: uppercase;
-    margin-bottom: 32px;
-  }
-  .hero-tag .dot {
-    width: 7px; height: 7px; background: var(--gold);
-    border-radius: 50%; animation: pulse 2s ease-in-out infinite;
-    box-shadow: 0 0 0 0 var(--gold);
-  }
-  @keyframes pulse {
-    0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(201,168,76,0.6); }
-    50%      { opacity: 0.5; box-shadow: 0 0 0 8px rgba(201,168,76,0); }
-  }
-
-  .hero h1 {
-    font-size: clamp(36px, 6vw, 70px);
-    line-height: 1.05;
-    font-weight: 800;
-    letter-spacing: -0.025em;
+    color: var(--primary);
+    font-size: 12.5px; font-weight: 600;
+    letter-spacing: 0.04em;
     margin-bottom: 28px;
   }
-  .hero h1 .accent {
-    color: var(--gold);
-    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-2) 100%);
-    -webkit-background-clip: text; background-clip: text;
-    -webkit-text-fill-color: transparent;
+  .hero-tag i { font-size: 11px; }
+
+  .hero h1 {
+    font-size: clamp(34px, 5vw, 56px);
+    line-height: 1.08;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: var(--ink);
+    margin-bottom: 24px;
   }
+  .hero h1 strong { color: var(--primary); font-weight: 700; }
   .hero p {
-    font-size: clamp(16px, 1.3vw, 19px);
-    color: var(--gray-1); max-width: 680px;
-    margin-bottom: 44px; line-height: 1.7; font-weight: 400;
+    font-size: clamp(15px, 1.2vw, 18px);
+    color: var(--muted);
+    max-width: 580px;
+    margin-bottom: 36px;
+    line-height: 1.7;
   }
-  .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+  .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+
+  .hero-side {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    box-shadow: var(--shadow-lg);
+  }
+  .hero-side h4 {
+    font-size: 13px; color: var(--muted-2);
+    text-transform: uppercase; letter-spacing: 0.1em;
+    margin-bottom: 18px; font-weight: 600;
+  }
+  .hero-side ul li {
+    display: flex; align-items: flex-start; gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line-2);
+    font-size: 14.5px;
+    color: var(--ink-2);
+  }
+  .hero-side ul li:last-child { border-bottom: none; }
+  .hero-side ul li i {
+    color: var(--accent);
+    font-size: 12px; margin-top: 5px;
+    flex-shrink: 0;
+  }
 
   /* ---------- Buttons ---------- */
   .btn {
-    display: inline-flex; align-items: center; gap: 10px;
-    padding: 16px 30px;
-    border-radius: 3px;
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 14px 26px;
+    border-radius: 6px;
     font-family: inherit;
     font-weight: 600; font-size: 14px;
-    letter-spacing: 0.05em; text-transform: uppercase;
-    text-decoration: none;
-    transition: all 0.25s ease;
-    cursor: pointer; border: 1px solid transparent;
+    text-decoration: none; cursor: pointer;
+    border: 1px solid transparent;
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
     white-space: nowrap;
   }
-  .btn i { font-size: 12px; transition: transform 0.25s; }
-  .btn:hover i { transform: translateX(3px); }
-  .btn-primary { background: var(--gold); color: var(--navy); }
-  .btn-primary:hover {
-    background: var(--gold-2);
-    transform: translateY(-2px);
-    box-shadow: 0 14px 32px -8px rgba(201,168,76,0.45);
-  }
+  .btn i { font-size: 11px; }
+  .btn-primary { background: var(--primary); color: #fff; }
+  .btn-primary:hover { background: var(--primary-dark); }
   .btn-ghost {
-    background: transparent; color: var(--white);
-    border-color: var(--border-2);
+    background: #fff; color: var(--ink);
+    border-color: var(--line);
   }
-  .btn-ghost:hover { background: rgba(255,255,255,0.04); border-color: var(--gold); color: var(--gold); }
+  .btn-ghost:hover { border-color: var(--primary); color: var(--primary); }
 
   /* ---------- Stats ---------- */
-  .stats { padding: 0; background: var(--navy-2);
-    border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .stats {
+    background: var(--bg-soft);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 56px 0;
+  }
   .stats-grid {
     display: grid; grid-template-columns: repeat(4, 1fr);
-    gap: 1px; background: var(--border);
+    gap: 36px;
   }
-  .stat {
-    background: var(--navy-2); padding: 44px 28px;
-    text-align: center;
-    transition: background 0.3s ease;
-  }
-  .stat:hover { background: var(--navy-3); }
+  .stat { text-align: left; }
   .stat-num {
-    font-size: clamp(28px, 3.6vw, 46px);
-    font-weight: 800; color: var(--gold);
-    letter-spacing: -0.025em; line-height: 1; margin-bottom: 12px;
+    font-size: clamp(28px, 3.4vw, 40px);
+    font-weight: 700; color: var(--primary);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    margin-bottom: 10px;
   }
   .stat-label {
-    font-size: 12.5px; color: var(--gray-2);
-    letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500;
+    font-size: 13.5px; color: var(--muted);
+    line-height: 1.45;
+  }
+  .stat-divider {
+    width: 24px; height: 2px;
+    background: var(--accent);
+    margin-bottom: 14px;
   }
 
   /* ---------- Section base ---------- */
   section { padding: var(--section-pad) 0; }
-  .section-head { margin-bottom: 60px; max-width: 820px; }
+  .section-head { margin-bottom: 56px; max-width: 760px; }
   .section-head.center { margin-left: auto; margin-right: auto; text-align: center; }
 
   .section-eyebrow {
-    display: inline-block; font-size: 12px; font-weight: 600;
-    letter-spacing: 0.2em; color: var(--gold);
-    text-transform: uppercase; margin-bottom: 18px;
-    position: relative; padding-left: 32px;
+    display: inline-block;
+    font-size: 12px; font-weight: 600;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    background: var(--primary-soft);
+    padding: 5px 12px;
+    border-radius: 100px;
+    margin-bottom: 18px;
   }
-  .section-eyebrow::before {
-    content: ''; position: absolute; left: 0; top: 50%;
-    width: 22px; height: 1px; background: var(--gold);
-  }
-  .section-head.center .section-eyebrow {
-    padding-left: 0; padding-right: 0;
-  }
-  .section-head.center .section-eyebrow::before { display: none; }
-  .section-head.center .section-eyebrow::after {
-    content: ''; display: block; width: 36px; height: 1px;
-    background: var(--gold); margin: 14px auto 0;
-  }
-
   .section-title {
-    font-size: clamp(28px, 3.4vw, 46px);
-    font-weight: 700; line-height: 1.15;
-    letter-spacing: -0.02em; margin-bottom: 20px;
+    font-size: clamp(28px, 3.4vw, 42px);
+    font-weight: 700; line-height: 1.18;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: 16px;
   }
   .section-subtitle {
-    font-size: clamp(15px, 1.15vw, 17.5px);
-    color: var(--gray-1); line-height: 1.75; max-width: 700px;
+    font-size: clamp(15px, 1.1vw, 17px);
+    color: var(--muted);
+    line-height: 1.7;
+    max-width: 680px;
   }
-  .section-head.center .section-subtitle { margin-left: auto; margin-right: auto; }
+  .section-head.center .section-subtitle { margin: 0 auto; }
 
   /* ---------- About ---------- */
   .about-grid {
     display: grid; grid-template-columns: 1fr 1fr;
-    gap: 80px; align-items: center;
+    gap: 60px; align-items: center;
   }
   .about-content p {
-    color: var(--gray-1); font-size: 16px;
-    line-height: 1.85; margin-bottom: 18px;
+    color: var(--muted); font-size: 16px;
+    line-height: 1.85; margin-bottom: 16px;
   }
-  .about-content p strong { color: var(--white); font-weight: 600; }
-  .about-content .vision-line {
-    padding: 18px 22px; margin-top: 24px;
-    background: var(--gold-soft);
-    border-left: 2px solid var(--gold);
-    border-radius: 0 4px 4px 0;
-    font-size: 15px; color: var(--gold-2);
-    line-height: 1.6; font-style: italic;
+  .about-content p strong { color: var(--ink); font-weight: 600; }
+  .vision-card {
+    background: var(--primary-soft);
+    border-left: 3px solid var(--primary);
+    padding: 22px 26px;
+    border-radius: 0 8px 8px 0;
+    margin: 26px 0 22px;
+  }
+  .vision-card .label {
+    font-size: 11.5px; font-weight: 600;
+    color: var(--primary);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .vision-card p {
+    color: var(--ink-2); font-size: 16px;
+    margin: 0; line-height: 1.6; font-style: italic;
   }
   .founder-badge {
     display: inline-flex; align-items: center; gap: 14px;
-    padding: 14px 22px 14px 18px;
-    background: var(--navy-3);
-    border: 1px solid var(--border);
-    border-left: 2px solid var(--gold);
-    border-radius: 4px; margin-top: 18px;
+    padding: 12px 18px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 8px;
   }
   .founder-badge .avatar {
-    width: 42px; height: 42px; border-radius: 50%;
-    background: linear-gradient(135deg, var(--gold), var(--gold-2));
-    display: flex; align-items: center; justify-content: center;
-    color: var(--navy); font-weight: 700; font-size: 15px;
-    letter-spacing: 0.02em;
+    width: 40px; height: 40px; border-radius: 8px;
+    background: var(--primary);
+    color: #fff; font-weight: 700; font-size: 14px;
+    display: inline-flex; align-items: center; justify-content: center;
   }
-  .founder-badge .info strong {
-    display: block; color: var(--white); font-size: 14px; margin-bottom: 2px;
+  .founder-badge strong {
+    display: block; color: var(--ink); font-size: 14px;
   }
-  .founder-badge .info span {
-    color: var(--gray-2); font-size: 12px; letter-spacing: 0.04em;
-  }
+  .founder-badge span { color: var(--muted); font-size: 12.5px; }
 
-  .about-visual {
-    position: relative; aspect-ratio: 1.05;
-    border-radius: 8px;
-    background: linear-gradient(135deg, var(--navy-3) 0%, var(--navy-4) 100%);
-    border: 1px solid var(--border);
-    overflow: hidden;
-    display: flex; align-items: center; justify-content: center;
+  .about-numbers {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 16px;
   }
-  .about-visual::before {
-    content: ''; position: absolute; inset: 0;
-    background-image:
-      linear-gradient(rgba(201,168,76,0.05) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(201,168,76,0.05) 1px, transparent 1px);
-    background-size: 32px 32px;
-    mask-image: radial-gradient(circle at center, black 30%, transparent 75%);
-    -webkit-mask-image: radial-gradient(circle at center, black 30%, transparent 75%);
+  .about-num-card {
+    padding: 28px 24px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
   }
-  .av-rings { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
-  .av-rings span {
-    position: absolute; border: 1px solid var(--gold-line);
-    border-radius: 50%;
+  .about-num-card .big {
+    font-size: 40px;
+    font-weight: 700; color: var(--primary);
+    line-height: 1; letter-spacing: -0.02em;
+    margin-bottom: 8px;
   }
-  .av-rings span:nth-child(1) { width: 70%; height: 70%; }
-  .av-rings span:nth-child(2) { width: 50%; height: 50%; opacity: 0.6; }
-  .av-rings span:nth-child(3) { width: 30%; height: 30%; opacity: 0.4; }
-  .av-shield {
-    position: relative; z-index: 2;
-    width: 96px; height: 96px;
-    background: var(--navy);
-    border: 1px solid var(--gold);
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    color: var(--gold); font-size: 38px;
-    box-shadow: 0 0 40px rgba(201,168,76,0.25);
+  .about-num-card .small {
+    color: var(--muted); font-size: 13.5px;
+    line-height: 1.45;
   }
-  .av-tags {
-    position: absolute; inset: 0; pointer-events: none;
+  .about-num-card.accent {
+    background: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
   }
-  .av-tags span {
-    position: absolute;
-    background: var(--navy);
-    border: 1px solid var(--border-2);
-    padding: 7px 14px; border-radius: 3px;
-    font-size: 11.5px; color: var(--gray-1);
-    letter-spacing: 0.06em; text-transform: uppercase; font-weight: 500;
-    display: inline-flex; align-items: center; gap: 8px;
-  }
-  .av-tags span::before {
-    content: ''; width: 6px; height: 6px;
-    background: var(--gold); border-radius: 50%;
-  }
-  .av-tags span:nth-child(1) { top: 14%; left: 10%; }
-  .av-tags span:nth-child(2) { top: 22%; right: 8%; }
-  .av-tags span:nth-child(3) { bottom: 18%; left: 12%; }
-  .av-tags span:nth-child(4) { bottom: 26%; right: 10%; }
+  .about-num-card.accent .big { color: #fff; }
+  .about-num-card.accent .small { color: rgba(255,255,255,0.85); }
 
   /* ---------- Services ---------- */
   .services-grid {
     display: grid; grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
+    gap: 20px;
   }
   .service-card {
-    padding: 38px 32px;
-    background: var(--navy-2);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    transition: all 0.3s ease;
-    position: relative; overflow: hidden;
-  }
-  .service-card::before {
-    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
-    background: linear-gradient(90deg, var(--gold), transparent);
-    transform: scaleX(0); transform-origin: left;
-    transition: transform 0.4s ease;
+    padding: 32px 28px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    transition: border-color 0.2s, box-shadow 0.2s;
   }
   .service-card:hover {
-    background: var(--navy-3);
-    border-color: var(--border-2);
-    transform: translateY(-5px);
+    border-color: #c0d2ee;
+    box-shadow: var(--shadow);
   }
-  .service-card:hover::before { transform: scaleX(1); }
   .service-icon {
-    width: 56px; height: 56px;
-    background: var(--gold-soft);
-    border: 1px solid var(--gold-line);
+    width: 48px; height: 48px;
+    background: var(--primary-soft);
     border-radius: 8px;
     display: flex; align-items: center; justify-content: center;
-    font-size: 22px; color: var(--gold);
-    margin-bottom: 26px;
+    color: var(--primary); font-size: 19px;
+    margin-bottom: 22px;
   }
-  .service-card h3 { font-size: 18.5px; font-weight: 600; margin-bottom: 12px; letter-spacing: -0.005em; }
-  .service-card p { color: var(--gray-2); font-size: 14.5px; line-height: 1.65; }
-  .service-link {
-    display: inline-flex; align-items: center; gap: 8px;
-    margin-top: 18px; color: var(--gold);
-    font-size: 13px; font-weight: 600;
-    letter-spacing: 0.05em; text-transform: uppercase;
-    text-decoration: none;
-    transition: gap 0.2s;
+  .service-card h3 {
+    font-size: 17px; font-weight: 600;
+    margin-bottom: 10px; letter-spacing: -0.005em;
+    color: var(--ink);
   }
-  .service-link:hover { gap: 12px; color: var(--gold-2); }
-  .service-link i { font-size: 11px; }
+  .service-card p {
+    color: var(--muted); font-size: 14.5px;
+    line-height: 1.65;
+  }
 
   /* ---------- Process ---------- */
-  .process { background: var(--navy-2); }
+  .process { background: var(--bg-soft); }
   .process-grid {
     display: grid; grid-template-columns: repeat(3, 1fr);
-    gap: 1px;
-    background: var(--border);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    overflow: hidden;
+    gap: 16px;
   }
   .process-step {
-    background: var(--navy-2);
-    padding: 36px 30px;
-    transition: background 0.3s;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 30px 26px;
     position: relative;
   }
-  .process-step:hover { background: var(--navy-3); }
-  .process-step .step-num {
+  .process-step .num {
     display: inline-flex; align-items: center; justify-content: center;
-    width: 38px; height: 38px;
-    border: 1px solid var(--gold-line);
+    width: 36px; height: 36px;
     border-radius: 50%;
-    color: var(--gold);
+    background: var(--primary-soft);
+    color: var(--primary);
     font-size: 13px; font-weight: 700;
-    letter-spacing: 0.05em;
-    margin-bottom: 22px;
-    background: var(--gold-soft);
+    margin-bottom: 18px;
   }
   .process-step h4 {
-    font-size: 16.5px; font-weight: 600;
-    margin-bottom: 10px; letter-spacing: -0.005em;
+    font-size: 16px; font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--ink);
   }
   .process-step p {
-    color: var(--gray-2);
-    font-size: 14px; line-height: 1.6;
+    color: var(--muted); font-size: 14px;
+    line-height: 1.6;
   }
 
   /* ---------- Industries ---------- */
-  .industries-row {
-    display: flex; flex-wrap: wrap; gap: 12px;
-    justify-content: center;
-    margin-top: 40px;
-  }
-  .industry-chip {
-    display: inline-flex; align-items: center; gap: 10px;
-    padding: 12px 20px;
-    background: var(--navy-2);
-    border: 1px solid var(--border);
-    border-radius: 100px;
-    font-size: 14px; font-weight: 500;
-    color: var(--gray-1);
-    transition: all 0.2s;
-  }
-  .industry-chip:hover {
-    border-color: var(--gold-line);
-    background: var(--navy-3);
-    color: var(--white);
-  }
-  .industry-chip i {
-    color: var(--gold); font-size: 13px;
-  }
-
-  /* ---------- TenderFlow self-hosted badge ---------- */
-  .self-hosted-badge {
-    display: inline-flex; align-items: center; gap: 10px;
-    padding: 8px 16px; margin-top: 16px;
-    background: var(--gold-soft);
-    border: 1px solid var(--gold-line);
-    border-radius: 100px;
-    color: var(--gold);
-    font-size: 12px; font-weight: 600;
-    letter-spacing: 0.1em; text-transform: uppercase;
-  }
-  .self-hosted-badge i { font-size: 11px; }
-
-  /* ---------- Z-Eye ---------- */
-  .zeye {
-    background: linear-gradient(180deg, var(--navy-2) 0%, var(--navy) 100%);
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-    position: relative; overflow: hidden;
-  }
-  .zeye::before {
-    content: ''; position: absolute;
-    right: -20%; top: -10%;
-    width: 700px; height: 700px;
-    background: radial-gradient(circle, rgba(201,168,76,0.06), transparent 60%);
-    border-radius: 50%; pointer-events: none;
-  }
-  .zeye-grid {
-    display: grid; grid-template-columns: 1.15fr 1fr;
-    gap: 80px; align-items: center; position: relative;
-  }
-  .feature-list { margin-top: 34px; }
-  .feature-list li {
-    display: flex; align-items: flex-start; gap: 14px;
-    padding: 15px 0;
-    border-bottom: 1px solid var(--border);
-    color: var(--gray-1); font-size: 15px; line-height: 1.55;
-  }
-  .feature-list li:last-child { border-bottom: none; }
-  .feature-list li i {
-    color: var(--gold); font-size: 12px;
-    margin-top: 5px; flex-shrink: 0;
-    width: 18px; height: 18px;
-    border: 1px solid var(--gold-line);
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-  }
-
-  .zeye-stats { display: grid; grid-template-columns: 1fr; gap: 16px; }
-  .zeye-stat {
-    padding: 30px 32px;
-    background: var(--navy-3);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    position: relative; overflow: hidden;
-    transition: transform 0.3s ease, border-color 0.3s ease;
-  }
-  .zeye-stat:hover { transform: translateX(4px); border-color: var(--gold-line); }
-  .zeye-stat::before {
-    content: ''; position: absolute;
-    left: 0; top: 18%; bottom: 18%;
-    width: 2px; background: var(--gold);
-  }
-  .zeye-stat::after {
-    content: ''; position: absolute; right: 24px; top: 50%; transform: translateY(-50%);
-    width: 60px; height: 60px;
-    background: radial-gradient(circle, var(--gold-soft), transparent 70%);
-    border-radius: 50%;
-  }
-  .zeye-stat .num {
-    font-size: 42px; font-weight: 800;
-    color: var(--gold); line-height: 1;
-    margin-bottom: 8px; letter-spacing: -0.02em;
-  }
-  .zeye-stat .label {
-    font-size: 13.5px; color: var(--gray-1);
-    letter-spacing: 0.06em; text-transform: uppercase; font-weight: 500;
-  }
-
-  /* ---------- TenderFlows ---------- */
-  .tf-cards {
+  .industries { background: #fff; }
+  .industries-grid {
     display: grid; grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
+    gap: 16px;
   }
-  .tf-card {
-    padding: 40px 32px 36px;
-    background: var(--navy-2);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    position: relative;
-    transition: all 0.3s ease;
+  .industry-tile {
+    padding: 28px 24px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    background: var(--bg-tint);
+    text-align: left;
+    transition: border-color 0.2s, background 0.2s;
   }
-  .tf-card:hover { background: var(--navy-3); border-color: var(--border-2); }
-  .tf-card .step {
-    font-size: 11.5px; color: var(--gold);
-    font-weight: 600; letter-spacing: 0.2em;
+  .industry-tile:hover {
+    border-color: #c0d2ee;
+    background: #fff;
+  }
+  .industry-tile .icon {
+    width: 44px; height: 44px;
+    border-radius: 8px;
+    background: #fff;
+    border: 1px solid var(--line);
+    display: inline-flex; align-items: center; justify-content: center;
+    color: var(--primary); font-size: 17px;
     margin-bottom: 16px;
   }
-  .tf-card h4 { font-size: 18px; font-weight: 600; margin-bottom: 12px; }
-  .tf-card p { color: var(--gray-2); font-size: 14.5px; line-height: 1.65; }
+  .industry-tile h4 {
+    font-size: 15.5px; font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 4px;
+  }
+  .industry-tile p {
+    color: var(--muted); font-size: 13.5px;
+    line-height: 1.5;
+  }
 
-  /* ---------- Clients ---------- */
-  .clients { background: var(--navy-2); }
-  .clients-grid {
-    display: grid; grid-template-columns: repeat(3, 1fr);
-    border: 1px solid var(--border); border-radius: var(--radius);
+  /* ---------- Why Us ---------- */
+  .why-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
     overflow: hidden;
   }
-  .client {
-    padding: 36px 24px; text-align: center;
-    border-right: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-    transition: background 0.3s;
+  .why-item {
+    background: #fff;
+    padding: 30px 28px;
   }
-  .client:nth-child(3n) { border-right: none; }
-  .client:nth-last-child(-n+3) { border-bottom: none; }
-  .client:hover { background: rgba(201,168,76,0.04); }
-  .client-name {
-    font-size: 15.5px; font-weight: 600;
-    color: var(--white); margin-bottom: 4px;
-    letter-spacing: -0.005em;
+  .why-item .check {
+    width: 28px; height: 28px;
+    background: var(--accent-soft);
+    border-radius: 50%;
+    color: var(--accent);
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 12px;
+    margin-bottom: 14px;
   }
-  .client-meta {
-    font-size: 11.5px; color: var(--gray-3);
-    letter-spacing: 0.06em; text-transform: uppercase;
+  .why-item h4 {
+    font-size: 16px; font-weight: 600;
+    color: var(--ink); margin-bottom: 6px;
   }
-
-  /* ---------- Testimonials ---------- */
-  .testimonials-grid {
-    display: grid; grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+  .why-item p {
+    color: var(--muted); font-size: 14px;
+    line-height: 1.6;
   }
-  .testimonial {
-    padding: 44px 40px 36px;
-    background: var(--navy-2);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    position: relative;
-  }
-  .testimonial::before {
-    content: '\201C';
-    position: absolute; top: 12px; left: 28px;
-    font-size: 90px; font-family: Georgia, serif;
-    color: var(--gold); opacity: 0.32; line-height: 1;
-  }
-  .testimonial p {
-    color: var(--gray-1); font-size: 16px;
-    line-height: 1.75; margin-bottom: 26px;
-    position: relative;
-  }
-  .testimonial-author {
-    display: flex; align-items: center; gap: 14px;
-    padding-top: 22px; border-top: 1px solid var(--border);
-  }
-  .testimonial-author .avatar {
-    width: 44px; height: 44px; border-radius: 50%;
-    background: var(--navy-3);
-    border: 1px solid var(--gold);
-    display: flex; align-items: center; justify-content: center;
-    color: var(--gold); font-weight: 600; font-size: 14px;
-  }
-  .testimonial-author strong { display: block; color: var(--white); font-size: 14px; margin-bottom: 2px; }
-  .testimonial-author span { color: var(--gray-3); font-size: 12px; letter-spacing: 0.04em; }
 
   /* ---------- Contact ---------- */
+  .contact { background: var(--bg-soft); }
   .contact-grid {
-    display: grid; grid-template-columns: 1fr 1.15fr;
-    gap: 60px;
+    display: grid; grid-template-columns: 1fr 1.1fr;
+    gap: 50px;
   }
-  .contact-info { display: flex; flex-direction: column; gap: 8px; }
+  .contact-info { display: flex; flex-direction: column; gap: 4px; }
   .contact-item {
-    display: flex; gap: 18px; align-items: flex-start;
+    display: flex; gap: 16px; align-items: flex-start;
     padding: 22px 0;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid var(--line);
   }
   .contact-item:last-child { border-bottom: none; }
   .contact-item .icon {
-    width: 46px; height: 46px;
-    background: var(--gold-soft);
-    border: 1px solid var(--gold-line);
-    border-radius: 6px;
+    width: 42px; height: 42px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 8px;
     display: flex; align-items: center; justify-content: center;
-    color: var(--gold); font-size: 16px; flex-shrink: 0;
+    color: var(--primary); font-size: 15px; flex-shrink: 0;
   }
   .contact-item .label {
-    font-size: 11.5px; color: var(--gray-3);
-    letter-spacing: 0.14em; text-transform: uppercase;
-    margin-bottom: 6px; font-weight: 500;
+    font-size: 11.5px; color: var(--muted-2);
+    letter-spacing: 0.1em; text-transform: uppercase;
+    margin-bottom: 4px; font-weight: 500;
   }
   .contact-item .value {
-    color: var(--white); font-weight: 500;
-    font-size: 15.5px; line-height: 1.5;
+    color: var(--ink); font-weight: 500;
+    font-size: 15px; line-height: 1.5;
   }
   .contact-item a { text-decoration: none; transition: color 0.2s; }
-  .contact-item a:hover { color: var(--gold); }
+  .contact-item a:hover { color: var(--primary); }
 
   .contact-form {
-    padding: 42px;
-    background: var(--navy-2);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 36px;
+    box-shadow: var(--shadow);
   }
   .contact-form h3 {
-    font-size: 22px; font-weight: 600;
-    margin-bottom: 6px; letter-spacing: -0.01em;
+    font-size: 22px; font-weight: 700;
+    color: var(--ink); margin-bottom: 6px;
+    letter-spacing: -0.01em;
   }
   .contact-form .sub {
-    color: var(--gray-2); font-size: 14px;
-    margin-bottom: 28px;
+    color: var(--muted); font-size: 14px;
+    margin-bottom: 24px;
   }
   .form-grid {
     display: grid; grid-template-columns: 1fr 1fr;
-    gap: 16px;
+    gap: 14px;
   }
-  .form-group { margin-bottom: 16px; }
+  .form-group { margin-bottom: 14px; }
   .form-group.full { grid-column: 1 / -1; }
   .form-group label {
-    display: block; font-size: 11.5px;
-    color: var(--gray-2); margin-bottom: 8px;
-    letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500;
+    display: block; font-size: 12px;
+    color: var(--ink-2); margin-bottom: 6px;
+    letter-spacing: 0.04em; font-weight: 600;
   }
   .form-group input, .form-group textarea {
-    width: 100%; padding: 14px 16px;
-    background: var(--navy);
-    border: 1px solid var(--border-2);
-    border-radius: 4px;
-    color: var(--white); font-family: inherit;
-    font-size: 15px;
-    transition: border-color 0.2s, background 0.2s;
+    width: 100%; padding: 12px 14px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    color: var(--ink); font-family: inherit;
+    font-size: 14.5px;
+    transition: border-color 0.2s, box-shadow 0.2s;
   }
-  .form-group input::placeholder, .form-group textarea::placeholder { color: var(--gray-3); }
+  .form-group input::placeholder,
+  .form-group textarea::placeholder { color: var(--muted-2); }
   .form-group input:focus, .form-group textarea:focus {
-    outline: none; border-color: var(--gold);
-    background: var(--navy-2);
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(17, 70, 168, 0.10);
   }
-  .form-group textarea { resize: vertical; min-height: 110px; }
+  .form-group textarea { resize: vertical; min-height: 100px; }
   .form-status {
-    display: none; padding: 14px 16px;
-    border-radius: 4px; font-size: 14px;
-    margin-bottom: 16px;
+    display: none; padding: 12px 14px;
+    border-radius: 6px; font-size: 14px;
+    margin-bottom: 14px;
   }
   .form-status.show { display: block; }
   .form-status.success {
-    background: rgba(46,204,113,0.08);
-    border: 1px solid rgba(46,204,113,0.25);
-    color: #6BD9A0;
+    background: var(--accent-soft);
+    border: 1px solid #b6e5e3;
+    color: #056f6d;
   }
 
   /* ---------- Footer ---------- */
   .footer {
-    background: var(--navy-2);
-    border-top: 1px solid var(--border);
-    padding: 36px 0;
+    background: #fff;
+    border-top: 1px solid var(--line);
+    padding: 32px 0;
   }
   .footer-inner {
     display: flex; justify-content: space-between;
     align-items: center; flex-wrap: wrap;
-    gap: 18px;
+    gap: 16px;
   }
-  .footer-copy { color: var(--gray-3); font-size: 13px; }
-  .footer-links { display: flex; gap: 26px; }
+  .footer-copy { color: var(--muted); font-size: 13px; }
+  .footer-links { display: flex; gap: 22px; }
   .footer-links a {
-    color: var(--gray-2); text-decoration: none;
+    color: var(--muted); text-decoration: none;
     font-size: 13px; transition: color 0.2s;
   }
-  .footer-links a:hover { color: var(--gold); }
-  .footer-tagline { color: var(--gray-3); font-size: 13px; }
-  .footer-tagline span { color: var(--gold); }
+  .footer-links a:hover { color: var(--primary); }
+  .footer-tagline { color: var(--muted-2); font-size: 13px; }
 
-  /* ---------- Back to top ---------- */
-  .back-top {
-    position: fixed; bottom: 26px; right: 26px;
-    width: 44px; height: 44px;
-    background: var(--gold); color: var(--navy);
-    border: none; border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    cursor: pointer; opacity: 0; pointer-events: none;
-    transform: translateY(8px);
-    transition: all 0.3s ease;
-    z-index: 90;
-    box-shadow: 0 8px 22px rgba(0,0,0,0.4);
-  }
-  .back-top.show { opacity: 1; pointer-events: auto; transform: translateY(0); }
-  .back-top:hover { background: var(--gold-2); transform: translateY(-2px); }
-
-  /* ---------- Reveal animations ---------- */
+  /* ---------- Reveal ---------- */
   .reveal {
-    opacity: 0; transform: translateY(28px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    opacity: 0; transform: translateY(16px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
   }
   .reveal.in { opacity: 1; transform: translateY(0); }
-
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { animation: none !important; transition: none !important; }
     .reveal { opacity: 1; transform: none; }
@@ -819,55 +639,45 @@
 
   /* ---------- Responsive ---------- */
   @media (max-width: 980px) {
-    .process-grid { grid-template-columns: repeat(2, 1fr); }
-    .nav-cta.desktop-only { display: none; }
     .hamburger { display: flex; }
+    .nav-cta { display: none; }
     .nav-links {
-      position: fixed; top: 64px; left: 0; right: 0;
+      position: fixed; top: 60px; left: 0; right: 0;
       flex-direction: column; align-items: stretch;
       gap: 0;
-      background: rgba(10,22,40,0.98);
-      backdrop-filter: blur(14px);
-      border-bottom: 1px solid var(--border);
-      padding: 16px 0;
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+      padding: 12px 0;
       transform: translateY(-110%);
-      transition: transform 0.35s ease;
-      max-height: calc(100vh - 64px); overflow-y: auto;
+      transition: transform 0.3s ease;
+      max-height: calc(100vh - 60px); overflow-y: auto;
+      box-shadow: var(--shadow);
     }
     .nav-links.open { transform: translateY(0); }
     .nav-links a {
-      padding: 16px 24px; border-bottom: 1px solid var(--border);
+      padding: 14px 24px;
+      border-bottom: 1px solid var(--line-2);
       font-size: 15px;
     }
-    .nav-links a::after { display: none; }
-    .nav-links a:hover, .nav-links a.active { background: var(--navy-3); color: var(--gold); }
+    .nav-links a.active::after { display: none; }
+    .nav-links a.active { background: var(--primary-soft); color: var(--primary); }
 
-    .stats-grid { grid-template-columns: repeat(2, 1fr); }
-    .about-grid { grid-template-columns: 1fr; gap: 50px; }
-    .about-visual { aspect-ratio: 1.4; max-height: 360px; }
-    .services-grid, .tf-cards { grid-template-columns: repeat(2, 1fr); }
-    .zeye-grid { grid-template-columns: 1fr; gap: 50px; }
-    .clients-grid { grid-template-columns: repeat(2, 1fr); }
-    .client:nth-child(3n) { border-right: 1px solid var(--border); }
-    .client:nth-child(2n) { border-right: none; }
-    .client:nth-last-child(-n+3) { border-bottom: 1px solid var(--border); }
-    .client:nth-last-child(-n+2) { border-bottom: none; }
-    .testimonials-grid { grid-template-columns: 1fr; }
-    .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+    .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .about-grid { grid-template-columns: 1fr; gap: 40px; }
+    .services-grid, .process-grid, .industries-grid { grid-template-columns: repeat(2, 1fr); }
+    .why-grid { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; gap: 36px; }
   }
 
   @media (max-width: 620px) {
-    .container { padding: 0 20px; }
-    .hero { padding: 120px 0 70px; min-height: auto; }
-    .services-grid, .tf-cards, .process-grid { grid-template-columns: 1fr; }
-    .clients-grid { grid-template-columns: 1fr; }
-    .client { border-right: none !important; }
-    .client:not(:last-child) { border-bottom: 1px solid var(--border) !important; }
-    .stat { padding: 30px 16px; }
-    .testimonial { padding: 36px 26px 28px; }
-    .contact-form { padding: 28px 22px; }
+    .container { padding: 0 18px; }
+    .hero { padding: 120px 0 70px; }
+    .services-grid, .process-grid, .industries-grid { grid-template-columns: 1fr; }
+    .stats-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
+    .about-numbers { grid-template-columns: 1fr 1fr; }
     .form-grid { grid-template-columns: 1fr; }
-    .av-tags span { font-size: 10px; padding: 5px 10px; }
+    .contact-form { padding: 24px; }
     .footer-inner { justify-content: center; text-align: center; }
   }
 </style>
@@ -875,21 +685,19 @@
 
 <body>
 
-<div class="scroll-progress"></div>
-
 <!-- ========== NAV ========== -->
 <header class="nav" id="nav">
   <div class="container nav-inner">
-    <a href="#home" class="logo">RAPID<span>CORP</span></a>
+    <a href="#home" class="logo"><span class="mark">R</span> RAPID CORP</a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
-      <li><a href="#zeye">Z-Eye</a></li>
-      <li><a href="#tenderflows">TenderFlows</a></li>
-      <li><a href="#clients">Clients</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#industries">Industries</a></li>
+      <li><a href="#why">Why Us</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a href="#contact" class="nav-cta desktop-only">Book a Call</a>
+    <a href="#contact" class="nav-cta">Get Consultation</a>
     <button class="hamburger" id="burger" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
@@ -899,13 +707,25 @@
 <!-- ========== HERO ========== -->
 <section class="hero" id="home">
   <div class="container">
-    <div class="hero-content reveal">
-      <div class="hero-tag"><span class="dot"></span> Enterprise Safety & IT Solutions</div>
-      <h1>AI-Powered Safety & IT Solutions for <span class="accent">Industrial, Pharma & Corporate</span> Clients</h1>
-      <p>From AI-based PPE compliance to enterprise IT infrastructure — Rapid Corp helps businesses run safer, smarter and more efficiently.</p>
-      <div class="hero-ctas">
-        <a href="#zeye" class="btn btn-primary">Explore Z-Eye <i class="fa-solid fa-arrow-right"></i></a>
-        <a href="#contact" class="btn btn-ghost">Contact Us</a>
+    <div class="hero-grid">
+      <div class="reveal">
+        <div class="hero-tag"><i class="fa-solid fa-circle-check"></i> Founded 2016 · Udaipur, Rajasthan</div>
+        <h1>Reliable <strong>IT Infrastructure &amp; Security</strong> for Modern Businesses.</h1>
+        <p>Rapid Corp is a Udaipur-based IT services company. We design, deploy and maintain enterprise networking, servers, CCTV, firewalls and AI-enabled monitoring — backed by strong AMC and field support.</p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary">Get a Consultation <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#services" class="btn btn-ghost">View Services</a>
+        </div>
+      </div>
+
+      <div class="hero-side reveal">
+        <h4>Why businesses choose us</h4>
+        <ul>
+          <li><i class="fa-solid fa-check"></i><span>Single-point IT partner with end-to-end ownership</span></li>
+          <li><i class="fa-solid fa-check"></i><span>Strong AMC and post-deployment support</span></li>
+          <li><i class="fa-solid fa-check"></i><span>Local field response across Udaipur and Rajasthan</span></li>
+          <li><i class="fa-solid fa-check"></i><span>Practical, cost-effective implementation</span></li>
+        </ul>
       </div>
     </div>
   </div>
@@ -915,10 +735,26 @@
 <section class="stats">
   <div class="container">
     <div class="stats-grid">
-      <div class="stat reveal"><div class="stat-num">Since 2016</div><div class="stat-label">9+ Years Building Industrial Tech</div></div>
-      <div class="stat reveal"><div class="stat-num">13</div><div class="stat-label">Engineers, Experts &amp; Field Support</div></div>
-      <div class="stat reveal"><div class="stat-num">90%+</div><div class="stat-label">Z-Eye PPE Detection Accuracy</div></div>
-      <div class="stat reveal"><div class="stat-num">300–500%</div><div class="stat-label">Year-1 ROI for Customers</div></div>
+      <div class="stat reveal">
+        <div class="stat-divider"></div>
+        <div class="stat-num">2016</div>
+        <div class="stat-label">Founded · 9+ years of operation</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat-divider"></div>
+        <div class="stat-num">13</div>
+        <div class="stat-label">Engineers, technical experts &amp; support</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat-divider"></div>
+        <div class="stat-num">6</div>
+        <div class="stat-label">Service pillars, fully owned in-house</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat-divider"></div>
+        <div class="stat-num">24×7</div>
+        <div class="stat-label">Support-ready field &amp; remote response</div>
+      </div>
     </div>
   </div>
 </section>
@@ -929,25 +765,41 @@
     <div class="about-grid">
       <div class="about-content reveal">
         <span class="section-eyebrow">Who We Are</span>
-        <h2 class="section-title">Industrial-grade technology, built for real businesses.</h2>
-        <p><strong>Founded in 2016</strong> and rebranded as Rapid Corp in 2021, we are a Udaipur-based IT infrastructure and security solutions company founded by <strong>Manish Patel</strong>. Today a team of <strong>13 engineers, technical experts and field support staff</strong> ships work that ranges from rack-and-stack server rooms to AI safety products running on factory floors.</p>
-        <p>We are not a typical IT vendor. We design, deploy and maintain — owning every engagement end-to-end, from first site visit to ongoing AMC. Our work spans enterprise IT infrastructure, AI-based safety systems (Z-Eye), procurement automation (TenderFlows) and surveillance.</p>
-        <p class="vision-line"><em>"To provide reliable, end-to-end IT infrastructure solutions that help businesses operate smoothly and securely."</em></p>
+        <h2 class="section-title">A single-point IT partner for businesses that need reliability.</h2>
+        <p><strong>Founded in 2016</strong> and rebranded as Rapid Corp in 2021, we are a Udaipur-based IT infrastructure and security solutions company founded by <strong>Manish Patel</strong>. Our 13-person team designs, deploys and maintains technology end-to-end — from rack-and-stack server rooms to camera networks and firewalls.</p>
+        <p>We work with hotels, hospitals, schools, manufacturing plants and corporate offices across Rajasthan. Every engagement is owned by us — from first site visit through ongoing AMC.</p>
+
+        <div class="vision-card">
+          <div class="label">Our Vision</div>
+          <p>"To provide reliable, end-to-end IT infrastructure solutions that help businesses operate smoothly and securely."</p>
+        </div>
+
         <div class="founder-badge">
           <div class="avatar">MP</div>
-          <div class="info"><strong>Manish Patel</strong><span>Founder, Rapid Corp</span></div>
+          <div>
+            <strong>Manish Patel</strong>
+            <span>Founder, Rapid Corp</span>
+          </div>
         </div>
       </div>
 
-      <div class="about-visual reveal" aria-hidden="true">
-        <div class="av-rings"><span></span><span></span><span></span></div>
-        <div class="av-tags">
-          <span>AI Safety</span>
-          <span>Networking</span>
-          <span>Procurement</span>
-          <span>Surveillance</span>
+      <div class="about-numbers reveal">
+        <div class="about-num-card">
+          <div class="big">2016</div>
+          <div class="small">Year of inception</div>
         </div>
-        <div class="av-shield"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="about-num-card">
+          <div class="big">2021</div>
+          <div class="small">Rebranded as Rapid Corp</div>
+        </div>
+        <div class="about-num-card accent">
+          <div class="big">13</div>
+          <div class="small">Engineers, experts &amp; support staff</div>
+        </div>
+        <div class="about-num-card">
+          <div class="big">6+</div>
+          <div class="small">Industries we serve</div>
+        </div>
       </div>
     </div>
   </div>
@@ -958,48 +810,51 @@
   <div class="container">
     <div class="section-head reveal">
       <span class="section-eyebrow">What We Do</span>
-      <h2 class="section-title">Six core capabilities, end-to-end execution.</h2>
-      <p class="section-subtitle">We design, deploy and maintain. Every engagement is owned end-to-end — from first audit to ongoing support.</p>
+      <h2 class="section-title">Six service pillars covering complete enterprise IT.</h2>
+      <p class="section-subtitle">From the cabling in your walls to the cameras at your gate to the firewalls protecting your data — we own the full stack so you have one partner, not five vendors.</p>
     </div>
 
     <div class="services-grid">
       <div class="service-card reveal">
-        <div class="service-icon"><i class="fa-solid fa-robot"></i></div>
-        <h3>Z-Eye AI Safety System</h3>
-        <p>Real-time PPE detection for manufacturing and pharma plants. Computer-vision compliance + people-counting analytics — running on your existing CCTV.</p>
-        <a href="#zeye" class="service-link">Explore Z-Eye <i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-icon"><i class="fa-solid fa-gavel"></i></div>
-        <h3>TenderFlows Procurement</h3>
-        <p>Blind-auction procurement platform with live rank tracking and full audit trails. Self-hosted on your infrastructure — vendors compete, you save.</p>
-        <a href="#tenderflows" class="service-link">Explore TenderFlows <i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-icon"><i class="fa-solid fa-server"></i></div>
+        <div class="service-icon"><i class="fa-solid fa-network-wired"></i></div>
         <h3>IT Infrastructure</h3>
-        <p>LAN, WAN and Wi-Fi design. Structured cabling. Windows and Linux server setup. Storage and data backup — enterprise-grade, deployed end-to-end.</p>
+        <p>LAN, WAN and Wi-Fi design. Structured cabling. Windows and Linux server setup. Storage and data backup — deployed end-to-end.</p>
       </div>
-      <div class="service-card reveal">
-        <div class="service-icon"><i class="fa-solid fa-video"></i></div>
-        <h3>CCTV &amp; Surveillance</h3>
-        <p>CCTV camera systems with AI-enhanced analytics. Biometric and access-control integration. Remote viewing, monitoring and ongoing maintenance.</p>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-icon"><i class="fa-solid fa-cloud"></i></div>
-        <h3>Cloud &amp; Server Solutions</h3>
-        <p>Google Workspace and Microsoft 365 deployments. NAS and on-premise data centers. Cloud backup and disaster recovery — built for resilience.</p>
-      </div>
+
       <div class="service-card reveal">
         <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
-        <h3>Cybersecurity &amp; AMC</h3>
-        <p>Firewall hardening. Endpoint security. Annual Maintenance Contracts with remote, on-site or hybrid support — tailored to your environment.</p>
+        <h3>Security Solutions</h3>
+        <p>Firewall setup and network security. CCTV surveillance. Biometric and access-control systems. Endpoint security.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fa-solid fa-headset"></i></div>
+        <h3>Managed IT &amp; AMC</h3>
+        <p>Annual Maintenance Contracts. Remote and on-site IT support. System monitoring and proactive troubleshooting.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fa-solid fa-cloud"></i></div>
+        <h3>Cloud &amp; Data Solutions</h3>
+        <p>Google Workspace and Microsoft 365 deployments. Cloud backup and disaster recovery. NAS and on-premise data centers.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fa-solid fa-laptop"></i></div>
+        <h3>Hardware &amp; Procurement</h3>
+        <p>Laptops, desktops, printers and accessories. End-to-end IT hardware supply, configuration and installation.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fa-solid fa-microchip"></i></div>
+        <h3>Advanced Solutions</h3>
+        <p>Computer-vision monitoring, PPE compliance detection, people-counting analytics and custom Python automation. Tailored projects on request.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ========== HOW WE WORK ========== -->
+<!-- ========== PROCESS ========== -->
 <section id="process" class="process">
   <div class="container">
     <div class="section-head reveal">
@@ -1010,32 +865,32 @@
 
     <div class="process-grid">
       <div class="process-step reveal">
-        <div class="step-num">01</div>
+        <div class="num">01</div>
         <h4>Requirement Discussion</h4>
-        <p>We start with a real conversation — your operations, pain points and what success looks like.</p>
+        <p>We start with a real conversation about your operations, pain points and what success looks like.</p>
       </div>
       <div class="process-step reveal">
-        <div class="step-num">02</div>
+        <div class="num">02</div>
         <h4>Site Visit &amp; Assessment</h4>
-        <p>On-site walk-through to map existing infrastructure, network paths, camera placements and gaps.</p>
+        <p>On-site walk-through to map existing infrastructure, network paths and gaps.</p>
       </div>
       <div class="process-step reveal">
-        <div class="step-num">03</div>
+        <div class="num">03</div>
         <h4>Solution Design &amp; Quote</h4>
         <p>A specific design and a clear, itemised quotation. No vague proposals, no inflated line items.</p>
       </div>
       <div class="process-step reveal">
-        <div class="step-num">04</div>
+        <div class="num">04</div>
         <h4>Project Execution</h4>
-        <p>Procurement, installation and configuration handled by our own engineers. We don't subcontract the hard parts.</p>
+        <p>Procurement, installation and configuration handled by our own engineers — not subcontractors.</p>
       </div>
       <div class="process-step reveal">
-        <div class="step-num">05</div>
+        <div class="num">05</div>
         <h4>Testing &amp; Handover</h4>
-        <p>End-to-end testing, documentation and a guided handover. You know exactly what was deployed and how.</p>
+        <p>End-to-end testing, documentation and a guided handover. You know exactly what was deployed.</p>
       </div>
       <div class="process-step reveal">
-        <div class="step-num">06</div>
+        <div class="num">06</div>
         <h4>Ongoing Support &amp; AMC</h4>
         <p>Annual Maintenance Contracts with remote, on-site or hybrid support. We stay on after go-live.</p>
       </div>
@@ -1043,122 +898,91 @@
   </div>
 </section>
 
-<!-- ========== Z-EYE ========== -->
-<section id="zeye" class="zeye">
+<!-- ========== INDUSTRIES ========== -->
+<section id="industries" class="industries">
   <div class="container">
-    <div class="zeye-grid">
-      <div class="reveal">
-        <span class="section-eyebrow">Featured Product</span>
-        <h2 class="section-title">Z-Eye — AI Safety Compliance, Automated.</h2>
-        <p class="section-subtitle">Detects PPE violations on your existing CCTV cameras, in real time. Fewer accidents, automatic compliance reports, measurable ROI.</p>
-        <ul class="feature-list">
-          <li><i class="fa-solid fa-check"></i><span>Detects 7 PPE items in real time — helmets, vests, goggles, gloves, masks, boots, harnesses.</span></li>
-          <li><i class="fa-solid fa-check"></i><span>Works on existing cameras — no new hardware required.</span></li>
-          <li><i class="fa-solid fa-check"></i><span>Alerts in under 1 second to supervisors and dashboards.</span></li>
-          <li><i class="fa-solid fa-check"></i><span>OSHA-ready automatic compliance reports.</span></li>
-          <li><i class="fa-solid fa-check"></i><span>Saves ₹7–10 lakh per site, per year.</span></li>
-          <li><i class="fa-solid fa-check"></i><span>Payback in 3–6 months.</span></li>
-          <li><i class="fa-solid fa-check"></i><span>300–500% ROI in Year 1.</span></li>
-        </ul>
-        <a href="#contact" class="btn btn-primary" style="margin-top:36px;">Request a Free Z-Eye Demo <i class="fa-solid fa-arrow-right"></i></a>
-      </div>
+    <div class="section-head reveal">
+      <span class="section-eyebrow">Industries We Serve</span>
+      <h2 class="section-title">Built for sectors where downtime and compliance matter.</h2>
+      <p class="section-subtitle">We have shipped infrastructure across manufacturing floors, hotels, hospitals, pharma operations and educational institutions in Rajasthan and beyond.</p>
+    </div>
 
-      <div class="zeye-stats reveal">
-        <div class="zeye-stat"><div class="num">90%</div><div class="label">Detection Accuracy</div></div>
-        <div class="zeye-stat"><div class="num">95%</div><div class="label">Accident Reduction</div></div>
-        <div class="zeye-stat"><div class="num">70%</div><div class="label">Monitoring Cost Saved</div></div>
+    <div class="industries-grid">
+      <div class="industry-tile reveal">
+        <div class="icon"><i class="fa-solid fa-industry"></i></div>
+        <h4>Manufacturing</h4>
+        <p>Factory networks, surveillance, PPE compliance and automation.</p>
+      </div>
+      <div class="industry-tile reveal">
+        <div class="icon"><i class="fa-solid fa-flask"></i></div>
+        <h4>Pharmaceutical</h4>
+        <p>Cleanroom-safe cabling, secure data and compliance-grade monitoring.</p>
+      </div>
+      <div class="industry-tile reveal">
+        <div class="icon"><i class="fa-solid fa-hotel"></i></div>
+        <h4>Hotels &amp; Hospitality</h4>
+        <p>Guest Wi-Fi, property surveillance, server rooms and ongoing AMC.</p>
+      </div>
+      <div class="industry-tile reveal">
+        <div class="icon"><i class="fa-solid fa-hospital"></i></div>
+        <h4>Hospitals &amp; Clinics</h4>
+        <p>Reliable internal networks, secure patient-data systems, CCTV.</p>
+      </div>
+      <div class="industry-tile reveal">
+        <div class="icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <h4>Schools &amp; Education</h4>
+        <p>Campus networks, lab infrastructure, surveillance and Wi-Fi coverage.</p>
+      </div>
+      <div class="industry-tile reveal">
+        <div class="icon"><i class="fa-solid fa-building"></i></div>
+        <h4>SMBs &amp; Corporates</h4>
+        <p>Office IT, security, cloud setup and full-stack managed services.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ========== TENDERFLOWS ========== -->
-<section id="tenderflows">
+<!-- ========== WHY US ========== -->
+<section id="why">
   <div class="container">
     <div class="section-head center reveal">
-      <span class="section-eyebrow">Procurement Platform</span>
-      <h2 class="section-title">TenderFlows — Smart Procurement Platform.</h2>
-      <p class="section-subtitle">Run blind auctions. Let vendors compete. Get the best price automatically.</p>
-      <div class="self-hosted-badge"><i class="fa-solid fa-server"></i> Self-hosted &middot; Runs on your infrastructure</div>
+      <span class="section-eyebrow">Why Rapid Corp</span>
+      <h2 class="section-title">One vendor, complete ownership.</h2>
+      <p class="section-subtitle">The reasons businesses choose us — and the reasons they stay with us through AMC year after year.</p>
     </div>
 
-    <div class="tf-cards">
-      <div class="tf-card reveal">
-        <div class="step">01 — ENGINE</div>
-        <h4>Blind Auction Engine</h4>
-        <p>Vendors compete without seeing each other's prices, eliminating cartel pricing and bid-rigging.</p>
+    <div class="why-grid">
+      <div class="why-item reveal">
+        <div class="check"><i class="fa-solid fa-check"></i></div>
+        <h4>End-to-end IT, single vendor</h4>
+        <p>Network, security, servers, CCTV, AMC — owned by one team. No finger-pointing between vendors.</p>
       </div>
-      <div class="tf-card reveal">
-        <div class="step">02 — TRANSPARENCY</div>
-        <h4>Live Rank Tracking</h4>
-        <p>Vendors see their rank in real time, not competitor prices — driving genuine price competition.</p>
+      <div class="why-item reveal">
+        <div class="check"><i class="fa-solid fa-check"></i></div>
+        <h4>Fast local response in Udaipur</h4>
+        <p>Field engineers based in Udaipur with quick on-site response across Rajasthan.</p>
       </div>
-      <div class="tf-card reveal">
-        <div class="step">03 — COMPLIANCE</div>
-        <h4>Full Audit Trail</h4>
-        <p>Every bid logged with timestamp and signature for complete compliance and procurement governance.</p>
+      <div class="why-item reveal">
+        <div class="check"><i class="fa-solid fa-check"></i></div>
+        <h4>Strong AMC &amp; after-sales</h4>
+        <p>Most customers stay with us on AMC after the first year — that's how we measure quality.</p>
       </div>
-    </div>
-
-    <div class="reveal" style="text-align:center; margin-top:50px;">
-      <a href="#contact" class="btn btn-ghost">Learn More about TenderFlows <i class="fa-solid fa-arrow-right"></i></a>
-    </div>
-  </div>
-</section>
-
-<!-- ========== CLIENTS ========== -->
-<section id="clients" class="clients">
-  <div class="container">
-    <div class="section-head center reveal">
-      <span class="section-eyebrow">Industries &amp; Clients</span>
-      <h2 class="section-title">Built for industry. Trusted by leaders.</h2>
-      <p class="section-subtitle">From manufacturing floors to pharma cleanrooms to hospital networks — our work runs across the sectors where downtime and compliance matter most.</p>
-    </div>
-
-    <div class="industries-row reveal">
-      <span class="industry-chip"><i class="fa-solid fa-industry"></i> Manufacturing</span>
-      <span class="industry-chip"><i class="fa-solid fa-flask"></i> Pharma</span>
-      <span class="industry-chip"><i class="fa-solid fa-hotel"></i> Hotels &amp; Hospitality</span>
-      <span class="industry-chip"><i class="fa-solid fa-hospital"></i> Hospitals &amp; Clinics</span>
-      <span class="industry-chip"><i class="fa-solid fa-graduation-cap"></i> Schools &amp; Education</span>
-      <span class="industry-chip"><i class="fa-solid fa-building"></i> SMBs &amp; Corporates</span>
-    </div>
-
-    <div class="clients-grid reveal" style="margin-top: 50px;">
-      <div class="client"><div class="client-name">Coromandel</div><div class="client-meta">Murugappa Group</div></div>
-      <div class="client"><div class="client-name">SK Khetan Group</div><div class="client-meta">Diversified Industrial</div></div>
-      <div class="client"><div class="client-name">Mankind Pharma</div><div class="client-meta">Pharmaceutical</div></div>
-      <div class="client"><div class="client-name">Narayan Seva Sansthan</div><div class="client-meta">Healthcare & Service</div></div>
-      <div class="client"><div class="client-name">SMS Limited</div><div class="client-meta">Engineering</div></div>
-      <div class="client"><div class="client-name">Pacific Bulk Bags</div><div class="client-meta">Manufacturing</div></div>
-    </div>
-
-    <div class="testimonials-grid reveal" style="margin-top: 50px;">
-      <div class="testimonial">
-        <p>Rapid Corp deployed our complete IT infrastructure and CCTV system. Professional, fast and reliable — they delivered exactly what they promised.</p>
-        <div class="testimonial-author">
-          <div class="avatar">SK</div>
-          <div><strong>SK Khetan Group</strong><span>Udaipur, Rajasthan</span></div>
-        </div>
-      </div>
-      <div class="testimonial">
-        <p>Their Z-Eye system gives us 24/7 compliance visibility we never had before. Genuine real-time enforcement, not just dashboards.</p>
-        <div class="testimonial-author">
-          <div class="avatar">MC</div>
-          <div><strong>Manufacturing Client</strong><span>Rajasthan</span></div>
-        </div>
+      <div class="why-item reveal">
+        <div class="check"><i class="fa-solid fa-check"></i></div>
+        <h4>Practical, cost-effective</h4>
+        <p>We size solutions to your actual needs. No over-engineering, no inflated quotes.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ========== CONTACT ========== -->
-<section id="contact">
+<section id="contact" class="contact">
   <div class="container">
     <div class="section-head reveal">
       <span class="section-eyebrow">Get In Touch</span>
-      <h2 class="section-title">Let's talk about your safety, IT or procurement challenge.</h2>
-      <p class="section-subtitle">Reach out for a consultation, a Z-Eye demo or an infrastructure assessment. We respond within one business day.</p>
+      <h2 class="section-title">Let's talk about your IT or security project.</h2>
+      <p class="section-subtitle">Reach out for a consultation, site assessment or AMC quote. We respond within one business day.</p>
     </div>
 
     <div class="contact-grid">
@@ -1177,12 +1001,12 @@
         </div>
         <div class="contact-item">
           <div class="icon"><i class="fa-solid fa-clock"></i></div>
-          <div><div class="label">Response Time</div><div class="value">Within 24 hours, business days</div></div>
+          <div><div class="label">Response</div><div class="value">Within 24 hours, business days</div></div>
         </div>
       </div>
 
       <div class="contact-form reveal">
-        <h3>Send Us a Message</h3>
+        <h3>Send a message</h3>
         <p class="sub">We'll get back to you within one business day.</p>
         <div class="form-status success" id="formStatus">Thank you. Your message has been received — we'll be in touch within 24 hours.</div>
         <form id="contactForm" action="https://formspree.io/f/xrbqrroa" method="POST" novalidate>
@@ -1205,7 +1029,7 @@
             </div>
             <div class="form-group full">
               <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" placeholder="Tell us briefly what you're looking for — IT infrastructure, Z-Eye demo, TenderFlows, etc." required></textarea>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us briefly what you're looking for..." required></textarea>
             </div>
           </div>
           <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send Message <i class="fa-solid fa-arrow-right"></i></button>
@@ -1223,13 +1047,9 @@
       <a href="#">Privacy Policy</a>
       <a href="#">Terms</a>
     </div>
-    <div class="footer-tagline">Proudly built in Udaipur, Rajasthan <span>🇮🇳</span></div>
+    <div class="footer-tagline">Built in Udaipur, Rajasthan</div>
   </div>
 </footer>
-
-<button class="back-top" id="backTop" aria-label="Back to top">
-  <i class="fa-solid fa-arrow-up"></i>
-</button>
 
 <script>
 (function () {
@@ -1238,24 +1058,15 @@
   const $  = (s, root = document) => root.querySelector(s);
   const $$ = (s, root = document) => Array.from(root.querySelectorAll(s));
 
-  // Scroll progress + sticky nav + back-to-top
-  const nav      = $('#nav');
-  const progress = $('.scroll-progress');
-  const backTop  = $('#backTop');
-
+  // Sticky nav + active section
+  const nav = $('#nav');
   function onScroll() {
-    const scrolled  = window.scrollY;
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const pct       = docHeight > 0 ? (scrolled / docHeight) * 100 : 0;
+    const scrolled = window.scrollY;
+    nav.classList.toggle('scrolled', scrolled > 16);
 
-    progress.style.width = pct + '%';
-    nav.classList.toggle('scrolled', scrolled > 20);
-    backTop.classList.toggle('show', scrolled > 600);
-
-    // Active section highlighting
     const sections = $$('section[id]');
     const links    = $$('.nav-links a[href^="#"]');
-    const offset   = scrolled + 120;
+    const offset   = scrolled + 110;
     let current    = '';
     sections.forEach(s => {
       if (s.offsetTop <= offset && s.offsetTop + s.offsetHeight > offset) current = s.id;
@@ -1295,10 +1106,7 @@
     $$('.reveal').forEach(el => el.classList.add('in'));
   }
 
-  // Back to top
-  backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-
-  // Contact form — submit via fetch to Formspree, show inline success
+  // Form submit (Formspree, AJAX)
   const form   = $('#contactForm');
   const status = $('#formStatus');
   form.addEventListener('submit', async (e) => {
@@ -1323,11 +1131,10 @@
     }
   });
 
-  // Current year (defensive — in case the file outlives 2026)
+  // Year (defensive, in case the file outlives 2026)
   const yr = new Date().getFullYear();
-  $$('.footer-copy').forEach(el => {
-    el.textContent = `© ${yr} Rapid Corp. All rights reserved.`;
-  });
+  const copy = $('.footer-copy');
+  if (copy) copy.textContent = `© ${yr} Rapid Corp. All rights reserved.`;
 })();
 </script>
 
