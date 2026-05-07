@@ -323,6 +323,15 @@
     color: var(--gray-1); font-size: 16px;
     line-height: 1.85; margin-bottom: 18px;
   }
+  .about-content p strong { color: var(--white); font-weight: 600; }
+  .about-content .vision-line {
+    padding: 18px 22px; margin-top: 24px;
+    background: var(--gold-soft);
+    border-left: 2px solid var(--gold);
+    border-radius: 0 4px 4px 0;
+    font-size: 15px; color: var(--gold-2);
+    line-height: 1.6; font-style: italic;
+  }
   .founder-badge {
     display: inline-flex; align-items: center; gap: 14px;
     padding: 14px 22px 14px 18px;
@@ -437,6 +446,91 @@
   }
   .service-card h3 { font-size: 18.5px; font-weight: 600; margin-bottom: 12px; letter-spacing: -0.005em; }
   .service-card p { color: var(--gray-2); font-size: 14.5px; line-height: 1.65; }
+  .service-link {
+    display: inline-flex; align-items: center; gap: 8px;
+    margin-top: 18px; color: var(--gold);
+    font-size: 13px; font-weight: 600;
+    letter-spacing: 0.05em; text-transform: uppercase;
+    text-decoration: none;
+    transition: gap 0.2s;
+  }
+  .service-link:hover { gap: 12px; color: var(--gold-2); }
+  .service-link i { font-size: 11px; }
+
+  /* ---------- Process ---------- */
+  .process { background: var(--navy-2); }
+  .process-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .process-step {
+    background: var(--navy-2);
+    padding: 36px 30px;
+    transition: background 0.3s;
+    position: relative;
+  }
+  .process-step:hover { background: var(--navy-3); }
+  .process-step .step-num {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 38px; height: 38px;
+    border: 1px solid var(--gold-line);
+    border-radius: 50%;
+    color: var(--gold);
+    font-size: 13px; font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-bottom: 22px;
+    background: var(--gold-soft);
+  }
+  .process-step h4 {
+    font-size: 16.5px; font-weight: 600;
+    margin-bottom: 10px; letter-spacing: -0.005em;
+  }
+  .process-step p {
+    color: var(--gray-2);
+    font-size: 14px; line-height: 1.6;
+  }
+
+  /* ---------- Industries ---------- */
+  .industries-row {
+    display: flex; flex-wrap: wrap; gap: 12px;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .industry-chip {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 12px 20px;
+    background: var(--navy-2);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    font-size: 14px; font-weight: 500;
+    color: var(--gray-1);
+    transition: all 0.2s;
+  }
+  .industry-chip:hover {
+    border-color: var(--gold-line);
+    background: var(--navy-3);
+    color: var(--white);
+  }
+  .industry-chip i {
+    color: var(--gold); font-size: 13px;
+  }
+
+  /* ---------- TenderFlow self-hosted badge ---------- */
+  .self-hosted-badge {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 8px 16px; margin-top: 16px;
+    background: var(--gold-soft);
+    border: 1px solid var(--gold-line);
+    border-radius: 100px;
+    color: var(--gold);
+    font-size: 12px; font-weight: 600;
+    letter-spacing: 0.1em; text-transform: uppercase;
+  }
+  .self-hosted-badge i { font-size: 11px; }
 
   /* ---------- Z-Eye ---------- */
   .zeye {
@@ -725,6 +819,7 @@
 
   /* ---------- Responsive ---------- */
   @media (max-width: 980px) {
+    .process-grid { grid-template-columns: repeat(2, 1fr); }
     .nav-cta.desktop-only { display: none; }
     .hamburger { display: flex; }
     .nav-links {
@@ -764,7 +859,7 @@
   @media (max-width: 620px) {
     .container { padding: 0 20px; }
     .hero { padding: 120px 0 70px; min-height: auto; }
-    .services-grid, .tf-cards { grid-template-columns: 1fr; }
+    .services-grid, .tf-cards, .process-grid { grid-template-columns: 1fr; }
     .clients-grid { grid-template-columns: 1fr; }
     .client { border-right: none !important; }
     .client:not(:last-child) { border-bottom: 1px solid var(--border) !important; }
@@ -820,10 +915,10 @@
 <section class="stats">
   <div class="container">
     <div class="stats-grid">
-      <div class="stat reveal"><div class="stat-num">90%+</div><div class="stat-label">PPE Detection Accuracy</div></div>
-      <div class="stat reveal"><div class="stat-num">&lt; 1 Sec</div><div class="stat-label">Alert Response</div></div>
-      <div class="stat reveal"><div class="stat-num">300–500%</div><div class="stat-label">ROI in Year 1</div></div>
-      <div class="stat reveal"><div class="stat-num">7+ Yrs</div><div class="stat-label">Industry Experience</div></div>
+      <div class="stat reveal"><div class="stat-num">Since 2016</div><div class="stat-label">9+ Years Building Industrial Tech</div></div>
+      <div class="stat reveal"><div class="stat-num">13</div><div class="stat-label">Engineers, Experts &amp; Field Support</div></div>
+      <div class="stat reveal"><div class="stat-num">90%+</div><div class="stat-label">Z-Eye PPE Detection Accuracy</div></div>
+      <div class="stat reveal"><div class="stat-num">300–500%</div><div class="stat-label">Year-1 ROI for Customers</div></div>
     </div>
   </div>
 </section>
@@ -835,8 +930,9 @@
       <div class="about-content reveal">
         <span class="section-eyebrow">Who We Are</span>
         <h2 class="section-title">Industrial-grade technology, built for real businesses.</h2>
-        <p>Rapid Corp is founded by Manish Patel, based in Udaipur, Rajasthan. We are not a typical IT vendor — we build technology products that solve real industrial problems.</p>
-        <p>Our work spans AI-based safety systems, enterprise IT infrastructure, procurement automation and surveillance solutions. We serve manufacturing plants, pharma companies, hospitals and corporates across Rajasthan and beyond.</p>
+        <p><strong>Founded in 2016</strong> and rebranded as Rapid Corp in 2021, we are a Udaipur-based IT infrastructure and security solutions company founded by <strong>Manish Patel</strong>. Today a team of <strong>13 engineers, technical experts and field support staff</strong> ships work that ranges from rack-and-stack server rooms to AI safety products running on factory floors.</p>
+        <p>We are not a typical IT vendor. We design, deploy and maintain — owning every engagement end-to-end, from first site visit to ongoing AMC. Our work spans enterprise IT infrastructure, AI-based safety systems (Z-Eye), procurement automation (TenderFlows) and surveillance.</p>
+        <p class="vision-line"><em>"To provide reliable, end-to-end IT infrastructure solutions that help businesses operate smoothly and securely."</em></p>
         <div class="founder-badge">
           <div class="avatar">MP</div>
           <div class="info"><strong>Manish Patel</strong><span>Founder, Rapid Corp</span></div>
@@ -870,32 +966,78 @@
       <div class="service-card reveal">
         <div class="service-icon"><i class="fa-solid fa-robot"></i></div>
         <h3>Z-Eye AI Safety System</h3>
-        <p>Real-time PPE detection for manufacturing and pharma — runs on your existing camera infrastructure.</p>
+        <p>Real-time PPE detection for manufacturing and pharma plants. Computer-vision compliance + people-counting analytics — running on your existing CCTV.</p>
+        <a href="#zeye" class="service-link">Explore Z-Eye <i class="fa-solid fa-arrow-right"></i></a>
       </div>
       <div class="service-card reveal">
         <div class="service-icon"><i class="fa-solid fa-gavel"></i></div>
-        <h3>TenderFlows</h3>
-        <p>Blind auction procurement platform that lets vendors compete and gets you the best price automatically.</p>
+        <h3>TenderFlows Procurement</h3>
+        <p>Blind-auction procurement platform with live rank tracking and full audit trails. Self-hosted on your infrastructure — vendors compete, you save.</p>
+        <a href="#tenderflows" class="service-link">Explore TenderFlows <i class="fa-solid fa-arrow-right"></i></a>
       </div>
       <div class="service-card reveal">
         <div class="service-icon"><i class="fa-solid fa-server"></i></div>
         <h3>IT Infrastructure</h3>
-        <p>Servers, NAS, networking and structured cabling — designed and deployed for enterprise scale.</p>
+        <p>LAN, WAN and Wi-Fi design. Structured cabling. Windows and Linux server setup. Storage and data backup — enterprise-grade, deployed end-to-end.</p>
       </div>
       <div class="service-card reveal">
         <div class="service-icon"><i class="fa-solid fa-video"></i></div>
-        <h3>CCTV & Surveillance</h3>
-        <p>AI-enhanced camera systems with intelligent monitoring, analytics and remote access.</p>
+        <h3>CCTV &amp; Surveillance</h3>
+        <p>CCTV camera systems with AI-enhanced analytics. Biometric and access-control integration. Remote viewing, monitoring and ongoing maintenance.</p>
       </div>
       <div class="service-card reveal">
         <div class="service-icon"><i class="fa-solid fa-cloud"></i></div>
-        <h3>Cloud & Server Solutions</h3>
-        <p>NAS, on-premise data centers and cloud migration with disaster recovery built-in.</p>
+        <h3>Cloud &amp; Server Solutions</h3>
+        <p>Google Workspace and Microsoft 365 deployments. NAS and on-premise data centers. Cloud backup and disaster recovery — built for resilience.</p>
       </div>
       <div class="service-card reveal">
         <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
-        <h3>Cybersecurity</h3>
-        <p>Firewall hardening, endpoint security and AMC contracts tailored to your environment.</p>
+        <h3>Cybersecurity &amp; AMC</h3>
+        <p>Firewall hardening. Endpoint security. Annual Maintenance Contracts with remote, on-site or hybrid support — tailored to your environment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== HOW WE WORK ========== -->
+<section id="process" class="process">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-eyebrow">How We Work</span>
+      <h2 class="section-title">Six steps from first call to running infrastructure.</h2>
+      <p class="section-subtitle">Every engagement is owned end-to-end. No handoffs, no finger-pointing — one team from discovery through ongoing AMC.</p>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-step reveal">
+        <div class="step-num">01</div>
+        <h4>Requirement Discussion</h4>
+        <p>We start with a real conversation — your operations, pain points and what success looks like.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">02</div>
+        <h4>Site Visit &amp; Assessment</h4>
+        <p>On-site walk-through to map existing infrastructure, network paths, camera placements and gaps.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">03</div>
+        <h4>Solution Design &amp; Quote</h4>
+        <p>A specific design and a clear, itemised quotation. No vague proposals, no inflated line items.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">04</div>
+        <h4>Project Execution</h4>
+        <p>Procurement, installation and configuration handled by our own engineers. We don't subcontract the hard parts.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">05</div>
+        <h4>Testing &amp; Handover</h4>
+        <p>End-to-end testing, documentation and a guided handover. You know exactly what was deployed and how.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">06</div>
+        <h4>Ongoing Support &amp; AMC</h4>
+        <p>Annual Maintenance Contracts with remote, on-site or hybrid support. We stay on after go-live.</p>
       </div>
     </div>
   </div>
@@ -937,6 +1079,7 @@
       <span class="section-eyebrow">Procurement Platform</span>
       <h2 class="section-title">TenderFlows — Smart Procurement Platform.</h2>
       <p class="section-subtitle">Run blind auctions. Let vendors compete. Get the best price automatically.</p>
+      <div class="self-hosted-badge"><i class="fa-solid fa-server"></i> Self-hosted &middot; Runs on your infrastructure</div>
     </div>
 
     <div class="tf-cards">
@@ -967,11 +1110,21 @@
 <section id="clients" class="clients">
   <div class="container">
     <div class="section-head center reveal">
-      <span class="section-eyebrow">Trusted By</span>
-      <h2 class="section-title">Industry leaders we've partnered with.</h2>
+      <span class="section-eyebrow">Industries &amp; Clients</span>
+      <h2 class="section-title">Built for industry. Trusted by leaders.</h2>
+      <p class="section-subtitle">From manufacturing floors to pharma cleanrooms to hospital networks — our work runs across the sectors where downtime and compliance matter most.</p>
     </div>
 
-    <div class="clients-grid reveal">
+    <div class="industries-row reveal">
+      <span class="industry-chip"><i class="fa-solid fa-industry"></i> Manufacturing</span>
+      <span class="industry-chip"><i class="fa-solid fa-flask"></i> Pharma</span>
+      <span class="industry-chip"><i class="fa-solid fa-hotel"></i> Hotels &amp; Hospitality</span>
+      <span class="industry-chip"><i class="fa-solid fa-hospital"></i> Hospitals &amp; Clinics</span>
+      <span class="industry-chip"><i class="fa-solid fa-graduation-cap"></i> Schools &amp; Education</span>
+      <span class="industry-chip"><i class="fa-solid fa-building"></i> SMBs &amp; Corporates</span>
+    </div>
+
+    <div class="clients-grid reveal" style="margin-top: 50px;">
       <div class="client"><div class="client-name">Coromandel</div><div class="client-meta">Murugappa Group</div></div>
       <div class="client"><div class="client-name">SK Khetan Group</div><div class="client-meta">Diversified Industrial</div></div>
       <div class="client"><div class="client-name">Mankind Pharma</div><div class="client-meta">Pharmaceutical</div></div>
