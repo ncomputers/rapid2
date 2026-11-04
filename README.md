@@ -10,9 +10,14 @@ Static single-page marketing site for Rapid Corp (`rapidcorp.in`), deployed via 
 
 ## Files
 
-- `index.html` — the homepage (everything in one file)
-- `404.html` — branded not-found page
+- `index.html` — the homepage (everything in one file, enriched with Schema.org & SEO metadata)
+- `404.html` — branded not-found page (`noindex, nofollow`)
+- `sitemap.xml` — standard XML sitemap for search engines
+- `robots.txt` — crawler directives & sitemap location
+- `og-image.png` — Open Graph preview image (1200x630) for social cards
 - `CNAME` — `rapidcorp.in`
+- `.htaccess`, `nginx.conf.example`, `vercel.json`, `netlify.toml` — server configuration templates for caching & security headers
+- `scripts/generate-sitemap.py` — helper script to update sitemap `<lastmod>`
 - `LICENCE`, `.gitignore`, `.github/`
 
 ## Local preview

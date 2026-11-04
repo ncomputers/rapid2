@@ -1,0 +1,31 @@
+name: Update Sitemap
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'index.html'
+
+permissions:
+  contents: write
+
+jobs:
+  sitemap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Update Sitemap Date
+        run: python3 scripts/generate-sitemap.py
+
+      - name: Commit and push if sitemap changed
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git diff --quiet sitemap.xml || (git add sitemap.xml && git commit -m "chore(seo): auto-update sitemap lastmod [skip ci]" && git push)
