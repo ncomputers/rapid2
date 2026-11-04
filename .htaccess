@@ -1,0 +1,78 @@
+# ==============================================================================
+# Rapid Corp — Apache Configuration (.htaccess)
+# Production SEO, Performance, Caching & Security Headers
+# ==============================================================================
+
+# 1. UTF-8 Encoding
+AddDefaultCharset UTF-8
+
+# 2. MIME Types
+<IfModule mod_mime.c>
+  AddType text/xml .xml
+  AddType application/xml .xml
+  AddType image/svg+xml .svg .svgz
+  AddType image/png .png
+  AddType text/plain .txt
+</IfModule>
+
+# 3. Canonical Domain & HTTPS Redirects (301 Permanent)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Force HTTPS
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Canonicalize www to non-www (https://rapidcorp.in)
+  RewriteCond %{HTTP_HOST} ^www\.rapidcorp\.in$ [NC]
+  RewriteRule ^ https://rapidcorp.in%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# 4. Custom Error Document
+ErrorDocument 404 /404.html
+
+# 5. Gzip / Brotli Compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+  AddOutputFilterByType DEFLATE application/javascript application/x-javascript application/json
+  AddOutputFilterByType DEFLATE application/xml application/xhtml+xml application/rss+xml
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# 6. Browser Caching (Expires Headers)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 month"
+
+  # HTML documents - fresh cache
+  ExpiresByType text/html "access plus 1 hour"
+
+  # Sitemaps and Robots
+  ExpiresByType text/xml "access plus 1 day"
+  ExpiresByType application/xml "access plus 1 day"
+  ExpiresByType text/plain "access plus 1 day"
+
+  # Images and Icons
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType image/x-icon "access plus 1 year"
+</IfModule>
+
+# 7. Security and SEO Response Headers
+<IfModule mod_headers.c>
+  # Enforce HTTPS HSTS
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
+
+  # Prevent MIME type sniffing
+  Header set X-Content-Type-Options "nosniff"
+
+  # Prevent Clickjacking
+  Header set X-Frame-Options "SAMEORIGIN"
+
+  # Referrer Policy
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # Permissions Policy
+  Header set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+</IfModule>

@@ -1,0 +1,7 @@
+# Rapid Corp - robots.txt
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+# Sitemap
+Sitemap: https://rapidcorp.in/sitemap.xml
