@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #1146a8;
+  --primary-dark: #0c3a8c;
+  --primary-soft: #eaf2ff;
+  --accent: #0aa5a2;
+  --accent-soft: #e3f7f6;
+  --ink: #10233f;
+  --muted: #51627a;
+  --line: #dbe3f1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--ink);
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: #1146a8;
+  color: #ffffff;
+}

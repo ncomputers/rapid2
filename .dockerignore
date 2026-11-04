@@ -1,0 +1,11 @@
+.git
+.github
+node_modules
+.next
+.DS_Store
+*.log
+tests
+test-results
+playwright-report
+.playwright
+*.md
