@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Award, Users, CheckCircle, ShieldCheck, MapPin, ArrowRight } from 'lucide-react';
 import JsonLd from '@/components/seo/JsonLd';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'About Rapid Corp — Independent IT Partner in Udaipur, Rajasthan',
@@ -45,8 +46,10 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="py-16 sm:py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
+    <div className="bg-white">
+      <Breadcrumbs items={[{ label: 'About Us' }]} />
+      <div className="py-12 sm:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
         {/* Intro */}
         <div className="max-w-3xl space-y-6">
           <span className="px-3 py-1 rounded-full bg-primary-soft text-primary text-xs font-bold uppercase tracking-wider">
@@ -111,5 +114,6 @@ export default function AboutPage() {
         </div>
       </div>
     </div>
+  </div>
   );
 }

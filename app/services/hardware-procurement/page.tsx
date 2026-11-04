@@ -2,6 +2,8 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Laptop, Server, HardDrive, Cpu, ArrowRight, CheckCircle2 } from 'lucide-react';
+import Breadcrumbs from '@/components/Breadcrumbs';
+import RelatedServices from '@/components/RelatedServices';
 
 export const metadata: Metadata = {
   title: 'Enterprise Hardware Procurement & Supply in Udaipur | Rapid Corp',
@@ -40,6 +42,13 @@ export default function HardwareProcurementPage() {
 
   return (
     <>
+      <Breadcrumbs
+        items={[
+          { label: 'Services', href: '/services' },
+          { label: 'Hardware Procurement' },
+        ]}
+      />
+
       <section className="bg-gradient-to-b from-primary-soft/40 to-white py-16 sm:py-20 border-b border-surface-line">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl space-y-6">
@@ -55,7 +64,7 @@ export default function HardwareProcurementPage() {
             </p>
             <div className="pt-2 flex flex-wrap gap-4">
               <Link
-                href="/contact"
+                href="/contact?service=hardware-procurement"
                 className="px-6 py-3.5 rounded-lg bg-primary text-white font-semibold text-sm shadow-md hover:bg-primary-dark transition-colors inline-flex items-center gap-2"
               >
                 <span>Request Hardware Quote</span>
@@ -87,6 +96,26 @@ export default function HardwareProcurementPage() {
           </div>
         </div>
       </section>
+
+      <RelatedServices
+        currentId="hardware-procurement"
+        related={[
+          {
+            id: 'it-infrastructure',
+            title: 'IT Infrastructure & Structured Cabling',
+            slug: '/services/it-infrastructure',
+            desc: 'Turnkey cabling, Wi-Fi 6 APs, server racks, and optical fiber backbones.',
+            iconName: 'network',
+          },
+          {
+            id: 'managed-it-amc',
+            title: 'Managed IT & AMC Support Contracts',
+            slug: '/services/managed-it-amc',
+            desc: 'Annual maintenance contracts keeping all your workstations and servers running with zero downtime.',
+            iconName: 'wrench',
+          },
+        ]}
+      />
     </>
   );
 }

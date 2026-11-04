@@ -3,6 +3,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Shield, Eye, Lock, Video, CheckCircle2, ArrowRight } from 'lucide-react';
 import JsonLd from '@/components/seo/JsonLd';
+import Breadcrumbs from '@/components/Breadcrumbs';
+import RelatedServices from '@/components/RelatedServices';
 
 export const metadata: Metadata = {
   title: 'Commercial CCTV Installation & Security Solutions in Udaipur | Rapid Corp',
@@ -123,6 +125,12 @@ export default function CCTVSurveillancePage() {
   return (
     <>
       <JsonLd data={schemaData} />
+      <Breadcrumbs
+        items={[
+          { label: 'Services', href: '/services' },
+          { label: 'CCTV Surveillance & Biometrics' },
+        ]}
+      />
 
       <section className="bg-gradient-to-b from-primary-soft/40 to-white py-16 sm:py-20 border-b border-surface-line">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -139,7 +147,7 @@ export default function CCTVSurveillancePage() {
             </p>
             <div className="pt-2 flex flex-wrap gap-4">
               <Link
-                href="/contact"
+                href="/contact?service=cctv-surveillance"
                 className="px-6 py-3.5 rounded-lg bg-primary text-white font-semibold text-sm shadow-md hover:bg-primary-dark transition-colors inline-flex items-center gap-2"
               >
                 <span>Request Security Audit</span>
@@ -187,6 +195,26 @@ export default function CCTVSurveillancePage() {
           </div>
         </div>
       </section>
+
+      <RelatedServices
+        currentId="cctv-surveillance"
+        related={[
+          {
+            id: 'managed-it-amc',
+            title: 'Managed IT & CCTV AMC Contracts',
+            slug: '/services/managed-it-amc',
+            desc: 'Scheduled preventative maintenance, quarterly camera lens cleaning, and 2-hour on-site dispatch.',
+            iconName: 'wrench',
+          },
+          {
+            id: 'advanced-solutions',
+            title: 'AI Video Analytics & Automation',
+            slug: '/services/advanced-solutions',
+            desc: 'Computer-vision PPE helmet detection, retail heatmaps, and instant WhatsApp security event alerts.',
+            iconName: 'cpu',
+          },
+        ]}
+      />
     </>
   );
 }

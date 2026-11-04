@@ -3,6 +3,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Wrench, Clock, CheckCircle2, ShieldCheck, ArrowRight } from 'lucide-react';
 import JsonLd from '@/components/seo/JsonLd';
+import Breadcrumbs from '@/components/Breadcrumbs';
+import RelatedServices from '@/components/RelatedServices';
 
 export const metadata: Metadata = {
   title: 'Annual Maintenance Contracts (AMC) & Managed IT Services in Udaipur | Rapid Corp',
@@ -46,6 +48,13 @@ export default function ManagedITAMCPage() {
 
   return (
     <>
+      <Breadcrumbs
+        items={[
+          { label: 'Services', href: '/services' },
+          { label: 'Managed IT & AMC Support' },
+        ]}
+      />
+
       <section className="bg-gradient-to-b from-primary-soft/40 to-white py-16 sm:py-20 border-b border-surface-line">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl space-y-6">
@@ -61,7 +70,7 @@ export default function ManagedITAMCPage() {
             </p>
             <div className="pt-2 flex flex-wrap gap-4">
               <Link
-                href="/contact"
+                href="/contact?service=managed-it-amc"
                 className="px-6 py-3.5 rounded-lg bg-primary text-white font-semibold text-sm shadow-md hover:bg-primary-dark transition-colors inline-flex items-center gap-2"
               >
                 <span>Get Customized AMC Quote</span>
@@ -93,6 +102,26 @@ export default function ManagedITAMCPage() {
           </div>
         </div>
       </section>
+
+      <RelatedServices
+        currentId="managed-it-amc"
+        related={[
+          {
+            id: 'it-infrastructure',
+            title: 'Enterprise IT Infrastructure & Cabling',
+            slug: '/services/it-infrastructure',
+            desc: 'Structured Cat6A cabling, high-density Wi-Fi 6, server clusters, and optical fiber backbones.',
+            iconName: 'network',
+          },
+          {
+            id: 'cctv-surveillance',
+            title: 'Commercial CCTV & Access Control',
+            slug: '/services/cctv-surveillance',
+            desc: '4K IP cameras, centralized NVR storage, perimeter alarms, and biometric door systems.',
+            iconName: 'shield',
+          },
+        ]}
+      />
     </>
   );
 }
