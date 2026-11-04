@@ -4,6 +4,7 @@ import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import { SITE_URL } from '@/lib/site';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -12,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://rapidcorp.in'),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: 'Rapid Corp — IT Infrastructure & Security Solutions, Udaipur',
     template: '%s | Rapid Corp',
@@ -39,12 +40,12 @@ export const metadata: Metadata = {
     telephone: false,
   },
   alternates: {
-    canonical: 'https://rapidcorp.in',
+    canonical: SITE_URL,
   },
   openGraph: {
     type: 'website',
     locale: 'en_IN',
-    url: 'https://rapidcorp.in',
+    url: SITE_URL,
     siteName: 'Rapid Corp',
     title: 'Rapid Corp — IT Infrastructure & Security Solutions, Udaipur',
     description:

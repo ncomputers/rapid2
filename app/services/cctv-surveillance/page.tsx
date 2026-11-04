@@ -5,6 +5,7 @@ import { Shield, Eye, Lock, Video, CheckCircle2, ArrowRight } from 'lucide-react
 import JsonLd from '@/components/seo/JsonLd';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedServices from '@/components/RelatedServices';
+import { SITE_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'Commercial CCTV Installation & Security Solutions in Udaipur | Rapid Corp',
@@ -19,13 +20,13 @@ export const metadata: Metadata = {
     'perimeter security Udaipur',
   ],
   alternates: {
-    canonical: 'https://rapidcorp.in/services/cctv-surveillance',
+    canonical: `${SITE_URL}/services/cctv-surveillance`,
   },
   openGraph: {
     title: 'Commercial CCTV Installation & Security Solutions in Udaipur · Rapid Corp',
     description:
       'Professional enterprise CCTV camera installation, biometric attendance systems, and 24/7 video security monitoring in Udaipur.',
-    url: 'https://rapidcorp.in/services/cctv-surveillance',
+    url: `${SITE_URL}/services/cctv-surveillance`,
     images: ['/og-image.png'],
   },
 };
@@ -70,13 +71,13 @@ export default function CCTVSurveillancePage() {
     '@graph': [
       {
         '@type': 'Service',
-        '@id': 'https://rapidcorp.in/services/cctv-surveillance#service',
+        '@id': `${SITE_URL}/services/cctv-surveillance#service`,
         name: 'Commercial CCTV Installation & Electronic Security',
         provider: {
           '@type': 'LocalBusiness',
           name: 'Rapid Corp',
           telephone: '+91-9828519299',
-          url: 'https://rapidcorp.in',
+          url: SITE_URL,
         },
         areaServed: {
           '@type': 'City',
@@ -103,19 +104,19 @@ export default function CCTVSurveillancePage() {
             '@type': 'ListItem',
             position: 1,
             name: 'Home',
-            item: 'https://rapidcorp.in',
+            item: SITE_URL,
           },
           {
             '@type': 'ListItem',
             position: 2,
             name: 'Services',
-            item: 'https://rapidcorp.in/services',
+            item: `${SITE_URL}/services`,
           },
           {
             '@type': 'ListItem',
             position: 3,
             name: 'CCTV Surveillance',
-            item: 'https://rapidcorp.in/services/cctv-surveillance',
+            item: `${SITE_URL}/services/cctv-surveillance`,
           },
         ],
       },

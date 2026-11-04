@@ -15,6 +15,7 @@ import {
   Award,
 } from 'lucide-react';
 import JsonLd from '@/components/seo/JsonLd';
+import { SITE_URL } from '@/lib/site';
 
 export default function HomePage() {
   const services = [
@@ -76,11 +77,11 @@ export default function HomePage() {
     '@graph': [
       {
         '@type': ['LocalBusiness', 'ProfessionalService', 'ITService'],
-        '@id': 'https://rapidcorp.in/#organization',
+        '@id': `${SITE_URL}/#organization`,
         name: 'Rapid Corp',
-        url: 'https://rapidcorp.in',
-        logo: 'https://rapidcorp.in/og-image.png',
-        image: 'https://rapidcorp.in/og-image.png',
+        url: SITE_URL,
+        logo: `${SITE_URL}/og-image.png`,
+        image: `${SITE_URL}/og-image.png`,
         description:
           'Rapid Corp is an independent enterprise IT infrastructure and multi-brand security systems integrator providing networking, CCTV, firewalls, and AMC support in Udaipur, Rajasthan.',
         telephone: '+91-9828519299',
@@ -115,11 +116,11 @@ export default function HomePage() {
       },
       {
         '@type': 'WebSite',
-        '@id': 'https://rapidcorp.in/#website',
-        url: 'https://rapidcorp.in',
+        '@id': `${SITE_URL}/#website`,
+        url: SITE_URL,
         name: 'Rapid Corp',
         publisher: {
-          '@id': 'https://rapidcorp.in/#organization',
+          '@id': `${SITE_URL}/#organization`,
         },
         inLanguage: 'en-IN',
       },
