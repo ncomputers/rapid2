@@ -90,7 +90,15 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-gray-300">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                <span>100ft Road, Nokha, Udaipur, Rajasthan 313001, India</span>
+                <a
+                  href="https://maps.google.com/?q=Rapid+Corp+100ft+Road+Nokha+Udaipur+Rajasthan+313001"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white hover:underline transition-colors leading-relaxed"
+                  title="Open Rapid Corp Udaipur Headquarters on Google Maps"
+                >
+                  100ft Road, Nokha, Udaipur, Rajasthan 313001, India (View on Google Maps)
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-accent shrink-0" />

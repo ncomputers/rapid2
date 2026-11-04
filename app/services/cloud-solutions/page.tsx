@@ -2,6 +2,8 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Cloud, Database, HardDrive, ShieldCheck, ArrowRight, CheckCircle2 } from 'lucide-react';
+import Breadcrumbs from '@/components/Breadcrumbs';
+import RelatedServices from '@/components/RelatedServices';
 
 export const metadata: Metadata = {
   title: 'Cloud Migrations & Data Backup Solutions in Udaipur | Rapid Corp',
@@ -40,6 +42,13 @@ export default function CloudSolutionsPage() {
 
   return (
     <>
+      <Breadcrumbs
+        items={[
+          { label: 'Services', href: '/services' },
+          { label: 'Cloud & Data Backup' },
+        ]}
+      />
+
       <section className="bg-gradient-to-b from-primary-soft/40 to-white py-16 sm:py-20 border-b border-surface-line">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl space-y-6">
@@ -55,7 +64,7 @@ export default function CloudSolutionsPage() {
             </p>
             <div className="pt-2 flex flex-wrap gap-4">
               <Link
-                href="/contact"
+                href="/contact?service=cloud-solutions"
                 className="px-6 py-3.5 rounded-lg bg-primary text-white font-semibold text-sm shadow-md hover:bg-primary-dark transition-colors inline-flex items-center gap-2"
               >
                 <span>Request Cloud Consultation</span>
@@ -87,6 +96,26 @@ export default function CloudSolutionsPage() {
           </div>
         </div>
       </section>
+
+      <RelatedServices
+        currentId="cloud-solutions"
+        related={[
+          {
+            id: 'it-infrastructure',
+            title: 'Enterprise IT Infrastructure & Cabling',
+            slug: '/services/it-infrastructure',
+            desc: 'High-speed local networking, fiber backbones, and server rack installations.',
+            iconName: 'network',
+          },
+          {
+            id: 'hardware-procurement',
+            title: 'Hardware Procurement & Supply',
+            slug: '/services/hardware-procurement',
+            desc: 'Dell, HP, and Lenovo commercial laptops, desktops, and enterprise storage racks.',
+            iconName: 'laptop',
+          },
+        ]}
+      />
     </>
   );
 }

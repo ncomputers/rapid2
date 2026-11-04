@@ -2,6 +2,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Factory, Hotel, Hospital, GraduationCap, Building2, ArrowRight } from 'lucide-react';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Industry Solutions — IT & Security by Sector | Rapid Corp Udaipur',
@@ -42,8 +43,10 @@ export default function IndustriesPage() {
   ];
 
   return (
-    <div className="py-16 sm:py-24 bg-surface-tint">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+    <div className="bg-surface-tint">
+      <Breadcrumbs items={[{ label: 'Industries' }]} />
+      <div className="py-12 sm:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <span className="px-3 py-1 rounded-full bg-primary-soft text-primary text-xs font-bold uppercase tracking-wider">
             Sector Expertise
@@ -86,5 +89,6 @@ export default function IndustriesPage() {
         </div>
       </div>
     </div>
+  </div>
   );
 }

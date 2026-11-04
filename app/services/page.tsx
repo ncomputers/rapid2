@@ -12,6 +12,7 @@ import {
   CheckCircle,
 } from 'lucide-react';
 import JsonLd from '@/components/seo/JsonLd';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Enterprise IT Services & Security Solutions in Udaipur | Rapid Corp',
@@ -99,8 +100,10 @@ export default function ServicesPage() {
   ];
 
   return (
-    <div className="py-16 sm:py-24 bg-surface-tint">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="bg-surface-tint">
+      <Breadcrumbs items={[{ label: 'Services' }]} />
+      <div className="py-12 sm:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <span className="px-3 py-1 rounded-full bg-primary-soft text-primary text-xs font-bold uppercase tracking-wider">
             Capabilities Overview
@@ -159,5 +162,6 @@ export default function ServicesPage() {
         </div>
       </div>
     </div>
+  </div>
   );
 }

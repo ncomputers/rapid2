@@ -2,6 +2,8 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Cpu, Eye, Code2, Bot, ArrowRight, CheckCircle2 } from 'lucide-react';
+import Breadcrumbs from '@/components/Breadcrumbs';
+import RelatedServices from '@/components/RelatedServices';
 
 export const metadata: Metadata = {
   title: 'AI Video Analytics & Python Automation in Udaipur | Rapid Corp',
@@ -41,6 +43,13 @@ export default function AdvancedSolutionsPage() {
 
   return (
     <>
+      <Breadcrumbs
+        items={[
+          { label: 'Services', href: '/services' },
+          { label: 'Advanced AI & Automation' },
+        ]}
+      />
+
       <section className="bg-gradient-to-b from-primary-soft/40 to-white py-16 sm:py-20 border-b border-surface-line">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl space-y-6">
@@ -56,7 +65,7 @@ export default function AdvancedSolutionsPage() {
             </p>
             <div className="pt-2 flex flex-wrap gap-4">
               <Link
-                href="/contact"
+                href="/contact?service=advanced-solutions"
                 className="px-6 py-3.5 rounded-lg bg-primary text-white font-semibold text-sm shadow-md hover:bg-primary-dark transition-colors inline-flex items-center gap-2"
               >
                 <span>Discuss a Custom Project</span>
@@ -88,6 +97,26 @@ export default function AdvancedSolutionsPage() {
           </div>
         </div>
       </section>
+
+      <RelatedServices
+        currentId="advanced-solutions"
+        related={[
+          {
+            id: 'cctv-surveillance',
+            title: 'Commercial CCTV Surveillance Systems',
+            slug: '/services/cctv-surveillance',
+            desc: '4K IP cameras, centralized NVR storage, perimeter alarms, and biometric access control.',
+            iconName: 'shield',
+          },
+          {
+            id: 'it-infrastructure',
+            title: 'IT Infrastructure & Structured Cabling',
+            slug: '/services/it-infrastructure',
+            desc: 'Enterprise LAN, WAN, optical fiber backbones, and server rack installations.',
+            iconName: 'network',
+          },
+        ]}
+      />
     </>
   );
 }
