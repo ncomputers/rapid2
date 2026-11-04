@@ -58,8 +58,8 @@ export default function CCTVSurveillancePage() {
       a: 'Yes. We inspect, repair, and maintain third-party CCTV setups, replacing damaged baluns, testing power supplies, and adjusting angles.',
     },
     {
-      q: 'Which camera brands do you supply and install?',
-      a: 'We deploy Tier-1 enterprise brands including Hikvision, CP PLUS, Dahua, Matrix, and Honeywell, all backed by official manufacturer warranties.',
+      q: 'Which camera brands do you supply, install and service?',
+      a: 'We are an independent multi-brand security systems integrator. We source, install, and service genuine commercial surveillance hardware from Hikvision, CP PLUS, Dahua, Matrix Comsec, and Honeywell — backed by official manufacturer warranties and authorized national distribution.',
     },
   ];
 

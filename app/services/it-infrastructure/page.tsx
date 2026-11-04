@@ -58,8 +58,8 @@ export default function ITInfrastructurePage() {
       a: 'Yes. We specialize in scheduled after-hours rack re-dressing, wire tracing, and switch replacements during designated maintenance windows.',
     },
     {
-      q: 'What hardware brands do you configure?',
-      a: 'We work with industry leaders including Cisco, Aruba, Ubiquiti UniFi, TP-Link Omada, Dell PowerEdge, and HP ProLiant.',
+      q: 'What hardware brands do you configure and deploy?',
+      a: 'As an independent multi-brand systems integrator, we deploy, configure, and maintain hardware from industry leaders including Cisco, Ubiquiti UniFi, TP-Link Omada, Dell PowerEdge, and HP ProLiant — procuring genuine units through authorized national distribution channels with official manufacturer warranties.',
     },
   ];
 

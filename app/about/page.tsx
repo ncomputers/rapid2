@@ -5,9 +5,9 @@ import { Award, Users, CheckCircle, ShieldCheck, MapPin, ArrowRight } from 'luci
 import JsonLd from '@/components/seo/JsonLd';
 
 export const metadata: Metadata = {
-  title: 'About Rapid Corp — Enterprise IT Partner in Udaipur, Rajasthan',
+  title: 'About Rapid Corp — Independent IT Partner in Udaipur, Rajasthan',
   description:
-    'Founded in 2016 by Manish Patel, Rapid Corp is an engineering-first IT infrastructure and security provider with a 13-person team in Udaipur.',
+    'Founded in 2016 by Manish Patel, Rapid Corp is an independent multi-brand IT infrastructure and electronic security systems integrator with a 13-person team in Udaipur.',
   alternates: {
     canonical: 'https://rapidcorp.in/about',
   },
@@ -23,20 +23,24 @@ export default function AboutPage() {
 
   const pillars = [
     {
+      title: 'Independent Multi-Brand Integrator',
+      desc: 'We are an independent engineering firm not tied to single-brand sales targets. We objectively design and deploy the best combination of hardware (Cisco, Ubiquiti, Hikvision, Dell, HP) tailored to your operational requirements.',
+    },
+    {
+      title: '100% Genuine Equipment Sourcing',
+      desc: 'Every switch, cable roll, server, and camera is sourced directly through authorized national distribution channels (Ingram Micro, Redington, Savex) with official manufacturer warranties and GST compliance.',
+    },
+    {
       title: 'Direct Engineering Accountability',
-      desc: 'We never outsource cabling, camera mounting, or server setups to unvetted subcontractors. Our own 13-person team owns every cable run from start to finish.',
+      desc: 'We never outsource cabling, camera mounting, or server setups to unvetted subcontractors. Our own 13-person full-time team owns every cable run from audit to termination.',
     },
     {
-      title: 'Only Genuine Enterprise Hardware',
-      desc: 'Every switch, cable roll, server, and camera is sourced directly through authorized national distributors with official manufacturer warranties.',
+      title: 'Rapid On-Site Response (Under 2 Hours)',
+      desc: 'Based at 100ft Road Nokha in Udaipur, our field engineers arrive on-site with tools, diagnostic testers, and spare modules within 2 hours across industrial zones (Sukher, Madri, Nokha, Gudli).',
     },
     {
-      title: 'Speedy Local On-Site Response',
-      desc: 'Based at 100ft Road Nokha in Udaipur, our field engineers arrive on-site with tools, test equipment, and spare modules within 2 hours.',
-    },
-    {
-      title: 'Long-Term Partnership Mindset',
-      desc: 'Over 85% of our installation clients transition directly into ongoing Annual Maintenance Contracts (AMC), trusting us year after year.',
+      title: 'Multi-Vendor AMC Support',
+      desc: 'Over 85% of our installation clients transition directly into ongoing Annual Maintenance Contracts (AMC). We maintain your mixed-brand equipment without requiring you to replace functioning hardware.',
     },
   ];
 
