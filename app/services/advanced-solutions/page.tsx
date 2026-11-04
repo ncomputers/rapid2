@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Cpu, Eye, Code2, Bot, ArrowRight, CheckCircle2 } from 'lucide-react';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedServices from '@/components/RelatedServices';
+import { SITE_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'AI Video Analytics & Python Automation in Udaipur | Rapid Corp',
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
     'Python automation Udaipur',
   ],
   alternates: {
-    canonical: 'https://rapidcorp.in/services/advanced-solutions',
+    canonical: `${SITE_URL}/services/advanced-solutions`,
   },
 };
 

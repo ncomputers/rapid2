@@ -3,13 +3,14 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Factory, Hotel, Hospital, GraduationCap, Building2, ArrowRight } from 'lucide-react';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import { SITE_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'Industry Solutions — IT & Security by Sector | Rapid Corp Udaipur',
   description:
     'Tailored IT infrastructure, surveillance, and AMC support for Manufacturing plants, Hotels & Resorts, Hospitals, and Corporate Offices in Udaipur.',
   alternates: {
-    canonical: 'https://rapidcorp.in/industries',
+    canonical: `${SITE_URL}/industries`,
   },
 };
 
