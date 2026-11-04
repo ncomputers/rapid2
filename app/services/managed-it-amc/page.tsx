@@ -23,12 +23,16 @@ export const metadata: Metadata = {
 export default function ManagedITAMCPage() {
   const amcTiers = [
     {
-      title: 'Preventative Maintenance',
+      title: 'Multi-Vendor Hardware Support',
+      desc: 'We support mixed IT and CCTV ecosystems across all major equipment brands (Cisco, Hikvision, Dell, HP) without requiring you to replace functioning hardware.',
+    },
+    {
+      title: 'Preventative Scheduled Maintenance',
       desc: 'Regular scheduled monthly visits to inspect server health, clean computer dust filters, verify backup integrity, and update operating system patches.',
     },
     {
-      title: 'Guaranteed Emergency Response',
-      desc: 'Under 2-hour on-site dispatch across Udaipur for critical infrastructure outages, server crashes, or network switch failures.',
+      title: 'Guaranteed Emergency On-Site Response',
+      desc: 'Under 2-hour on-site dispatch across Udaipur industrial hubs (Sukher, Madri, Nokha, Gudli, Goverdhan Vilas) for critical outages, server crashes, or switch failures.',
     },
     {
       title: 'Remote Helpdesk & Ticket Tracking',

@@ -112,6 +112,12 @@ export default function ContactPage() {
                     <div className="text-muted">Monday – Saturday: 9:30 AM – 7:00 PM IST</div>
                   </div>
                 </li>
+                <li className="flex items-start gap-4 pt-2 border-t border-surface-line">
+                  <div className="text-xs text-muted">
+                    <span className="font-bold text-ink block mb-1">Priority On-Site Field Hubs (Under 2h):</span>
+                    Sukher Industrial Area · Madri Industrial Area · Nokha · Gudli · Goverdhan Vilas · Bhamashah Industrial Belt · Rajsamand
+                  </div>
+                </li>
               </ul>
             </div>
 

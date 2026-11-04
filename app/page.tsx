@@ -82,7 +82,7 @@ export default function HomePage() {
         logo: 'https://rapidcorp.in/og-image.png',
         image: 'https://rapidcorp.in/og-image.png',
         description:
-          'Rapid Corp provides enterprise IT infrastructure, CCTV security surveillance, firewall setup, server administration, and AMC support in Udaipur, Rajasthan.',
+          'Rapid Corp is an independent enterprise IT infrastructure and multi-brand security systems integrator providing networking, CCTV, firewalls, and AMC support in Udaipur, Rajasthan.',
         telephone: '+91-9828519299',
         email: 'admin@rapidcorp.in',
         priceRange: '₹₹',
@@ -138,13 +138,13 @@ export default function HomePage() {
             <div className="lg:col-span-7 space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-soft text-primary text-xs sm:text-sm font-bold border border-primary/20">
                 <span className="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
-                <span>Founded 2016 · Udaipur, Rajasthan</span>
+                <span>Independent Multi-Brand Integrator · Udaipur, Rajasthan</span>
               </div>
               <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-ink leading-tight">
                 Reliable <span className="text-primary">IT Infrastructure &amp; Security</span> for Modern Businesses.
               </h1>
               <p className="text-base sm:text-lg text-muted leading-relaxed max-w-2xl">
-                Rapid Corp is a Udaipur-based enterprise technology partner. We design, deploy, and maintain commercial networking, server clusters, CCTV surveillance, firewalls, and AI-enabled monitoring — backed by guaranteed AMC support.
+                Rapid Corp is a Udaipur-based independent IT infrastructure and electronic security systems integrator. We design, deploy, and maintain commercial networking, server clusters, CCTV surveillance, firewalls, and AI-enabled monitoring — backed by guaranteed AMC support.
               </p>
               <div className="flex flex-wrap items-center gap-4 pt-2">
                 <Link
@@ -172,11 +172,11 @@ export default function HomePage() {
                 </h3>
                 <ul className="space-y-4">
                   {[
-                    'Single-point IT partner with end-to-end equipment ownership',
-                    'Transparent BOQ with authentic enterprise hardware warranties',
-                    'Local field response across Udaipur and greater Rajasthan',
-                    'Strict SLA-backed Annual Maintenance Contracts (AMC)',
-                    'Certified network engineers & cybersecurity specialists',
+                    'Independent Multi-Brand Integrator — Objective recommendations, zero single-brand sales quotas',
+                    '100% Genuine Commercial Hardware — Sourced via authorized national distribution channels with official manufacturer warranty',
+                    'Prioritized Local Field Response — Under 2-hour dispatch across Udaipur industrial hubs (Sukher, Madri, Nokha, Gudli)',
+                    'Comprehensive Multi-Vendor AMC — Maintenance for your existing mixed equipment without forced replacements',
+                    'TIA/EIA & IP67 Standards — Fluke-tested structured cabling, labeled ports, and certified terminations',
                   ].map((point, idx) => (
                     <li key={idx} className="flex items-start gap-3 text-sm text-ink/90">
                       <CheckCircle2 className="w-5 h-5 text-accent shrink-0 mt-0.5" />
@@ -198,6 +198,44 @@ export default function HomePage() {
                   </a>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Brand & Hardware Ecosystem Showcase (Safe, Honest Multi-Brand Framing) */}
+      <section className="py-8 bg-surface-soft border-b border-surface-line">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
+            <div className="text-center lg:text-left shrink-0">
+              <div className="text-xs font-bold uppercase tracking-wider text-primary">
+                Multi-Brand Deployment Specialist
+              </div>
+              <div className="text-sm text-muted font-medium mt-0.5">
+                Hardware &amp; platforms we expertly configure, deploy &amp; maintain:
+              </div>
+            </div>
+            <div className="flex flex-wrap items-center justify-center lg:justify-end gap-3 sm:gap-4">
+              {[
+                { name: 'Cisco', cat: 'Networking' },
+                { name: 'Ubiquiti UniFi', cat: 'Wi-Fi & Routing' },
+                { name: 'Hikvision', cat: 'CCTV & Biometrics' },
+                { name: 'CP PLUS', cat: 'Surveillance' },
+                { name: 'Dell Technologies', cat: 'Servers & Desktops' },
+                { name: 'HP Enterprise', cat: 'Servers & Workstations' },
+                { name: 'Fortinet', cat: 'Firewall & Security' },
+                { name: 'Microsoft 365', cat: 'Cloud Suites' },
+                { name: 'Google Workspace', cat: 'Cloud Email' },
+                { name: 'Synology', cat: 'NAS Storage' },
+              ].map((brand, bIdx) => (
+                <div
+                  key={bIdx}
+                  className="px-3.5 py-1.5 rounded-lg bg-white border border-surface-line shadow-sm text-center"
+                >
+                  <div className="text-xs font-bold text-ink">{brand.name}</div>
+                  <div className="text-[10px] text-muted">{brand.cat}</div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
