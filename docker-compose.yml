@@ -1,20 +1,18 @@
-version: '3.8'
-
+# Note: This docker-compose.yml is for local testing and reference.
+# In production on Coolify, Coolify builds directly from the Dockerfile and Traefik handles routing.
 services:
   rapidcorp:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: rapidcorp_app
     restart: always
-    ports:
-      - "3000:3000"
     environment:
       - NODE_ENV=production
       - PORT=3000
+      - HOSTNAME=0.0.0.0
     healthcheck:
-      test: ["CMD", "wget", "-qO-", "http://localhost:3000/"]
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:3000/"]
       interval: 30s
       timeout: 5s
       retries: 3
-      start_period: 10s
+      start_period: 20s

@@ -5,6 +5,7 @@ import { Wrench, Clock, CheckCircle2, ShieldCheck, ArrowRight } from 'lucide-rea
 import JsonLd from '@/components/seo/JsonLd';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedServices from '@/components/RelatedServices';
+import { SITE_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'Annual Maintenance Contracts (AMC) & Managed IT Services in Udaipur | Rapid Corp',
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
     'server maintenance Udaipur',
   ],
   alternates: {
-    canonical: 'https://rapidcorp.in/services/managed-it-amc',
+    canonical: `${SITE_URL}/services/managed-it-amc`,
   },
 };
 

@@ -13,13 +13,14 @@ import {
 } from 'lucide-react';
 import JsonLd from '@/components/seo/JsonLd';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import { SITE_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'Enterprise IT Services & Security Solutions in Udaipur | Rapid Corp',
   description:
     'Comprehensive enterprise IT services in Udaipur: Structured Cabling, Server Deployment, Commercial CCTV, Firewall Security, Managed AMC, Cloud Migrations, and Hardware.',
   alternates: {
-    canonical: 'https://rapidcorp.in/services',
+    canonical: `${SITE_URL}/services`,
   },
 };
 

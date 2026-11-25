@@ -43,7 +43,7 @@ function ContactForm() {
     setStatus('loading');
 
     try {
-      const res = await fetch('https://formspree.io/f/xrbqrroa', {
+      const res = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -62,10 +62,41 @@ function ContactForm() {
           service: 'IT Infrastructure',
           message: '',
         });
+        return;
+      }
+
+      // If server route returned error, attempt direct fallback
+      const fallback = await fetch('https://formspree.io/f/xrbqrroa', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (fallback.ok) {
+        setStatus('success');
+        setFormData({
+          name: '',
+          company: '',
+          email: '',
+          phone: '',
+          service: 'IT Infrastructure',
+          message: '',
+        });
       } else {
         setStatus('error');
       }
     } catch (_) {
+      try {
+        const fallback = await fetch('https://formspree.io/f/xrbqrroa', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify(formData),
+        });
+        if (fallback.ok) {
+          setStatus('success');
+          return;
+        }
+      } catch (_) {}
       setStatus('error');
     }
   };
@@ -184,16 +215,15 @@ function ContactForm() {
 
         <div className="space-y-1">
           <label htmlFor="message" className="text-xs font-bold text-ink uppercase tracking-wider">
-            Project Details &amp; Requirements *
+            Project Details &amp; Requirements <span className="text-muted font-normal lowercase">(optional)</span>
           </label>
           <textarea
             id="message"
             name="message"
             rows={4}
-            required
             value={formData.message}
             onChange={handleChange}
-            placeholder="Describe your current setup, number of users/cameras, or what challenge you're looking to solve..."
+            placeholder="Describe your current setup, number of users/cameras, or what challenge you're looking to solve (optional)..."
             className="w-full px-4 py-3 rounded-lg border border-surface-line bg-surface-soft focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-sm"
           />
         </div>

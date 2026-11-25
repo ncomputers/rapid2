@@ -4,13 +4,14 @@ import Link from 'next/link';
 import { Award, Users, CheckCircle, ShieldCheck, MapPin, ArrowRight } from 'lucide-react';
 import JsonLd from '@/components/seo/JsonLd';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import { SITE_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'About Rapid Corp — Independent IT Partner in Udaipur, Rajasthan',
   description:
     'Founded in 2016 by Manish Patel, Rapid Corp is an independent multi-brand IT infrastructure and electronic security systems integrator with a 13-person team in Udaipur.',
   alternates: {
-    canonical: 'https://rapidcorp.in/about',
+    canonical: `${SITE_URL}/about`,
   },
 };
 

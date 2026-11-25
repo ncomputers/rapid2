@@ -16,11 +16,11 @@ test.describe('Contact Form & Lead Capture Tests', () => {
     await expect(messageInput).toBeVisible();
     await expect(submitBtn).toBeVisible();
 
-    // Verify required attribute
+    // Verify required attributes (name, email, phone required; message optional for low-friction lead capture)
     await expect(nameInput).toHaveAttribute('required', '');
     await expect(emailInput).toHaveAttribute('required', '');
     await expect(phoneInput).toHaveAttribute('required', '');
-    await expect(messageInput).toHaveAttribute('required', '');
+    await expect(messageInput).not.toHaveAttribute('required', '');
 
     // Test filling in values
     await nameInput.fill('Playwright Test User');

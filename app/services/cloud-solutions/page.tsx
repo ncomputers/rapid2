@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Cloud, Database, HardDrive, ShieldCheck, ArrowRight, CheckCircle2 } from 'lucide-react';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedServices from '@/components/RelatedServices';
+import { SITE_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'Cloud Migrations & Data Backup Solutions in Udaipur | Rapid Corp',
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
     'cloud disaster recovery',
   ],
   alternates: {
-    canonical: 'https://rapidcorp.in/services/cloud-solutions',
+    canonical: `${SITE_URL}/services/cloud-solutions`,
   },
 };
 

@@ -5,6 +5,7 @@ import { Network, CheckCircle2, Server, Wifi, Cpu, ArrowRight } from 'lucide-rea
 import JsonLd from '@/components/seo/JsonLd';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedServices from '@/components/RelatedServices';
+import { SITE_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'Enterprise IT Infrastructure & Structured Cabling in Udaipur | Rapid Corp',
@@ -19,13 +20,13 @@ export const metadata: Metadata = {
     'LAN WAN deployment',
   ],
   alternates: {
-    canonical: 'https://rapidcorp.in/services/it-infrastructure',
+    canonical: `${SITE_URL}/services/it-infrastructure`,
   },
   openGraph: {
     title: 'Enterprise IT Infrastructure & Structured Cabling in Udaipur · Rapid Corp',
     description:
       'Turnkey enterprise networking, server installation, and structured cabling for corporate offices, hotels, and manufacturing plants in Rajasthan.',
-    url: 'https://rapidcorp.in/services/it-infrastructure',
+    url: `${SITE_URL}/services/it-infrastructure`,
     images: ['/og-image.png'],
   },
 };
@@ -70,13 +71,13 @@ export default function ITInfrastructurePage() {
     '@graph': [
       {
         '@type': 'Service',
-        '@id': 'https://rapidcorp.in/services/it-infrastructure#service',
+        '@id': `${SITE_URL}/services/it-infrastructure#service`,
         name: 'Enterprise IT Infrastructure & Structured Cabling',
         provider: {
           '@type': 'LocalBusiness',
           name: 'Rapid Corp',
           telephone: '+91-9828519299',
-          url: 'https://rapidcorp.in',
+          url: SITE_URL,
         },
         areaServed: {
           '@type': 'City',
@@ -103,19 +104,19 @@ export default function ITInfrastructurePage() {
             '@type': 'ListItem',
             position: 1,
             name: 'Home',
-            item: 'https://rapidcorp.in',
+            item: SITE_URL,
           },
           {
             '@type': 'ListItem',
             position: 2,
             name: 'Services',
-            item: 'https://rapidcorp.in/services',
+            item: `${SITE_URL}/services`,
           },
           {
             '@type': 'ListItem',
             position: 3,
             name: 'IT Infrastructure',
-            item: 'https://rapidcorp.in/services/it-infrastructure',
+            item: `${SITE_URL}/services/it-infrastructure`,
           },
         ],
       },

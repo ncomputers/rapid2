@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Laptop, Server, HardDrive, Cpu, ArrowRight, CheckCircle2 } from 'lucide-react';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import RelatedServices from '@/components/RelatedServices';
+import { SITE_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'Enterprise Hardware Procurement & Supply in Udaipur | Rapid Corp',
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
     'enterprise IT hardware supply',
   ],
   alternates: {
-    canonical: 'https://rapidcorp.in/services/hardware-procurement',
+    canonical: `${SITE_URL}/services/hardware-procurement`,
   },
 };
 
