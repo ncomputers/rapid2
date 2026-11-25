@@ -8,6 +8,9 @@ export default function Footer() {
   const services = [
     { label: 'IT Infrastructure & Networking', href: '/services/it-infrastructure' },
     { label: 'CCTV Surveillance & Security', href: '/services/cctv-surveillance' },
+    { label: 'Firewall & Network Security', href: '/services/firewall-security' },
+    { label: 'WiFi for Offices & Hotels', href: '/services/wifi-solutions' },
+    { label: 'Biometric Attendance & Access Control', href: '/services/biometric-attendance' },
     { label: 'Managed IT & AMC Support', href: '/services/managed-it-amc' },
     { label: 'Cloud & Data Backup', href: '/services/cloud-solutions' },
     { label: 'Hardware & Procurement', href: '/services/hardware-procurement' },
@@ -18,6 +21,7 @@ export default function Footer() {
     { label: 'Home', href: '/' },
     { label: 'About Us', href: '/about' },
     { label: 'All Services', href: '/services' },
+    { label: 'Products & Prices', href: '/products' },
     { label: 'Industries Served', href: '/industries' },
     { label: 'Contact Us', href: '/contact' },
   ];

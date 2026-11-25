@@ -7,7 +7,7 @@ import RelatedServices from '@/components/RelatedServices';
 import { SITE_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Enterprise Hardware Procurement & Supply in Udaipur | Rapid Corp',
+  title: 'Laptop, Server & IT Hardware Supplier in Udaipur',
   description:
     'Sourcing and deployment of commercial laptops, desktops, 1U/2U rack servers, switches, and UPS systems from Dell, HP, Lenovo, and Cisco in Udaipur.',
   keywords: [
@@ -58,7 +58,7 @@ export default function HardwareProcurementPage() {
               <span>Direct Sourcing &amp; Deployment</span>
             </div>
             <h1 className="text-3xl sm:text-5xl font-extrabold text-ink tracking-tight">
-              Enterprise IT Hardware Procurement in Udaipur
+              Laptop, Server &amp; IT Hardware Supplier in Udaipur
             </h1>
             <p className="text-base sm:text-lg text-muted leading-relaxed">
               We source, test, configure, and install genuine commercial-grade IT equipment with full manufacturer warranties and local on-site replacement support.

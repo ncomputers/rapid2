@@ -7,7 +7,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import { SITE_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'About Rapid Corp — Independent IT Partner in Udaipur, Rajasthan',
+  title: 'About Us: Independent IT Company in Udaipur, Rajasthan',
   description:
     'Founded in 2016 by Manish Patel, Rapid Corp is an independent multi-brand IT infrastructure and electronic security systems integrator with a 13-person team in Udaipur.',
   alternates: {
@@ -25,12 +25,12 @@ export default function AboutPage() {
 
   const pillars = [
     {
-      title: 'Independent Multi-Brand Integrator',
-      desc: 'We are an independent engineering firm not tied to single-brand sales targets. We objectively design and deploy the best combination of hardware (Cisco, Ubiquiti, Hikvision, Dell, HP) tailored to your operational requirements.',
+      title: 'Multi-Brand Sales & Service',
+      desc: 'We are an independent engineering firm not tied to single-brand sales targets. We objectively design and deploy the best combination of hardware (Cisco, Ubiquiti, CP PLUS, Dell, HP, Lenovo) tailored to your operational requirements.',
     },
     {
       title: '100% Genuine Equipment Sourcing',
-      desc: 'Every switch, cable roll, server, and camera is sourced directly through authorized national distribution channels (Ingram Micro, Redington, Savex) with official manufacturer warranties and GST compliance.',
+      desc: 'Every switch, cable roll, server, and camera we supply is genuine, with a GST invoice and manufacturer warranty as applicable.',
     },
     {
       title: 'Direct Engineering Accountability',

@@ -8,6 +8,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 function ContactForm() {
   const searchParams = useSearchParams();
   const serviceParam = searchParams.get('service') || '';
+  const productParam = (searchParams.get('product') || '').slice(0, 100);
 
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [formData, setFormData] = useState({
@@ -24,6 +25,9 @@ function ContactForm() {
       const matchMap: Record<string, string> = {
         'it-infrastructure': 'IT Infrastructure',
         'cctv-surveillance': 'CCTV Surveillance',
+        'firewall-security': 'Firewall & Network Security',
+        'wifi-solutions': 'WiFi for Offices & Hotels',
+        'biometric-attendance': 'Biometric Attendance & Access Control',
         'managed-it-amc': 'Managed IT & AMC',
         'cloud-solutions': 'Cloud Solutions',
         'hardware-procurement': 'Hardware Procurement',
@@ -32,7 +36,10 @@ function ContactForm() {
       const normalized = matchMap[serviceParam.toLowerCase()] || serviceParam;
       setFormData((prev) => ({ ...prev, service: normalized }));
     }
-  }, [serviceParam]);
+    if (productParam) {
+      setFormData((prev) => ({ ...prev, message: `Please share the price of: ${productParam}\nQuantity: ` }));
+    }
+  }, [serviceParam, productParam]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -206,6 +213,9 @@ function ContactForm() {
           >
             <option value="IT Infrastructure">IT Infrastructure &amp; Networking</option>
             <option value="CCTV Surveillance">CCTV Surveillance &amp; Biometrics</option>
+            <option value="Firewall & Network Security">Firewall &amp; Network Security</option>
+            <option value="WiFi for Offices & Hotels">WiFi for Offices &amp; Hotels</option>
+            <option value="Biometric Attendance & Access Control">Biometric Attendance &amp; Access Control</option>
             <option value="Managed IT & AMC">Managed IT &amp; AMC Contract</option>
             <option value="Cloud Solutions">Cloud &amp; Storage Backup</option>
             <option value="Hardware Procurement">Hardware Procurement</option>

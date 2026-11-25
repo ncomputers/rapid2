@@ -6,7 +6,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import { SITE_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Industry Solutions — IT & Security by Sector | Rapid Corp Udaipur',
+  title: 'Industry Solutions — IT & Security by Sector in Udaipur',
   description:
     'Tailored IT infrastructure, surveillance, and AMC support for Manufacturing plants, Hotels & Resorts, Hospitals, and Corporate Offices in Udaipur.',
   alternates: {

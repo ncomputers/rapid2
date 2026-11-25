@@ -8,7 +8,7 @@ import RelatedServices from '@/components/RelatedServices';
 import { SITE_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Commercial CCTV Installation & Security Solutions in Udaipur | Rapid Corp',
+  title: 'CCTV Camera Installation & Dealer in Udaipur',
   description:
     'High-definition IP CCTV camera installation, AI motion analytics, perimeter surveillance, and biometric access control systems for enterprises and hotels in Udaipur.',
   keywords: [
@@ -62,7 +62,7 @@ export default function CCTVSurveillancePage() {
     },
     {
       q: 'Which camera brands do you supply, install and service?',
-      a: 'We are an independent multi-brand security systems integrator. We source, install, and service genuine commercial surveillance hardware from Hikvision, CP PLUS, Dahua, Matrix Comsec, and Honeywell — backed by official manufacturer warranties and authorized national distribution.',
+      a: 'We sell, install and service commercial surveillance equipment from CP PLUS, Matrix and Honeywell, with manufacturer warranty as applicable. We also maintain existing cameras of other brands.',
     },
   ];
 
@@ -141,7 +141,7 @@ export default function CCTVSurveillancePage() {
               <span>Security Engineering</span>
             </div>
             <h1 className="text-3xl sm:text-5xl font-extrabold text-ink tracking-tight">
-              Commercial CCTV Installation &amp; Access Control in Udaipur
+              CCTV Camera Installation in Udaipur
             </h1>
             <p className="text-base sm:text-lg text-muted leading-relaxed">
               Protect your business premises, inventory, and staff with high-definition IP camera networks, AI perimeter detection, and smart biometric access.
@@ -200,6 +200,20 @@ export default function CCTVSurveillancePage() {
       <RelatedServices
         currentId="cctv-surveillance"
         related={[
+          {
+            id: 'biometric-attendance',
+            title: 'Biometric Attendance & Access Control',
+            slug: '/services/biometric-attendance',
+            desc: 'Face, fingerprint and card systems for attendance and doors.',
+            iconName: 'shield',
+          },
+          {
+            id: 'firewall-security',
+            title: 'Firewall & Network Security',
+            slug: '/services/firewall-security',
+            desc: 'Firewall supply, setup, VPN and licence renewal.',
+            iconName: 'shield',
+          },
           {
             id: 'managed-it-amc',
             title: 'Managed IT & CCTV AMC Contracts',

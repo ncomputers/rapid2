@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X, ArrowRight, ChevronDown, Network, Shield, Wrench, Cloud, Laptop, Cpu } from 'lucide-react';
+import { Menu, X, ArrowRight, ChevronDown, Network, Shield, Wrench, Cloud, Laptop, Cpu, ShieldCheck, Wifi, Fingerprint } from 'lucide-react';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,6 +45,24 @@ export default function Navbar() {
       icon: Shield,
     },
     {
+      label: 'Firewall & Network Security',
+      href: '/services/firewall-security',
+      desc: 'Sophos, Fortinet, SonicWall and WatchGuard supply, setup, VPN and renewals',
+      icon: ShieldCheck,
+    },
+    {
+      label: 'WiFi for Offices & Hotels',
+      href: '/services/wifi-solutions',
+      desc: 'Site survey, managed access points and guest WiFi',
+      icon: Wifi,
+    },
+    {
+      label: 'Biometric Attendance & Access Control',
+      href: '/services/biometric-attendance',
+      desc: 'Face, fingerprint and card systems for staff and doors',
+      icon: Fingerprint,
+    },
+    {
       label: 'Managed IT & AMC Support',
       href: '/services/managed-it-amc',
       desc: '2-hour response, preventive visits, helpdesk',
@@ -81,14 +99,14 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Brand Logo */}
         <Link href="/" className="flex items-center gap-2.5 group">
-          <span className="w-9 h-9 rounded-lg bg-primary text-white font-extrabold text-lg flex items-center justify-center shadow-md shadow-primary/20 transition-transform group-hover:scale-105">
+          <span className="w-9 h-9 shrink-0 rounded-lg bg-primary text-white font-extrabold text-lg flex items-center justify-center shadow-md shadow-primary/20 transition-transform group-hover:scale-105">
             R
           </span>
           <div className="flex flex-col">
-            <span className="font-extrabold tracking-tight text-ink text-base sm:text-lg leading-tight">
+            <span className="font-extrabold tracking-tight text-ink text-base lg:text-lg leading-tight whitespace-nowrap">
               RAPID CORP
             </span>
-            <span className="text-[10px] tracking-wider font-semibold text-muted uppercase">
+            <span className="text-[10px] tracking-wider font-semibold text-muted uppercase whitespace-nowrap md:hidden lg:inline">
               IT &amp; Security Solutions
             </span>
           </div>
@@ -98,7 +116,7 @@ export default function Navbar() {
         <nav className="hidden md:flex items-center gap-1 lg:gap-2">
           <Link
             href="/"
-            className={`px-3.5 py-2 rounded-md text-sm font-semibold transition-colors ${
+            className={`px-1.5 lg:px-3.5 py-2 rounded-md text-xs lg:text-sm font-semibold transition-colors ${
               pathname === '/'
                 ? 'text-primary bg-primary-soft'
                 : 'text-ink/80 hover:text-primary hover:bg-surface-soft'
@@ -117,7 +135,7 @@ export default function Navbar() {
             <div className="flex items-center">
               <Link
                 href="/services"
-                className={`px-3.5 py-2 rounded-l-md text-sm font-semibold transition-colors ${
+                className={`px-1.5 lg:px-3.5 py-2 rounded-l-md text-xs lg:text-sm font-semibold transition-colors ${
                   pathname.startsWith('/services')
                     ? 'text-primary bg-primary-soft'
                     : 'text-ink/80 hover:text-primary hover:bg-surface-soft'
@@ -130,7 +148,7 @@ export default function Navbar() {
                 onClick={() => setServicesDropdown(!servicesDropdown)}
                 aria-expanded={servicesDropdown}
                 aria-label="Toggle services menu"
-                className={`p-2 rounded-r-md transition-colors ${
+                className={`p-1 lg:p-2 rounded-r-md transition-colors ${
                   pathname.startsWith('/services')
                     ? 'text-primary bg-primary-soft'
                     : 'text-ink/60 hover:text-primary hover:bg-surface-soft'
@@ -142,10 +160,10 @@ export default function Navbar() {
 
             {/* Dropdown Menu */}
             {servicesDropdown && (
-              <div className="absolute top-full left-0 w-80 bg-white rounded-xl shadow-2xl border border-surface-line p-2 mt-1 animate-in fade-in slide-in-from-top-2 duration-150">
+              <div className="absolute top-full left-0 w-80 bg-white rounded-xl shadow-2xl border border-surface-line p-2 mt-1 max-h-[80vh] overflow-y-auto animate-in fade-in slide-in-from-top-2 duration-150">
                 <div className="p-2 border-b border-surface-line mb-1 flex items-center justify-between">
                   <span className="text-[11px] font-bold text-muted uppercase tracking-wider">
-                    Our 6 Core Capabilities
+                    Our Services
                   </span>
                   <Link
                     href="/services"
@@ -183,8 +201,19 @@ export default function Navbar() {
           </div>
 
           <Link
+            href="/products"
+            className={`px-1.5 lg:px-3.5 py-2 rounded-md text-xs lg:text-sm font-semibold transition-colors ${
+              pathname === '/products'
+                ? 'text-primary bg-primary-soft'
+                : 'text-ink/80 hover:text-primary hover:bg-surface-soft'
+            }`}
+          >
+            Products
+          </Link>
+
+          <Link
             href="/about"
-            className={`px-3.5 py-2 rounded-md text-sm font-semibold transition-colors ${
+            className={`px-1.5 lg:px-3.5 py-2 rounded-md text-xs lg:text-sm font-semibold transition-colors ${
               pathname === '/about'
                 ? 'text-primary bg-primary-soft'
                 : 'text-ink/80 hover:text-primary hover:bg-surface-soft'
@@ -195,7 +224,7 @@ export default function Navbar() {
 
           <Link
             href="/industries"
-            className={`px-3.5 py-2 rounded-md text-sm font-semibold transition-colors ${
+            className={`px-1.5 lg:px-3.5 py-2 rounded-md text-xs lg:text-sm font-semibold transition-colors ${
               pathname === '/industries'
                 ? 'text-primary bg-primary-soft'
                 : 'text-ink/80 hover:text-primary hover:bg-surface-soft'
@@ -206,7 +235,7 @@ export default function Navbar() {
 
           <Link
             href="/contact"
-            className={`px-3.5 py-2 rounded-md text-sm font-semibold transition-colors ${
+            className={`px-1.5 lg:px-3.5 py-2 rounded-md text-xs lg:text-sm font-semibold transition-colors ${
               pathname === '/contact'
                 ? 'text-primary bg-primary-soft'
                 : 'text-ink/80 hover:text-primary hover:bg-surface-soft'
@@ -220,10 +249,10 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-3">
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-primary text-white text-sm font-semibold shadow-md shadow-primary/20 hover:bg-primary-dark transition-all hover:gap-2.5"
+            className="inline-flex items-center gap-2 px-3 lg:px-4 py-2.5 rounded-lg bg-primary text-white text-xs lg:text-sm whitespace-nowrap font-semibold shadow-md shadow-primary/20 hover:bg-primary-dark transition-all hover:gap-2.5"
           >
             <span>Get Consultation</span>
-            <ArrowRight className="w-4 h-4" />
+            <ArrowRight className="w-4 h-4 hidden lg:block" />
           </Link>
         </div>
 
@@ -276,6 +305,16 @@ export default function Navbar() {
               ))}
             </div>
           </div>
+
+          <Link
+            href="/products"
+            onClick={() => setIsOpen(false)}
+            className={`block px-3.5 py-2.5 rounded-md text-base font-semibold ${
+              pathname === '/products' ? 'text-primary bg-primary-soft' : 'text-ink hover:bg-surface-soft'
+            }`}
+          >
+            Products
+          </Link>
 
           <Link
             href="/about"
