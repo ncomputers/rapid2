@@ -7,7 +7,7 @@ import RelatedServices from '@/components/RelatedServices';
 import { SITE_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'AI Video Analytics & Python Automation in Udaipur | Rapid Corp',
+  title: 'AI Video Analytics & Python Automation in Udaipur',
   description:
     'Custom AI computer vision CCTV analytics, PPE helmet detection, retail footfall counting, and tailored Python automation scripts in Udaipur, Rajasthan.',
   keywords: [

@@ -10,13 +10,16 @@ import {
   Cpu,
   ArrowRight,
   CheckCircle,
+  ShieldCheck,
+  Wifi,
+  Fingerprint,
 } from 'lucide-react';
 import JsonLd from '@/components/seo/JsonLd';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { SITE_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Enterprise IT Services & Security Solutions in Udaipur | Rapid Corp',
+  title: 'IT Services & Security Solutions in Udaipur',
   description:
     'Comprehensive enterprise IT services in Udaipur: Structured Cabling, Server Deployment, Commercial CCTV, Firewall Security, Managed AMC, Cloud Migrations, and Hardware.',
   alternates: {
@@ -49,6 +52,27 @@ export default function ServicesPage() {
         'Biometric fingerprint and facial-recognition door locks',
         'Centralized control room video wall setups',
       ],
+    },
+    {
+      id: 'firewall-security',
+      title: 'Firewall & Network Security',
+      icon: ShieldCheck,
+      desc: 'Sophos, Fortinet, SonicWall and WatchGuard supply, setup, VPN and renewals.',
+      deliverables: ["Model sizing and supply", "Internet failover and security policies", "Site-to-site and remote-access VPN", "Licence renewal and support"],
+    },
+    {
+      id: 'wifi-solutions',
+      title: 'WiFi for Offices & Hotels',
+      icon: Wifi,
+      desc: 'Site survey, managed access points and guest WiFi.',
+      deliverables: ["On-site WiFi survey", "Managed access points", "Guest login and VLAN separation", "PoE switching and cabling"],
+    },
+    {
+      id: 'biometric-attendance',
+      title: 'Biometric Attendance & Access Control',
+      icon: Fingerprint,
+      desc: 'Face, fingerprint and card systems for staff and doors.',
+      deliverables: ["Face and fingerprint attendance", "Door locks and access control", "Software setup and reports", "Multi-location reporting"],
     },
     {
       id: 'managed-it-amc',
@@ -113,7 +137,7 @@ export default function ServicesPage() {
             Enterprise IT &amp; Security Services
           </h1>
           <p className="text-base sm:text-lg text-muted">
-            Explore our six engineering pillars designed to eliminate IT friction, secure your facility, and maintain business continuity.
+            Explore our services designed to eliminate IT friction, secure your facility, and maintain business continuity.
           </p>
         </div>
 

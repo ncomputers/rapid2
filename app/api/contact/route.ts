@@ -24,6 +24,7 @@ export async function POST(request: Request) {
     });
 
     // Forward to Formspree server-side
+    let delivered = false;
     try {
       const formspreeRes = await fetch('https://formspree.io/f/xrbqrroa', {
         method: 'POST',
@@ -34,18 +35,24 @@ export async function POST(request: Request) {
         body: JSON.stringify({
           name,
           company: company || '',
-          email: email || '',
+          ...(email ? { email } : {}), // Formspree may reject an empty email
           phone: phone || '',
           service: service || '',
           message: message || '',
         }),
+        signal: AbortSignal.timeout(10000),
       });
 
-      if (!formspreeRes.ok) {
+      delivered = formspreeRes.ok;
+      if (!delivered) {
         console.warn('[LEAD] Formspree responded with non-200 status:', formspreeRes.status);
       }
     } catch (fsErr) {
       console.error('[LEAD] Error forwarding to Formspree:', fsErr);
+    }
+
+    if (!delivered) {
+      return NextResponse.json({ error: 'Could not deliver the inquiry' }, { status: 502 });
     }
 
     return NextResponse.json({ ok: true, message: 'Inquiry received successfully' });

@@ -7,7 +7,7 @@ import RelatedServices from '@/components/RelatedServices';
 import { SITE_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Cloud Migrations & Data Backup Solutions in Udaipur | Rapid Corp',
+  title: 'Cloud, Email & Data Backup Services in Udaipur',
   description:
     'Seamless corporate email migrations to Google Workspace & Microsoft 365, on-premise NAS storage setup, and automated offsite disaster recovery in Udaipur.',
   keywords: [

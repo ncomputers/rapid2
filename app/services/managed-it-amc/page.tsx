@@ -8,7 +8,7 @@ import RelatedServices from '@/components/RelatedServices';
 import { SITE_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Annual Maintenance Contracts (AMC) & Managed IT Services in Udaipur | Rapid Corp',
+  title: 'Computer AMC & IT Support in Udaipur',
   description:
     'SLA-backed IT AMC contracts in Udaipur: 24/7 network monitoring, preventative hardware maintenance, guaranteed on-site engineer dispatches, and emergency troubleshooting.',
   keywords: [
@@ -27,7 +27,7 @@ export default function ManagedITAMCPage() {
   const amcTiers = [
     {
       title: 'Multi-Vendor Hardware Support',
-      desc: 'We support mixed IT and CCTV ecosystems across all major equipment brands (Cisco, Hikvision, Dell, HP) without requiring you to replace functioning hardware.',
+      desc: 'We support mixed IT and CCTV ecosystems across all major equipment brands (Cisco, CP PLUS, Dell, HP) without requiring you to replace functioning hardware.',
     },
     {
       title: 'Preventative Scheduled Maintenance',
@@ -64,7 +64,7 @@ export default function ManagedITAMCPage() {
               <span>Dedicated Support Contracts</span>
             </div>
             <h1 className="text-3xl sm:text-5xl font-extrabold text-ink tracking-tight">
-              Annual Maintenance Contracts (AMC) &amp; Managed IT in Udaipur
+              Computer AMC &amp; IT Support in Udaipur
             </h1>
             <p className="text-base sm:text-lg text-muted leading-relaxed">
               Eliminate unexpected downtime with our proactive maintenance plans, guaranteed engineer SLAs, and dedicated helpdesk support.

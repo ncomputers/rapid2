@@ -8,7 +8,7 @@ import RelatedServices from '@/components/RelatedServices';
 import { SITE_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Enterprise IT Infrastructure & Structured Cabling in Udaipur | Rapid Corp',
+  title: 'IT Infrastructure & Networking Company in Udaipur',
   description:
     'Professional IT infrastructure design in Udaipur: Cat6 structured cabling, enterprise Wi-Fi 6, Windows/Linux server setups, optical fiber backbones, and network rack dressing.',
   keywords: [
@@ -62,7 +62,7 @@ export default function ITInfrastructurePage() {
     },
     {
       q: 'What hardware brands do you configure and deploy?',
-      a: 'As an independent multi-brand systems integrator, we deploy, configure, and maintain hardware from industry leaders including Cisco, Ubiquiti UniFi, TP-Link Omada, Dell PowerEdge, and HP ProLiant — procuring genuine units through authorized national distribution channels with official manufacturer warranties.',
+      a: 'We sell, configure and maintain hardware from brands including Cisco, Ubiquiti UniFi, TP-Link Omada, Dell PowerEdge, and HP ProLiant — with manufacturer warranty as applicable.',
     },
   ];
 
@@ -142,7 +142,7 @@ export default function ITInfrastructurePage() {
               <span>Core Enterprise Service</span>
             </div>
             <h1 className="text-3xl sm:text-5xl font-extrabold text-ink tracking-tight">
-              Enterprise IT Infrastructure &amp; Structured Cabling in Udaipur
+              IT Infrastructure &amp; Networking Experts in Udaipur
             </h1>
             <p className="text-base sm:text-lg text-muted leading-relaxed">
               We engineer dependable network backbones, organize server racks, and deploy high-speed Wi-Fi so your organization operates with zero connectivity bottlenecks.
@@ -210,6 +210,20 @@ export default function ITInfrastructurePage() {
       <RelatedServices
         currentId="it-infrastructure"
         related={[
+          {
+            id: 'wifi-solutions',
+            title: 'WiFi for Offices & Hotels',
+            slug: '/services/wifi-solutions',
+            desc: 'Site survey, managed access points and guest WiFi.',
+            iconName: 'network',
+          },
+          {
+            id: 'firewall-security',
+            title: 'Firewall & Network Security',
+            slug: '/services/firewall-security',
+            desc: 'Firewall supply, setup, VPN and licence renewal.',
+            iconName: 'shield',
+          },
           {
             id: 'hardware-procurement',
             title: 'Enterprise Hardware Procurement',

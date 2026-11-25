@@ -13,6 +13,9 @@ import {
   Clock,
   Users,
   Award,
+  ShieldCheck,
+  Wifi,
+  Fingerprint,
 } from 'lucide-react';
 import JsonLd from '@/components/seo/JsonLd';
 import { SITE_URL } from '@/lib/site';
@@ -30,6 +33,24 @@ export default function HomePage() {
       title: 'CCTV Surveillance & Security',
       slug: '/services/cctv-surveillance',
       desc: 'Commercial IP cameras, AI motion detection, perimeter security, and biometric access control systems.',
+    },
+    {
+      icon: ShieldCheck,
+      title: 'Firewall & Network Security',
+      slug: '/services/firewall-security',
+      desc: 'Sophos, Fortinet, SonicWall and WatchGuard supply, setup, VPN and renewals.',
+    },
+    {
+      icon: Wifi,
+      title: 'WiFi for Offices & Hotels',
+      slug: '/services/wifi-solutions',
+      desc: 'Site survey, managed access points and guest WiFi.',
+    },
+    {
+      icon: Fingerprint,
+      title: 'Biometric Attendance & Access Control',
+      slug: '/services/biometric-attendance',
+      desc: 'Face, fingerprint and card systems for staff and doors.',
     },
     {
       icon: Wrench,
@@ -139,7 +160,7 @@ export default function HomePage() {
             <div className="lg:col-span-7 space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-soft text-primary text-xs sm:text-sm font-bold border border-primary/20">
                 <span className="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
-                <span>Independent Multi-Brand Integrator · Udaipur, Rajasthan</span>
+                <span>Multi-Brand IT Sales &amp; Service · Udaipur, Rajasthan</span>
               </div>
               <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-ink leading-tight">
                 Reliable <span className="text-primary">IT Infrastructure &amp; Security</span> for Modern Businesses.
@@ -173,8 +194,8 @@ export default function HomePage() {
                 </h3>
                 <ul className="space-y-4">
                   {[
-                    'Independent Multi-Brand Integrator — Objective recommendations, zero single-brand sales quotas',
-                    '100% Genuine Commercial Hardware — Sourced via authorized national distribution channels with official manufacturer warranty',
+                    'Multi-Brand Sales & Service — Firewalls, laptops, servers, WiFi, CCTV and printers in one place',
+                    '100% Genuine Commercial Hardware — Dell, HP, Lenovo, Cisco, Fortinet, Sophos and more, with manufacturer warranty as applicable',
                     'Prioritized Local Field Response — Under 2-hour dispatch across Udaipur industrial hubs (Sukher, Madri, Nokha, Gudli)',
                     'Comprehensive Multi-Vendor AMC — Maintenance for your existing mixed equipment without forced replacements',
                     'TIA/EIA & IP67 Standards — Fluke-tested structured cabling, labeled ports, and certified terminations',
@@ -220,7 +241,8 @@ export default function HomePage() {
               {[
                 { name: 'Cisco', cat: 'Networking' },
                 { name: 'Ubiquiti UniFi', cat: 'Wi-Fi & Routing' },
-                { name: 'Hikvision', cat: 'CCTV & Biometrics' },
+                { name: 'Lenovo', cat: 'Laptops & Servers' },
+                { name: 'Sophos', cat: 'Firewall & Security' },
                 { name: 'CP PLUS', cat: 'Surveillance' },
                 { name: 'Dell Technologies', cat: 'Servers & Desktops' },
                 { name: 'HP Enterprise', cat: 'Servers & Workstations' },
@@ -267,7 +289,7 @@ export default function HomePage() {
               Complete Enterprise IT
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-ink tracking-tight">
-              Six Core Service Pillars for Modern Infrastructure
+              Core Services for Modern Infrastructure
             </h2>
             <p className="text-base text-muted">
               From the structured cabling inside your walls to the high-definition cameras guarding your perimeter — we deliver integrated solutions with single-vendor accountability.
