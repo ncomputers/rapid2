@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
 
 export default function Footer() {
@@ -32,13 +33,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 pb-12 border-b border-white/10">
           {/* Brand Col */}
           <div className="space-y-4">
-            <Link href="/" className="flex items-center gap-2.5">
-              <span className="w-9 h-9 rounded-lg bg-primary text-white font-extrabold text-lg flex items-center justify-center">
-                R
-              </span>
-              <span className="font-extrabold tracking-tight text-white text-lg">
-                RAPID CORP
-              </span>
+            <Link href="/" className="inline-block rounded-lg bg-white px-3 py-2">
+              <Image src="/logo.png" alt="Rapid Corp" width={286} height={160} className="h-16 w-auto" />
             </Link>
             <p className="text-sm text-gray-300 leading-relaxed">
               Udaipur-based enterprise IT infrastructure and electronic security solutions company. Founded in 2016, our 13-person engineering team designs, deploys, and maintains mission-critical systems across Rajasthan.

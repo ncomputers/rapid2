@@ -101,7 +101,7 @@ export default function HomePage() {
         '@id': `${SITE_URL}/#organization`,
         name: 'Rapid Corp',
         url: SITE_URL,
-        logo: `${SITE_URL}/og-image.png`,
+        logo: `${SITE_URL}/logo.png`,
         image: `${SITE_URL}/og-image.png`,
         description:
           'Rapid Corp is an independent enterprise IT infrastructure and multi-brand security systems integrator providing networking, CCTV, firewalls, and AMC support in Udaipur, Rajasthan.',

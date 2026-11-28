@@ -67,8 +67,8 @@ export const metadata: Metadata = {
     images: ['/og-image.png'],
   },
   icons: {
-    icon: '/og-image.png',
-    apple: '/og-image.png',
+    icon: '/icon.png',
+    apple: '/apple-icon.png',
   },
   other: {
     'geo.region': 'IN-RJ',
