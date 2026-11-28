@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Menu, X, ArrowRight, ChevronDown, Network, Shield, Wrench, Cloud, Laptop, Cpu, ShieldCheck, Wifi, Fingerprint } from 'lucide-react';
 
@@ -99,17 +100,17 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Brand Logo */}
         <Link href="/" className="flex items-center gap-2.5 group">
-          <span className="w-9 h-9 shrink-0 rounded-lg bg-primary text-white font-extrabold text-lg flex items-center justify-center shadow-md shadow-primary/20 transition-transform group-hover:scale-105">
-            R
+          <Image
+            src="/logo.png"
+            alt="Rapid Corp"
+            width={286}
+            height={160}
+            priority
+            className="h-12 lg:h-14 w-auto transition-transform group-hover:scale-105"
+          />
+          <span className="text-[10px] tracking-wider font-semibold text-muted uppercase whitespace-nowrap hidden lg:inline">
+            IT &amp; Security Solutions
           </span>
-          <div className="flex flex-col">
-            <span className="font-extrabold tracking-tight text-ink text-base lg:text-lg leading-tight whitespace-nowrap">
-              RAPID CORP
-            </span>
-            <span className="text-[10px] tracking-wider font-semibold text-muted uppercase whitespace-nowrap md:hidden lg:inline">
-              IT &amp; Security Solutions
-            </span>
-          </div>
         </Link>
 
         {/* Desktop Navigation Links */}
